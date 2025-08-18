@@ -1,42 +1,11 @@
 import Image from "next/image";
-import { Cloud, Shield, Network } from "lucide-react";
+import { Server, HardDrive, Network, Zap, Wifi, Radio, Cable, ArrowRight } from "lucide-react";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900">
-                XX-online
-              </h1>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors duration-300 relative group">
-                サービス
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a href="#solutions" className="text-gray-600 hover:text-gray-900 transition-colors duration-300 relative group">
-                ソリューション
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors duration-300 relative group">
-                会社情報
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors duration-300 relative group">
-                お問い合わせ
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300"></span>
-              </a>
-            </nav>
-            <button className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-300">
-              資料請求
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-gray-900">
@@ -60,104 +29,131 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-0 w-full h-full" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"}}></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Products Showcase Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-gray-100 rounded-full text-gray-700 text-sm font-medium mb-4">
-              <span className="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>
-              Core Services
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              主要サービス
+              取り扱い製品
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              最新技術を駆使した包括的なITインフラソリューションで、企業のデジタル変革を実現
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              データセンターから企業ネットワークまで、ITインフラの全領域をカバーする高品質な製品群
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="group bg-white p-8 rounded-2xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-200 transition-colors duration-300">
-                  <Cloud className="w-8 h-8 text-orange-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">クラウドインフラ</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  AWS、Azure、GCPを活用したスケーラブルなクラウドインフラの設計・構築・運用
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    マルチクラウド対応
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    自動スケーリング
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    コスト最適化
-                  </div>
-                </div>
-            </div>
 
-            <div className="group bg-white p-8 rounded-2xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-200 transition-colors duration-300">
-                  <Shield className="w-8 h-8 text-orange-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">サイバーセキュリティ</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  ゼロトラストアーキテクチャに基づく包括的なセキュリティソリューション
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    多層防御システム
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    AI脅威検知
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    コンプライアンス対応
-                  </div>
-                </div>
-            </div>
+          {/* Product Categories Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+                <Server className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">サーバー</h3>
+              <p className="text-sm text-gray-600 mb-3">GPU・CPUサーバー</p>
+              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
+                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
 
-            <div className="group bg-white p-8 rounded-2xl border border-gray-200 hover:border-gray-400 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-200 transition-colors duration-300">
-                  <Network className="w-8 h-8 text-orange-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">ネットワークソリューション</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  高速・安全・安定したエンタープライズネットワークの構築と管理
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    SD-WAN対応
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    5G統合ソリューション
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    24/7監視・運用
-                  </div>
-                </div>
+            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+                <HardDrive className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">ストレージ</h3>
+              <p className="text-sm text-gray-600 mb-3">NAS・SAN・SSD</p>
+              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
+                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
+
+            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+                <Network className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">スイッチ</h3>
+              <p className="text-sm text-gray-600 mb-3">L2・L3・コア</p>
+              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
+                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
+
+            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+                <Zap className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">波長分離多重化</h3>
+              <p className="text-sm text-gray-600 mb-3">DWDM・CWDM</p>
+              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
+                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
+
+            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+                <Wifi className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">FTTx</h3>
+              <p className="text-sm text-gray-600 mb-3">AP・OLT・ONU</p>
+              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
+                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
+
+            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+                <Radio className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">トランスセイバー</h3>
+              <p className="text-sm text-gray-600 mb-3">1.6T～10G・Coherent</p>
+              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
+                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
+
+            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+                <Cable className="w-6 h-6 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">ケーブル</h3>
+              <p className="text-sm text-gray-600 mb-3">MPO・AOC・DAC・ACC・AEC</p>
+              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
+                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
+
+            {/* Featured Product Card */}
+            <a href="/products" className="group bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl text-white hover:from-gray-800 hover:to-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4">
+                <Server className="w-6 h-6 text-orange-400" />
+              </div>
+              <h3 className="text-lg font-bold mb-2">全製品を見る</h3>
+              <p className="text-sm text-gray-300 mb-3">7カテゴリの詳細製品</p>
+              <div className="flex items-center text-sm text-gray-300 group-hover:text-white">
+                製品ページへ <ArrowRight className="w-4 h-4 ml-1" />
+              </div>
+            </a>
+          </div>
+
+          {/* CTA Section */}
+          <div className="text-center mt-16">
+            <div className="bg-gray-900 rounded-3xl p-12 text-white">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                お客様のITインフラニーズに最適な製品をご提案
+              </h3>
+              <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+                専門エンジニアがお客様の要件をヒアリングし、最適な製品構成をご提案いたします
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-orange-600 text-white px-8 py-3 rounded-xl hover:bg-orange-700 transition-colors duration-300 font-medium">
+                  製品カタログ請求
+                </button>
+                <button className="border border-gray-600 text-white px-8 py-3 rounded-xl hover:bg-gray-800 transition-colors duration-300 font-medium">
+                  技術相談予約
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
