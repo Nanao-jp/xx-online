@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 interface HeaderProps {
   className?: string;
@@ -23,15 +24,15 @@ export default function Header({ className = '' }: HeaderProps) {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors duration-300">
+            <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors duration-300">
               XX-online
-            </a>
+            </Link>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium transition-all duration-300 relative group ${
@@ -44,7 +45,7 @@ export default function Header({ className = '' }: HeaderProps) {
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-gray-900 transition-all duration-300 ${
                   pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}></span>
-              </a>
+              </Link>
             ))}
           </nav>
 
