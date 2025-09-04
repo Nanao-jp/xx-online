@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# XX-online コーポレートサイト
 
-## Getting Started
+## 1. プロジェクト概要
 
-First, run the development server:
+ITインフラ製品を扱う企業「XX-online」の公式コーポレートサイトです。
+シンプルで信頼感のあるデザインを追求し、企業の顔となる洗練されたウェブサイトを目指しています。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 主な技術スタック
+- **フレームワーク**: Next.js (v15.4.6) / React (v19.1.0)
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS (v4)
+- **アイコン**: Lucide React
+- **コード品質**: ESLint, Husky, lint-staged
+  - `git commit`時に自動でコード整形が実行されます。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2. 各ページの構成と仕組み
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### `/` (トップページ)
+ウェブサイトの顔となるページです。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **ヒーローセクション**: `/public/hero.jpg`を背景に、「ITインフラを革新する」というキャッチコピーで企業のビジョンを伝えます。
+- **製品紹介**: 主要な製品カテゴリを一覧で紹介し、詳細ページへの導線を設けています。
 
-## Learn More
+### `/about` (会社情報)
+企業の基本情報を掲載する静的なページです。
 
-To learn more about Next.js, take a look at the following resources:
+- 会社名、設立日、代表者、所在地、従業員数、事業内容などをまとめています。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `/news` (ニュース)
+企業からのお知らせや最新情報を掲載する静的なページです。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 日付とカテゴリタグ付きでニュース記事をリスト表示します。
 
-## Deploy on Vercel
+### `/solution` (ソリューション)
+企業の提供するソリューションを分かりやすく紹介するページです。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `'use client'`コンポーネントで実装されており、`useState`フックを利用したタブ切り替え機能が特徴です。
+- 「AIデータセンターソリューション」と「統合接続ソリューション」の2つのカテゴリに分けて表示します。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### `/products` (製品)
+取り扱い製品の詳細なカタログページです。
+
+- こちらも`'use client'`コンポーネントで、複雑な製品カテゴリをタブで分類しています。
+- 7つの大カテゴリと、その中の詳細なサブカテゴリ（サーバーはGPU/CPUで分類など）で構成されています。
+
+### `/service-support` (サービス・サポート)
+顧客サポートに関する情報を掲載するページです。
+
+- 現在は「準備中」のプレースホルダーページとなっています。
+
+### `/components/Header.tsx` (共通ヘッダー)
+全ページで共通して使用されるヘッダーコンポーネントです。
+
+- `'use client'`コンポーネントとして実装されています。
+- `usePathname`フックを使い、現在表示しているページのナビゲーションリンクを動的にハイライトする機能を持ちます。
+
+## 3. 開発の始め方
+
+1. **依存関係のインストール:**
+   ```bash
+   npm install
+   ```
+
+2. **開発サーバーの起動:**
+   ```bash
+   npm run dev
+   ```
+   ブラウザで [http://localhost:3000](http://localhost:3000) を開いてください。
+
+3. **ビルド:**
+   ```bash
+   npm run build
+   ```
+
+4. **Lintチェック:**
+   ```bash
+   npm run lint
+   ```
