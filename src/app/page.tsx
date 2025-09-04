@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Server, HardDrive, Network, Zap, Wifi, Radio, Cable, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -43,7 +45,7 @@ export default function Home() {
 
           {/* Product Categories Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Server className="w-6 h-6 text-orange-600" />
               </div>
@@ -52,9 +54,9 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
 
-            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <HardDrive className="w-6 h-6 text-orange-600" />
               </div>
@@ -63,9 +65,9 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
 
-            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Network className="w-6 h-6 text-orange-600" />
               </div>
@@ -74,9 +76,9 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
 
-            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Zap className="w-6 h-6 text-orange-600" />
               </div>
@@ -85,9 +87,9 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
 
-            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Wifi className="w-6 h-6 text-orange-600" />
               </div>
@@ -96,9 +98,9 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
 
-            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Radio className="w-6 h-6 text-orange-600" />
               </div>
@@ -107,9 +109,9 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
 
-            <a href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Cable className="w-6 h-6 text-orange-600" />
               </div>
@@ -118,10 +120,10 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
 
             {/* Featured Product Card */}
-            <a href="/products" className="group bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl text-white hover:from-gray-800 hover:to-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products" className="group bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl text-white hover:from-gray-800 hover:to-gray-700 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4">
                 <Server className="w-6 h-6 text-orange-400" />
               </div>
@@ -130,7 +132,7 @@ export default function Home() {
               <div className="flex items-center text-sm text-gray-300 group-hover:text-white">
                 製品ページへ <ArrowRight className="w-4 h-4 ml-1" />
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* CTA Section */}
@@ -156,47 +158,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">XX-online</h3>
-              <p className="text-gray-400">
-                企業のITインフラを革新し、ビジネス成長を支援します
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">サービス</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">クラウドインフラ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">セキュリティ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">ネットワーク</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">運用・保守</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">企業情報</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">会社概要</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">導入事例</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">ニュース</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">採用情報</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">お問い合わせ</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>TEL: 03-XXXX-XXXX</li>
-                <li>Email: info@xx-online.com</li>
-                <li>営業時間: 平日 9:00-18:00</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 XX-online. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

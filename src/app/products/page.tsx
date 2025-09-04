@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { Server, HardDrive, Network, Zap, Wifi, Radio, Cable, Cpu, Gpu } from "lucide-react";
 import Header from "@/components/Header";
+import { allProducts } from '@/data/products';
+import ProductCard from '@/components/ProductCard';
 
 export default function Products() {
   const [activeTab, setActiveTab] = useState('server');
@@ -75,65 +77,9 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
-                        <div className="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-6">
-                          <Gpu className="w-8 h-8 text-orange-600" />
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-4">GPUサーバー</h3>
-                        <p className="text-gray-600 mb-4">
-                          AI・機械学習処理向け高性能GPUサーバー
-                        </p>
-                        <div className="space-y-2">
-                          <div className="flex items-center text-sm text-gray-700">
-                            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                            高性能GPU搭載
-                          </div>
-                          <div className="flex items-center text-sm text-gray-700">
-                            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                            AI処理最適化
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
-                        <div className="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-6">
-                          <Gpu className="w-8 h-8 text-orange-600" />
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-4">ワークステーション</h3>
-                        <p className="text-gray-600 mb-4">
-                          高性能GPU搭載ワークステーション
-                        </p>
-                        <div className="space-y-2">
-                          <div className="flex items-center text-sm text-gray-700">
-                            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                            プロ仕様設計
-                          </div>
-                          <div className="flex items-center text-sm text-gray-700">
-                            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                            大容量メモリ
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
-                        <div className="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-6">
-                          <Gpu className="w-8 h-8 text-orange-600" />
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-4">計算サーバー</h3>
-                        <p className="text-gray-600 mb-4">
-                          科学計算・シミュレーション向けGPUサーバー
-                        </p>
-                        <div className="space-y-2">
-                          <div className="flex items-center text-sm text-gray-700">
-                            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                            並列処理対応
-                          </div>
-                          <div className="flex items-center text-sm text-gray-700">
-                            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                            高速演算処理
-                          </div>
-                        </div>
-                      </div>
+                      {allProducts.filter(p => p.category === 'gpu-server').map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                      ))}
                     </div>
                   </div>
 
@@ -146,6 +92,7 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {/* TODO: CPUサーバーのデータを追加する */}
                       <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
                         <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
                           <Cpu className="w-8 h-8 text-orange-600" />
