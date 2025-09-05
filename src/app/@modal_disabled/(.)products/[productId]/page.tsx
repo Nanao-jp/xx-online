@@ -2,7 +2,13 @@ import { allProducts } from '@/data/products';
 import Modal from '@/components/Modal';
 import ProductDetailView from '@/components/ProductDetailView';
 
-export default async function ProductModal({ params }: { params: { productId: string } }) {
+interface ProductModalProps {
+  params: {
+    productId: string;
+  }
+}
+
+export default async function ProductModal({ params }: ProductModalProps) {
   const product = allProducts.find(p => p.id === params.productId);
 
   if (!product) {

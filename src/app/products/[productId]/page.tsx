@@ -15,7 +15,7 @@ import { ProductSpecs } from '@/components/product/ProductSpecs';
 // Dynamically import components that are below the fold
 const RelatedProducts = dynamic(() => import('@/components/product/RelatedProducts').then(mod => mod.RelatedProducts));
 const ProductContactCTA = dynamic(() => import('@/components/product/ProductContactCTA').then(mod => mod.ProductContactCTA));
-const Footer = dynamic(() => import('@/components/Footer'));
+// const Footer = dynamic(() => import('@/components/Footer'));
 
 
 export async function generateMetadata({ params }: { params: { productId: string } }) {
