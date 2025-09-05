@@ -1,3 +1,5 @@
+'use client';
+
 import { Rocket, Gauge, Search } from 'lucide-react';
 import { Product } from '@/data/products';
 

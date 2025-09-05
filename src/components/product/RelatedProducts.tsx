@@ -7,7 +7,7 @@ type RelatedProductsProps = {
   currentProductId: string;
 }
 
-export function RelatedProducts({ currentProductId }: RelatedProductsProps) {
+export default function RelatedProducts({ currentProductId }: RelatedProductsProps) {
   const relatedProducts = allProducts.filter((p) => p.id !== currentProductId);
 
   // If no related products, don't render the section

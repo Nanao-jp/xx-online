@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export function ProductContactCTA() {
+export default function ProductContactCTA() {
   return (
     <section className="bg-white py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

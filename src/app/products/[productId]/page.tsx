@@ -1,9 +1,10 @@
+import type { Metadata } from 'next';
 import { allProducts } from '@/data/products';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import dynamic from 'next/dynamic';
 
-// Import newly created components
+// Import components
 import { ProductHero } from '@/components/product/ProductHero';
 import { ProductIntroduction } from '@/components/product/ProductIntroduction';
 import { ProductFeatures } from '@/components/product/ProductFeatures';
@@ -13,13 +14,21 @@ import { ProductOandM } from '@/components/product/ProductOandM';
 import { ProductSpecs } from '@/components/product/ProductSpecs';
 
 // Dynamically import components that are below the fold
-const RelatedProducts = dynamic(() => import('@/components/product/RelatedProducts').then(mod => mod.RelatedProducts));
-const ProductContactCTA = dynamic(() => import('@/components/product/ProductContactCTA').then(mod => mod.ProductContactCTA));
-// const Footer = dynamic(() => import('@/components/Footer'));
+const RelatedProducts = dynamic(() => import('@/components/product/RelatedProducts'));
+const ProductContactCTA = dynamic(() => import('@/components/product/ProductContactCTA'));
+// Footer is rendered in the root layout
 
+type ProductDetailPageProps = {
+  params: Promise<{ productId: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+};
 
-export async function generateMetadata({ params }: { params: { productId: string } }) {
-  const product = allProducts.find(p => p.id === params.productId);
+export async function generateMetadata(
+  { params }: ProductDetailPageProps
+): Promise<Metadata> {
+  const { productId } = await params;
+  const product = allProducts.find(p => p.id === productId);
+
   if (!product) {
     return {
       title: '製品が見つかりません',
@@ -32,14 +41,15 @@ export async function generateMetadata({ params }: { params: { productId: string
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return allProducts.map((product) => ({
     productId: product.id,
   }));
 }
 
-export default async function ProductDetailPage({ params }: { params: { productId:string } }) {
-  const product = allProducts.find(p => p.id === params.productId);
+export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
+  const { productId } = await params;
+  const product = allProducts.find(p => p.id === productId);
 
   if (!product) {
     notFound();
@@ -59,7 +69,7 @@ export default async function ProductDetailPage({ params }: { params: { productI
         <RelatedProducts currentProductId={product.id} />
         <ProductContactCTA />
       </main>
-      {/* <Footer /> */}
+      {/* Footer is rendered in the root layout */}
     </div>
   );
 }
