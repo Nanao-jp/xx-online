@@ -3,9 +3,8 @@ import Modal from '@/components/Modal';
 import ProductDetailView from '@/components/ProductDetailView';
 
 interface ProductModalProps {
-  params: {
-    productId: string;
-  }
+  params: { productId: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 export default async function ProductModal({ params }: ProductModalProps) {
