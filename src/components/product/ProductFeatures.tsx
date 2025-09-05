@@ -14,8 +14,8 @@ export function ProductFeatures({ features }: ProductFeaturesProps) {
     <section className="bg-white py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {mainFeature && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative w-full h-80 rounded-lg overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-center">
+            <div className="relative w-full aspect-video md:h-80 md:aspect-auto rounded-lg overflow-hidden">
               <Image src={mainFeature.image} alt={mainFeature.title} fill className="object-cover" />
             </div>
             <div>

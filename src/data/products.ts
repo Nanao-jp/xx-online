@@ -19,6 +19,12 @@ export type ProductOandMFeature = {
   icon: 'Rocket' | 'Gauge' | 'Search';
 };
 
+export type ProductEnergySavingPoint = {
+  title: string;
+  description: string;
+  icon: 'BatteryCharging' | 'ThermometerSun' | 'Gauge';
+};
+
 export interface Product {
   id: string; // URLで使うID (例: g5200-v7)
   name: string;
@@ -49,10 +55,8 @@ export interface Product {
   reliability: ProductFeature[];
   energySaving: {
     image: string;
-    points: {
-      title: string;
-      description: string;
-    }[];
+    points: ProductEnergySavingPoint[];
+    imagePosition?: 'top' | 'center' | 'bottom';
   };
   oandm: {
     features: ProductOandMFeature[];
@@ -132,16 +136,20 @@ export const allProducts: Product[] = [
     ],
     energySaving: {
       image: '/products/g5200v7/energy-saving.jpg',
+      imagePosition: 'bottom',
       points: [
         {
+          icon: 'BatteryCharging',
           title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
           description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
         },
         {
+          icon: 'ThermometerSun',
           title: '業界をリードする電源技術、より高い効率',
           description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
         },
         {
+          icon: 'Gauge',
           title: 'インテリジェントなサービス状況把握、動的な負荷調整',
           description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
         }

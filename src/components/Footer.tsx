@@ -1,32 +1,41 @@
+import Link from 'next/link';
+
 export default function Footer() {
+  const navItems = [
+    { href: '/about', label: '会社情報' },
+    { href: '/news', label: 'ニュース' },
+    { href: '/solution', label: 'ソリューション' },
+    { href: '/products', label: '製品' },
+    { href: '/service-support', label: 'サービス・サポート' },
+  ];
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+          {/* Logo & Description */}
+          <div className="md:col-span-2">
             <h3 className="text-xl font-bold mb-4">XX-online</h3>
-            <p className="text-gray-400">
+            <p className="text-gray-400 max-w-md mx-auto md:mx-0">
               企業のITインフラを革新し、ビジネス成長を支援します
             </p>
           </div>
+          
+          {/* Sitemap */}
           <div>
-            <h4 className="font-semibold mb-4">サービス</h4>
+            <h4 className="font-semibold mb-4">サイトマップ</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">クラウドインフラ</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">セキュリティ</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">ネットワーク</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">運用・保守</a></li>
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-white transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold mb-4">企業情報</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">会社概要</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">導入事例</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">ニュース</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">採用情報</a></li>
-            </ul>
-          </div>
+
+          {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4">お問い合わせ</h4>
             <ul className="space-y-2 text-gray-400">

@@ -124,6 +124,18 @@ export const allProducts: Product[] = [
 
     // ... その他のセクションデータ（reliability, energySaving, oandm, specs）も同様に記述 ...
 
+    energySaving: {
+      image: '/products/g5300-v8/energy-saving.jpg',
+      imagePosition: 'bottom', // 表示位置を 'top', 'center', 'bottom' から指定可。省略時は 'center'
+      points: [
+        {
+          icon: 'BatteryCharging', // 'BatteryCharging', 'ThermometerSun', 'Gauge' から選択
+          title: '（省エネ特徴1のタイトル）',
+          description: '（省エネ特徴1の説明文）'
+        }
+      ]
+    },
+
     specs: [ // 技術仕様テーブル
       { label: '形態', value: '（例: 4U AIサーバー）' },
       { label: 'プロセッサー', value: '（プロセッサー情報）' },
