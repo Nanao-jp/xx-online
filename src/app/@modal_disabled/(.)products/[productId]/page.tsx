@@ -7,7 +7,7 @@ interface ProductModalProps {
   searchParams?: { [key: string]: string | string[] | undefined };
 }
 
-export default async function ProductModal({ params }: ProductModalProps) {
+export default function ProductModal({ params }: ProductModalProps) {
   const product = allProducts.find(p => p.id === params.productId);
 
   if (!product) {
