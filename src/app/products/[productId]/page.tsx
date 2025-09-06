@@ -1,86 +1,69 @@
-import type { Metadata } from 'next';
 import { allProducts } from '@/data/products';
+import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
-import dynamic from 'next/dynamic';
-
-// Import server page components
-import { ProductHero } from '@/components/product/ProductHero';
-import { ProductIntroduction } from '@/components/product/ProductIntroduction';
-import { ProductFeatures } from '@/components/product/ProductFeatures';
-import { ProductReliability } from '@/components/product/ProductReliability';
-import { ProductEnergySaving } from '@/components/product/ProductEnergySaving';
-import { ProductOandM } from '@/components/product/ProductOandM';
-import { ProductSpecs } from '@/components/product/ProductSpecs';
 import ProductDetailView from '@/components/ProductDetailView';
 
-const RelatedProducts = dynamic(() => import('@/components/product/RelatedProducts'));
-const ProductContactCTA = dynamic(() => import('@/components/product/ProductContactCTA'));
+// ✅ Next.js 15 から params/searchParams は Promise になった
+type Params = Promise<{ productId: string }>;
 
-type ProductPageProps = {
-  params: { productId: string };
-};
-
+// ---- メタデータ生成 ----
 export async function generateMetadata(
-  { params }: ProductPageProps
+  { params }: { params: Params }
 ): Promise<Metadata> {
-  const product = allProducts.find(p => p.id === params.productId);
+  const { productId } = await params;
+  const product = allProducts.find(p => p.id === productId);
+  if (!product) notFound();
 
-  if (!product) {
-    return {
-      title: '製品が見つかりません',
-      description: 'お探しの製品ページは見つかりませんでした。',
-    };
-  }
   return {
     title: product.meta.title,
     description: product.meta.description,
   };
 }
 
+// ---- 静的パス生成 ----
 export async function generateStaticParams() {
-  return allProducts.map((product) => ({
-    productId: product.id,
-  }));
+  return allProducts.map((p) => ({ productId: p.id }));
 }
 
-export default async function ProductDetailPage({ params }: ProductPageProps) {
-  const product = allProducts.find(p => p.id === params.productId);
+// ---- ページ本体 ----
+export default async function ProductDetailPage(
+  { params }: { params: Params }
+) {
+  const { productId } = await params;
+  const product = allProducts.find(p => p.id === productId);
+  if (!product) notFound();
 
-  if (!product) {
-    notFound();
-  }
-
-  if (product.displayType === 'fullpage') {
-    // This is not a perfect type guard, but it helps TypeScript
-    const serverProduct = product as import('@/data/types').ServerProduct;
+  // モーダル専用設定ならエラーページに誘導
+  if (product.displayType === 'modal') {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="bg-gray-50 min-h-screen">
         <Header />
-        <main className="pt-16">
-          <ProductHero content={serverProduct.hero} />
-          <ProductIntroduction content={serverProduct.introduction} />
-          <ProductFeatures features={serverProduct.features} />
-          <ProductReliability features={serverProduct.reliability} />
-          <ProductEnergySaving content={serverProduct.energySaving} />
-          <ProductOandM content={serverProduct.oandm} />
-          <ProductSpecs specs={serverProduct.specs} datasheetUrl={serverProduct.datasheetUrl} />
-          <RelatedProducts currentProductId={serverProduct.id} />
-          <ProductContactCTA />
+        <main className="py-24">
+          <div className="container mx-auto px-4">
+            <h1 className="text-2xl font-bold">Error</h1>
+            <p>This product is configured to be viewed in a modal, but was accessed directly.</p>
+            <p>Please access it through the products page.</p>
+          </div>
         </main>
       </div>
     );
   }
 
-  // Render a simple, non-modal page for Cable products (for direct access, refresh, etc.)
+  // 通常の製品ページ表示
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-white">
       <Header />
-      <main className="pt-24 pb-12">
-        <div className="max-w-4xl mx-auto px-4">
-            <ProductDetailView product={product} />
-        </div>
+      <main>
+        <ProductDetailView product={product} />
+        <RelatedProducts currentProductId={product.id} />
+        <ProductContactCTA />
       </main>
     </div>
   );
 }
+
+// dynamic imports
+const RelatedProducts = dynamic(() => import('@/components/product/RelatedProducts'));
+const ProductContactCTA = dynamic(() => import('@/components/product/ProductContactCTA'));

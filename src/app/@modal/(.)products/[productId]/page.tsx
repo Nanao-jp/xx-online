@@ -3,14 +3,11 @@ import Modal from '@/components/Modal';
 import ProductDetailView from '@/components/ProductDetailView';
 import { notFound } from 'next/navigation';
 
-type PageProps = {
-    params: {
-        productId: string;
-    }
-}
+type Params = Promise<{ productId: string }>;
 
-export default async function ProductModal({ params }: PageProps) {
-    const product = allProducts.find(p => p.id === params.productId);
+export default async function ProductModal({ params }: { params: Params }) {
+    const { productId } = await params;
+    const product = allProducts.find(p => p.id === productId);
 
     if (!product) {
         notFound();

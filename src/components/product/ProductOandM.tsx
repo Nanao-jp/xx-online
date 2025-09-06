@@ -1,13 +1,13 @@
 'use client';
 
-import { Rocket, Gauge, Search } from 'lucide-react';
-import { Product } from '@/data/products';
+import { ServerProduct } from '@/data/types';
+import { Rocket, Gauge, Search, LucideIcon } from 'lucide-react';
 
 type ProductOandMProps = {
-  content: Product['oandm'];
-}
+  content: ServerProduct['oandm'];
+};
 
-const iconMap = {
+const iconMap: { [key: string]: LucideIcon } = {
   Rocket: Rocket,
   Gauge: Gauge,
   Search: Search,

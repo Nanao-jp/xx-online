@@ -1,22 +1,18 @@
 import Image from 'next/image';
-import { ProductEnergySavingPoint } from '@/data/products';
-import { BatteryCharging, ThermometerSun, Gauge, Icon as LucideIcon } from 'lucide-react';
+import { ServerProduct } from '@/data/types';
+import { BatteryCharging, ThermometerSun, Gauge, LucideIcon } from 'lucide-react';
 import { ElementType } from 'react';
 
 // Icon mapping
-const iconMap: { [key: string]: ElementType } = {
+const iconMap: { [key: string]: LucideIcon } = {
   BatteryCharging,
   ThermometerSun,
   Gauge,
 };
 
 type ProductEnergySavingProps = {
-  content: {
-    image: string;
-    points: ProductEnergySavingPoint[];
-    imagePosition?: 'top' | 'center' | 'bottom';
-  };
-}
+  content: ServerProduct['energySaving'];
+};
 
 export function ProductEnergySaving({ content }: ProductEnergySavingProps) {
   // To ensure Tailwind's JIT compiler detects the classes, we list them completely.

@@ -1,8 +1,12 @@
-import { AnyProduct } from '@/data/products';
+import { Product } from '@/data/products';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const ProductCardContent = ({ product }: { product: AnyProduct }) => (
+type ProductCardProps = {
+  product: Product;
+};
+
+const ProductCardContent = ({ product }: { product: Product }) => (
   <>
     <div className="relative w-full aspect-square bg-gray-50 rounded-lg overflow-hidden mb-6">
       <Image
@@ -32,7 +36,7 @@ const ProductCardContent = ({ product }: { product: AnyProduct }) => (
   </>
 );
 
-const ProductCard = ({ product }: { product: AnyProduct }) => {
+export function ProductCard({ product }: ProductCardProps) {
   const commonClasses = "block bg-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group";
 
   if (product.displayType === 'modal') {
@@ -50,5 +54,3 @@ const ProductCard = ({ product }: { product: AnyProduct }) => {
     </a>
   );
 };
-
-export default ProductCard;

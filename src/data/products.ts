@@ -4,10 +4,10 @@ export * from './types';
 // --- Import product data from subdirectories
 import { serverProducts } from './server';
 import { cableProducts } from './cable';
-import type { AnyProduct } from './types';
+import type { Product } from './types';
 
 // --- Combine and export all products
-export const allProducts: AnyProduct[] = [
+export const allProducts = [
   ...serverProducts,
   ...cableProducts,
-];
+] satisfies readonly Product[];

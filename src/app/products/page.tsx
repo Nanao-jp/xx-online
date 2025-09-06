@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Server, HardDrive, Network, Zap, Wifi, Radio, Cable, Cpu, Gpu, Unplug, Usb, Waypoints } from "lucide-react";
 import Header from "@/components/Header";
 import { allProducts } from '@/data/products';
-import ProductCard from '@/components/ProductCard';
+import { ProductCard } from '@/components/ProductCard';
 
 export default function Products() {
   const [activeTab, setActiveTab] = useState('server');

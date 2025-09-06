@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { ProductFeature } from '@/data/products';
+import { ServerProduct } from '@/data/types';
 
 type ProductReliabilityProps = {
-  features: ProductFeature[];
+  features: ServerProduct['reliability'];
 }
 
 export function ProductReliability({ features }: ProductReliabilityProps) {

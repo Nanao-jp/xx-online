@@ -7,7 +7,16 @@ export type ProductSpec = {
   value: string;
 };
 
-// --- ページセクションごとの詳細な型 ---
+// カテゴリを判別キーとして明確化
+export type ServerCategory = 'gpu-server' | 'cpu-server';
+export type CableCategory = 'aoc' | 'dac' | 'mpo';
+export type Category = ServerCategory | CableCategory;
+
+export type HeroData = {
+  title: string;
+  subtitle: string;
+  image: string;
+};
 
 export type ProductFeature = {
   title: string;
@@ -37,7 +46,7 @@ export interface BaseProduct {
   name: string;
   description: string;
   mainImage: string;
-  category: string;
+  category: Category; // ← 判別キーとして使用
   displayType: 'fullpage' | 'modal';
   meta: {
     title: string;
@@ -45,17 +54,12 @@ export interface BaseProduct {
   };
 }
 
-// サーバーのような情報量が多い製品 (フルページ表示用)
+// サーバー製品：hero を必須にもつ
 export interface ServerProduct extends BaseProduct {
+  category: ServerCategory;
   displayType: 'fullpage';
-  category: 'gpu-server' | 'cpu-server';
-
-  // 詳細ページ用のセクションデータ
-  hero: {
-    title: string;
-    subtitle: string;
-    image: string;
-  };
+  
+  hero: HeroData;
   introduction: {
     title: string;
     description: string;
@@ -73,19 +77,16 @@ export interface ServerProduct extends BaseProduct {
   };
   specs: ProductSpec[];
   datasheetUrl?: string;
-
-  // 製品一覧ページ用の短い特徴
   shortFeatures: string[];
 }
 
-// ケーブルのような情報量が少ない製品 (モーダル表示用)
+// ケーブル製品：hero は存在しない
 export interface CableProduct extends BaseProduct {
+  category: CableCategory;
   displayType: 'modal';
-  category: 'cable';
   
-  // モーダルで表示するシンプルな情報
   specs: ProductSpec[];
 }
 
-// すべての製品を網羅するUnion型
-export type AnyProduct = ServerProduct | CableProduct;
+// すべての製品を網羅する判別可能な共用体
+export type Product = ServerProduct | CableProduct;

@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { Product } from '@/data/products';
+import { ServerProduct } from '@/data/types';
 
 type ProductIntroductionProps = {
-  content: Product['introduction'];
+  content: ServerProduct['introduction'];
 }
 
 export function ProductIntroduction({ content }: ProductIntroductionProps) {

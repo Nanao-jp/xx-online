@@ -1,10 +1,11 @@
+import { ServerProduct } from '@/data/types';
 import Link from 'next/link';
-import { ProductSpec } from '@/data/products';
+import { Download } from 'lucide-react';
 
 type ProductSpecsProps = {
-  specs: ProductSpec[];
-  datasheetUrl?: string;
-}
+  specs: ServerProduct['specs'];
+  datasheetUrl?: ServerProduct['datasheetUrl'];
+};
 
 export function ProductSpecs({ specs, datasheetUrl }: ProductSpecsProps) {
   return (

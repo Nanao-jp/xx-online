@@ -1,7 +1,7 @@
 'use client';
 
 import { allProducts } from '@/data/products';
-import ProductCard from '@/components/ProductCard';
+import { ProductCard } from '@/components/ProductCard';
 
 type RelatedProductsProps = {
   currentProductId: string;
