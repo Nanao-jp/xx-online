@@ -17,12 +17,8 @@ import ProductDetailView from '@/components/ProductDetailView';
 const RelatedProducts = dynamic(() => import('@/components/product/RelatedProducts'));
 const ProductContactCTA = dynamic(() => import('@/components/product/ProductContactCTA'));
 
-type ProductPageProps = {
-  params: { productId: string };
-};
-
 export async function generateMetadata(
-  { params }: ProductPageProps
+  { params }: { params: { productId: string } }
 ): Promise<Metadata> {
   const product = allProducts.find(p => p.id === params.productId);
 
@@ -44,7 +40,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ProductDetailPage({ params }: ProductPageProps) {
+export default async function ProductDetailPage({ params }: { params: { productId: string } }) {
   const product = allProducts.find(p => p.id === params.productId);
 
   if (!product) {
