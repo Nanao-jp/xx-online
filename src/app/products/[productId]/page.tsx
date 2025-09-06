@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import dynamic from 'next/dynamic';
 
-// Import components
+// Import server page components
 import { ProductHero } from '@/components/product/ProductHero';
 import { ProductIntroduction } from '@/components/product/ProductIntroduction';
 import { ProductFeatures } from '@/components/product/ProductFeatures';
@@ -12,22 +12,19 @@ import { ProductReliability } from '@/components/product/ProductReliability';
 import { ProductEnergySaving } from '@/components/product/ProductEnergySaving';
 import { ProductOandM } from '@/components/product/ProductOandM';
 import { ProductSpecs } from '@/components/product/ProductSpecs';
+import ProductDetailView from '@/components/ProductDetailView';
 
-// Dynamically import components that are below the fold
 const RelatedProducts = dynamic(() => import('@/components/product/RelatedProducts'));
 const ProductContactCTA = dynamic(() => import('@/components/product/ProductContactCTA'));
-// Footer is rendered in the root layout
 
-type ProductDetailPageProps = {
-  params: Promise<{ productId: string }>;
-  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+type ProductPageProps = {
+  params: { productId: string };
 };
 
 export async function generateMetadata(
-  { params }: ProductDetailPageProps
+  { params }: ProductPageProps
 ): Promise<Metadata> {
-  const { productId } = await params;
-  const product = allProducts.find(p => p.id === productId);
+  const product = allProducts.find(p => p.id === params.productId);
 
   if (!product) {
     return {
@@ -41,35 +38,49 @@ export async function generateMetadata(
   };
 }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return allProducts.map((product) => ({
     productId: product.id,
   }));
 }
 
-export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
-  const { productId } = await params;
-  const product = allProducts.find(p => p.id === productId);
+export default async function ProductDetailPage({ params }: ProductPageProps) {
+  const product = allProducts.find(p => p.id === params.productId);
 
   if (!product) {
     notFound();
   }
 
+  if (product.displayType === 'fullpage') {
+    // This is not a perfect type guard, but it helps TypeScript
+    const serverProduct = product as import('@/data/types').ServerProduct;
+    return (
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <main className="pt-16">
+          <ProductHero content={serverProduct.hero} />
+          <ProductIntroduction content={serverProduct.introduction} />
+          <ProductFeatures features={serverProduct.features} />
+          <ProductReliability features={serverProduct.reliability} />
+          <ProductEnergySaving content={serverProduct.energySaving} />
+          <ProductOandM content={serverProduct.oandm} />
+          <ProductSpecs specs={serverProduct.specs} datasheetUrl={serverProduct.datasheetUrl} />
+          <RelatedProducts currentProductId={serverProduct.id} />
+          <ProductContactCTA />
+        </main>
+      </div>
+    );
+  }
+
+  // Render a simple, non-modal page for Cable products (for direct access, refresh, etc.)
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <main>
-        <ProductHero content={product.hero} />
-        <ProductIntroduction content={product.introduction} />
-        <ProductFeatures features={product.features} />
-        <ProductReliability features={product.reliability} />
-        <ProductEnergySaving content={product.energySaving} />
-        <ProductOandM content={product.oandm} />
-        <ProductSpecs specs={product.specs} datasheetUrl={product.datasheetUrl} />
-        <RelatedProducts currentProductId={product.id} />
-        <ProductContactCTA />
+      <main className="pt-24 pb-12">
+        <div className="max-w-4xl mx-auto px-4">
+            <ProductDetailView product={product} />
+        </div>
       </main>
-      {/* Footer is rendered in the root layout */}
     </div>
   );
 }

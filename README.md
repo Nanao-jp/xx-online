@@ -62,6 +62,10 @@ ITインフラ製品を扱う企業「XX-online」の公式コーポレートサ
 - **コンポーネントベース設計**: ページは`src/components/product/`ディレクトリ内の再利用可能な小さなコンポーネント群で構成されており、これらを組み合わせて表示されます。
 - **動的メタデータ生成**: 各ページは製品データに基づき、SEOに最適化された`<title>`タグや`<meta description>`を自動生成します。
 - **パフォーマンス最適化**: `next/dynamic`を利用し、初期表示に不要なコンポーネントを遅延読み込みすることで、高速なページ表示を実現しています。
+- **動的な表示切り替え（フルページ / モーダル）**:
+  - 製品データに`displayType`（`'fullpage'`または`'modal'`）というキーを追加。これにより、製品ごとに詳細ページで表示するか、モーダルで簡易表示するかをデータ側で制御できます。
+  - Next.jsの**Intercepting Routes**機能（`@modal`ディレクトリ）を活用し、`displayType: 'modal'`の製品をクリックした際に、ページ遷移を"横取り"してモーダルとして表示します。
+  - この実装により、`ProductCard`コンポーネントは製品の表示形式を意識する必要がなくなり、コードの関心事を分離し、高いメンテナンス性を維持しています。
 
 ---
 
@@ -93,6 +97,7 @@ export const allProducts: Product[] = [
     description: '（製品の短い説明文）',
     mainImage: '/products/g5300-v8/main-image.jpg', // 製品一覧で使われる画像
     category: 'gpu-server', // 'gpu-server' または 'cpu-server'
+    displayType: 'fullpage', // 'fullpage'（詳細ページ） or 'modal'（モーダル表示）
 
     // --- SEO設定 ---
     meta: {
@@ -147,6 +152,24 @@ export const allProducts: Product[] = [
     // --- 製品一覧ページ用 ---
     shortFeatures: [ '特徴A', '特徴B', '特徴C' ]
   },
+  // --- モーダル表示用の製品データ例 ---
+  {
+    id: 'aoc-100g-qsfp28',
+    name: 'AOC 100G QSFP28',
+    description: '高性能アクティブ光ケーブル',
+    mainImage: '/products/cables/AOC/aoc-100g-qsfp28-01.png',
+    category: 'aoc',
+    displayType: 'modal',
+    meta: {
+      title: 'AOC 100G QSFP28 | XX-online',
+      description: 'データセンター向けの100G QSFP28アクティブ光ケーブル。'
+    },
+    specs: [
+      { label: '製品タイプ', value: 'AOC' },
+      { label: 'データレート', value: '100Gbps' },
+      { label: 'コネクタ', value: 'QSFP28' }
+    ]
+  }
 ];
 ```
 

@@ -1,34 +1,54 @@
+import { AnyProduct } from '@/data/products';
 import Link from 'next/link';
-import { Product } from '@/data/products';
 import Image from 'next/image';
 
-interface ProductCardProps {
-  product: Product;
-}
-
-export default function ProductCard({ product }: ProductCardProps) {
-  return (
-    <Link href={`/products/${product.id}`} className="block h-full">
-      <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow flex flex-col h-full">
-        <div className="relative w-full h-40 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
-          <Image
-            src={product.mainImage}
-            alt={product.name}
-            fill
-            className="object-contain p-4"
-          />
-        </div>
-        <h3 className="text-xl font-bold text-gray-900 mb-4">{product.name}</h3>
-        <p className="text-gray-600 mb-4 flex-grow">{product.description}</p>
-        <div className="space-y-2">
-          {product.shortFeatures.map((feature, index) => (
-            <div key={index} className="flex items-center text-sm text-gray-700">
-              <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-              {feature}
-            </div>
-          ))}
-        </div>
+const ProductCardContent = ({ product }: { product: AnyProduct }) => (
+  <>
+    <div className="relative w-full aspect-square bg-gray-50 rounded-lg overflow-hidden mb-6">
+      <Image
+        src={product.mainImage}
+        alt={product.name}
+        fill
+        className="object-contain group-hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+    <h3 className="text-xl font-bold text-gray-900 mb-2 truncate group-hover:text-orange-600 transition-colors">
+      {product.name}
+    </h3>
+    <p className="text-gray-600 text-sm mb-4 h-10 overflow-hidden">
+      {product.description}
+    </p>
+    
+    {'shortFeatures' in product && product.shortFeatures && (
+      <div className="space-y-2 border-t pt-4">
+        {product.shortFeatures.slice(0, 2).map((feature, i) => (
+          <div key={i} className="flex items-center text-sm text-gray-700">
+            <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></div>
+            <span>{feature}</span>
+          </div>
+        ))}
       </div>
-    </Link>
+    )}
+  </>
+);
+
+const ProductCard = ({ product }: { product: AnyProduct }) => {
+  const commonClasses = "block bg-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group";
+
+  if (product.displayType === 'modal') {
+    return (
+      <Link href={`/products/${product.id}`} className={commonClasses} scroll={false}>
+        <ProductCardContent product={product} />
+      </Link>
+    );
+  }
+
+  // For 'fullpage' products, use a standard link to ensure navigation.
+  return (
+    <a href={`/products/${product.id}`} className={commonClasses}>
+      <ProductCardContent product={product} />
+    </a>
   );
-}
+};
+
+export default ProductCard;
