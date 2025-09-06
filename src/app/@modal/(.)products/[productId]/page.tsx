@@ -3,13 +3,7 @@ import Modal from '@/components/Modal';
 import ProductDetailView from '@/components/ProductDetailView';
 import { notFound } from 'next/navigation';
 
-type PageProps = {
-    params: {
-        productId: string;
-    }
-}
-
-export default async function ProductModal({ params }: PageProps) {
+export default async function ProductModal({ params }: { params: { productId: string } }) {
     const product = allProducts.find(p => p.id === params.productId);
 
     if (!product) {

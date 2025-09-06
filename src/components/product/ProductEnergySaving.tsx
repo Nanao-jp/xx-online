@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ProductEnergySavingPoint } from '@/data/products';
-import { BatteryCharging, ThermometerSun, Gauge, Icon as LucideIcon } from 'lucide-react';
+import { BatteryCharging, ThermometerSun, Gauge } from 'lucide-react';
 import { ElementType } from 'react';
 
 // Icon mapping
