@@ -10,7 +10,14 @@ export type ProductSpec = {
 // カテゴリを判別キーとして明確化
 export type ServerCategory = 'gpu-server' | 'cpu-server';
 export type CableCategory = 'aoc' | 'dac' | 'mpo';
-export type Category = ServerCategory | CableCategory;
+export type TransceiverCategory =
+  | '1.6t'
+  | '800g'
+  | '400g'
+  | '200g'
+  | '100g'
+  | 'coherent';
+export type Category = ServerCategory | CableCategory | TransceiverCategory;
 
 export type HeroData = {
   title: string;
@@ -88,5 +95,13 @@ export interface CableProduct extends BaseProduct {
   specs: ProductSpec[];
 }
 
+// 光トランシーバー製品
+export interface TransceiverProduct extends BaseProduct {
+  category: TransceiverCategory;
+  displayType: 'modal'; // ケーブルと同様にモーダル表示を想定
+
+  specs: ProductSpec[];
+}
+
 // すべての製品を網羅する判別可能な共用体
-export type Product = ServerProduct | CableProduct;
+export type Product = ServerProduct | CableProduct | TransceiverProduct;

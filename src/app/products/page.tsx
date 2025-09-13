@@ -12,9 +12,9 @@ export default function Products() {
   const tabs = [
     { id: 'server', label: 'サーバー', icon: Server },
     { id: 'cable', label: 'ケーブル', icon: Cable },
+    { id: 'transceiver', label: '光トランシーバー', icon: Radio },
     { id: 'storage', label: 'ストレージ', icon: HardDrive, disabled: true },
     { id: 'switch', label: 'スイッチ', icon: Network, disabled: true },
-    { id: 'transceiver', label: 'トランシーバー', icon: Radio, disabled: true },
   ];
 
   const renderEmptyState = (title: string) => (
@@ -155,6 +155,67 @@ export default function Products() {
                         ))
                         : renderEmptyState('MPO')
                       }
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Transceiver Products */}
+              {activeTab === 'transceiver' && (
+                <div className="space-y-16">
+                  {/* 800G Section */}
+                  <div>
+                    <div className="flex items-center mb-8">
+                      <div className="flex items-center bg-red-50 px-4 py-2 rounded-full">
+                        <h2 className="text-lg font-bold text-red-800">800G</h2>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {allProducts.filter(p => p.category === '800g').map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 400G Section */}
+                  <div>
+                    <div className="flex items-center mb-8">
+                      <div className="flex items-center bg-yellow-50 px-4 py-2 rounded-full">
+                        <h2 className="text-lg font-bold text-yellow-800">400G</h2>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {allProducts.filter(p => p.category === '400g').map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 200G Section */}
+                  <div>
+                    <div className="flex items-center mb-8">
+                      <div className="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                        <h2 className="text-lg font-bold text-blue-800">200G</h2>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {allProducts.filter(p => p.category === '200g').map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 100G Section */}
+                  <div>
+                    <div className="flex items-center mb-8">
+                      <div className="flex items-center bg-green-50 px-4 py-2 rounded-full">
+                        <h2 className="text-lg font-bold text-green-800">100G</h2>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {allProducts.filter(p => p.category === '100g').map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                      ))}
                     </div>
                   </div>
                 </div>
