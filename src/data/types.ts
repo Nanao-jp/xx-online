@@ -59,6 +59,9 @@ export interface BaseProduct {
     title: string;
     description: string;
   };
+  specs?: ProductSpec[];
+  shortFeatures?: string[];
+  order?: number;
 }
 
 // サーバー製品：hero を必須にもつ

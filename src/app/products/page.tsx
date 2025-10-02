@@ -80,7 +80,10 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === 'gpu-server').map((product) => (
+                      {allProducts
+                        .filter(p => p.category === 'gpu-server')
+                        .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                        .map((product) => (
                         <ProductCard key={product.id} product={product} />
                       ))}
                     </div>
@@ -113,12 +116,14 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === 'aoc').length > 0
-                        ? allProducts.filter(p => p.category === 'aoc').map((product) => (
-                            <ProductCard key={product.id} product={product} />
-                          ))
-                        : renderEmptyState('AOC')
-                      }
+                      {allProducts.filter((p) => p.category === 'aoc').length > 0 ? (
+                        allProducts
+                          .filter((p) => p.category === 'aoc')
+                          .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                          .map((product) => <ProductCard key={product.id} product={product} />)
+                      ) : (
+                        renderEmptyState('AOC')
+                      )}
                     </div>
                   </div>
 
@@ -131,12 +136,14 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === 'dac').length > 0
-                        ? allProducts.filter(p => p.category === 'dac').map((product) => (
-                          <ProductCard key={product.id} product={product} />
-                        ))
-                        : renderEmptyState('DAC')
-                      }
+                      {allProducts.filter((p) => p.category === 'dac').length > 0 ? (
+                        allProducts
+                          .filter((p) => p.category === 'dac')
+                          .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                          .map((product) => <ProductCard key={product.id} product={product} />)
+                      ) : (
+                        renderEmptyState('DAC')
+                      )}
                     </div>
                   </div>
                   
@@ -149,12 +156,14 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === 'mpo').length > 0
-                        ? allProducts.filter(p => p.category === 'mpo').map((product) => (
-                          <ProductCard key={product.id} product={product} />
-                        ))
-                        : renderEmptyState('MPO')
-                      }
+                      {allProducts.filter((p) => p.category === 'mpo').length > 0 ? (
+                        allProducts
+                          .filter((p) => p.category === 'mpo')
+                          .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                          .map((product) => <ProductCard key={product.id} product={product} />)
+                      ) : (
+                        renderEmptyState('MPO')
+                      )}
                     </div>
                   </div>
                 </div>
@@ -171,7 +180,10 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === '800g').map((product) => (
+                      {allProducts
+                        .filter(p => p.category === '800g')
+                        .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                        .map((product) => (
                         <ProductCard key={product.id} product={product} />
                       ))}
                     </div>
@@ -185,7 +197,10 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === '400g').map((product) => (
+                      {allProducts
+                        .filter(p => p.category === '400g')
+                        .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                        .map((product) => (
                         <ProductCard key={product.id} product={product} />
                       ))}
                     </div>
@@ -199,7 +214,10 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === '200g').map((product) => (
+                      {allProducts
+                        .filter(p => p.category === '200g')
+                        .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                        .map((product) => (
                         <ProductCard key={product.id} product={product} />
                       ))}
                     </div>
@@ -213,7 +231,10 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {allProducts.filter(p => p.category === '100g').map((product) => (
+                      {allProducts
+                        .filter(p => p.category === '100g')
+                        .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                        .map((product) => (
                         <ProductCard key={product.id} product={product} />
                       ))}
                     </div>
