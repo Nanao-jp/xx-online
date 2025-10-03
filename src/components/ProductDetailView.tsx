@@ -19,9 +19,9 @@ export default function ProductDetailView({ product }: { product: Product }) {
         <ProductHero product={product} />
         <ProductIntroduction content={product.introduction} />
         <ProductFeatures features={product.features} />
-        <ProductReliability features={product.reliability} />
-        <ProductEnergySaving content={product.energySaving} />
-        <ProductOandM content={product.oandm} />
+        <ProductReliability reliability={product.reliability} />
+        <ProductEnergySaving energySaving={product.energySaving} />
+        <ProductOandM oandm={product.oandm} />
         {product.showSpecs !== false && <ProductSpecs specs={product.specs} datasheetUrl={product.datasheetUrl} />}
       </>
     );

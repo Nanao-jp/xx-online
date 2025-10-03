@@ -15,7 +15,7 @@ export const serverProducts: ServerProduct[] = [
     },
     hero: {
       title: 'DFX Server DH116 V1',
-      subtitle: 'AIトレーニング・推論ワークロードに最適な次世代の4U2ソケットAIサーバー。',
+      subtitle: 'AIワークロードを加速する、ストレージと拡張性に優れた4U2ソケットサーバー。',
       image: '/products/servers/dfx-dh116-v1/g5200v7-ai-server.jpg'
     },
     introduction: {
@@ -147,7 +147,7 @@ export const serverProducts: ServerProduct[] = [
     },
     hero: {
       title: 'DFX Server DH126 V1',
-      subtitle: 'AIトレーニング・推論ワークロードに最適な次世代の4U2ソケットAIサーバー。',
+      subtitle: '高密度コンピューティングと超高速相互接続を実現する、次世代の1U2ソケットサーバー。',
       image: '/products/servers/dfx-dh126-v1/main.png'
     },
     introduction: {
@@ -273,7 +273,7 @@ export const serverProducts: ServerProduct[] = [
     },
     hero: { 
       title: 'DFX Server DH120H V1', 
-      subtitle: '次世代の1U2ソケットラックサーバー', 
+      subtitle: 'HPCから高密度仮想化まで、多様なワークロードに応える高効率1U2ソケットサーバー。', 
       image: '/products/servers/dfx-dh120h-v1/hero.jpg' 
     },
     introduction: { 
@@ -376,17 +376,62 @@ export const serverProducts: ServerProduct[] = [
     order: 4,
     displayType: 'fullpage',
     name: 'DFX Server DH226 V1',
-    description: '（製品の短い説明文）',
+    description: '仮想化からAI推論まで、多様なワークロードに対応する高性能2U2ソケットサーバー。',
     mainImage: '/products/servers/dfx-dh226-v1/main.png',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH226 V1 | XX-online',
-      description: '（検索エンジン向けの説明文）'
+      description: 'DFX Server DH226 V1は、仮想化、クラウドコンピューティング、AI推論などのシナリオに適した、高性能と柔軟な拡張性を両立した次世代の2U2ソケットラックサーバーです。'
     },
-    hero: { title: 'DFX Server DH226 V1', subtitle: '', image: '/products/servers/dfx-dh226-v1/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
+    hero: { 
+      title: 'DFX Server DH226 V1', 
+      subtitle: '仮想化からAI推論まで、多様なワークロードに対応する高性能2U2ソケットサーバー。',
+      image: '/products/servers/dfx-dh226-v1/main.png' 
+    },
+    introduction: { 
+      title: '次世代の2U2ソケットラックサーバー', 
+      description: 'DFX Server DH226 V1は、インターネット、インターネットデータセンター（IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。ITコア業務から複雑なワークロードまで柔軟に対応します。',
+      image: '/products/servers/dfx-dh226-v1/00.jpg',
+      bullets: [
+        '主な運用: 仮想化, クラウドコンピューティング, Webアプリケーション, AI推論',
+        '主なメリット: 高性能、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
+      ]
+    },
+    features: [
+      {
+        title: '強力なパフォーマンス',
+        description: '2基の最大400W対応の第4世代AMD EPYC™ 9004シリーズプロセッサー（Genoa）、24枚のDDR5 DIMMをサポート',
+        image: '/products/servers/dfx-dh226-v1/01.jpg',
+        imagePosition: 'right'
+      },
+      {
+        title: '超高速相互接続',
+        description: 'PCIe 5.0プロトコルと11個の標準PCIeスロットに対応することで、より柔軟な構成を実現、PCIe帯域幅を100%増加、超高速相互接続が可能',
+        image: '/products/servers/dfx-dh226-v1/02.jpg'
+      },
+      {
+        title: '高速フラッシュ',
+        description: '高速フラッシュメモリーと多様な構成：',
+        image: '/products/servers/dfx-dh226-v1/03.jpg',
+        bullets: [
+          '24×NVMe U.2 SSD、高速フラッシュメモリー、高速なパフォーマンス',
+          '25×SAS/SATA SSD、柔軟な構成、高速なI/Oパフォーマンス',
+          '16×CPUパススルー型のSATA HDD、より多くのハードディスクスロット、より高い費用対効果'
+        ]
+      }
+    ],
+    reliability: [
+      {
+        title: 'ヒートシンクあたりの放熱性能が50%向上',
+        description: 'ヒートパイプ拡張放熱技術により、優れた放熱とより強い温度適応性を実現',
+        image: '/products/servers/dfx-dh226-v1/04.jpg'
+      },
+      {
+        title: '障害データ収集',
+        description: 'CPUクラッシュ時の自動障害情報収集と迅速なシステム障害箇所特定に対応',
+        image: '/products/servers/dfx-dh226-v1/05.jpg'
+      }
+    ],
     energySaving: { image: '', points: [] },
     oandm: { features: [] },
     specs: [],
