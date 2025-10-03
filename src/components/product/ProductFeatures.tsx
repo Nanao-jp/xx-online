@@ -30,14 +30,8 @@ export function ProductFeatures({ features }: ProductFeaturesProps) {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="relative"
+              className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-center"
             >
-              {/* 装飾的な番号 */}
-              <div className="absolute -left-4 top-0 text-[120px] font-bold text-orange-500/5 leading-none select-none">
-                {String(index + 1).padStart(2, '0')}
-              </div>
-              
-              <div className="relative grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-center">
                 <div className={`relative w-full aspect-video md:h-96 md:aspect-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-gray-200 ${index % 2 !== 0 ? 'md:order-last' : ''}`}>
                   <Image
                     src={feature.image}
@@ -82,7 +76,6 @@ export function ProductFeatures({ features }: ProductFeaturesProps) {
                     </ul>
                   )}
                 </div>
-              </div>
             </div>
           ))}
         </div>

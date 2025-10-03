@@ -127,11 +127,7 @@ export const serverProducts: ServerProduct[] = [
       { label: '寸法（高さ×幅×奥行）', value: '175mm×447mm×798mm' },
     ],
     datasheetUrl: '/products/servers/dfx-dh116-v1/G5200-V7-Datasheet.pdf',
-    shortFeatures: [
-      '堅牢なパフォーマンス',
-      '超大容量ストレージ',
-      '柔軟な拡張性'
-    ],
+    shortFeatures: [],
   },
   {
     id: 'dfx-dh126-v1',
@@ -252,11 +248,7 @@ export const serverProducts: ServerProduct[] = [
       { label: '寸法（高さ×幅×奥行）', value: '175mm×447mm×798mm' },
     ],
     datasheetUrl: undefined, // No datasheet for this one yet
-    shortFeatures: [
-      '堅牢なパフォーマンス',
-      '超大容量ストレージ',
-      '柔軟な拡張性'
-    ],
+    shortFeatures: [],
     showSpecs: false,
   },
   {
@@ -432,10 +424,49 @@ export const serverProducts: ServerProduct[] = [
         image: '/products/servers/dfx-dh226-v1/05.jpg'
       }
     ],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
+    energySaving: {
+      image: '/products/servers/dfx-dh226-v1/06.jpg',
+      imagePosition: 'bottom',
+      points: [
+        {
+          icon: 'ThermometerSun',
+          title: '業界をリードする電源技術、より高い効率',
+          description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'Gauge',
+          title: 'インテリジェントなサービス状況把握、動的な負荷調整',
+          description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
+        },
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
+        }
+      ]
+    },
+    oandm: {
+      features: [
+        {
+          icon: 'Rocket',
+          title: '20倍向上のアップグレード効率',
+          description: 'ゼロ再起動のアップグレードと非接触型アップグレードに対応'
+        },
+        {
+          icon: 'Gauge',
+          title: '10倍向上の展開効率',
+          description: '展開の待機時間がゼロ、75%の合理化された展開手順がツールによって実行可能'
+        },
+        {
+          icon: 'Search',
+          title: '100%のインベントリー精度',
+          description: 'アセットインベントリーミスを完全排除、サードパーティのサーバーを管理可能で、資産位置の自動識別とリアルタイムの追跡に対応'
+        }
+      ]
+    },
     specs: [],
     shortFeatures: [],
+    showSpecs: false,
   },
   {
     id: 'dfx-dh226h-v1',
@@ -449,34 +480,200 @@ export const serverProducts: ServerProduct[] = [
       title: 'DFX Server DH226H V1 | XX-online',
       description: '（検索エンジン向けの説明文）'
     },
-    hero: { title: 'DFX Server DH226H V1', subtitle: '', image: '/products/servers/dfx-dh226h-v1/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
+    hero: { title: 'DFX Server DH226H V1', subtitle: '仮想化からAI推論まで、多様なワークロードに対応する高性能2U2ソケットサーバー。', image: '/products/servers/dfx-dh226h-v1/main.png' },
+    introduction: { 
+      title: '次世代の2U2ソケットラックサーバー', 
+      description: 'FusionServer 2258H V7は、インターネット、インターネットデータセンター（IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。ITコア業務、クラウドコンピューティング、仮想化、高性能計算、エンタープライズまたは電気通信サービスの運用、およびその他の複雑なワークロードに適します。',
+      image: '/products/servers/dfx-dh226h-v1/01.jpg',
+      bullets: [
+        '主な運用: 仮想化、クラウドコンピューティング、Webアプリケーション、AI推論',
+        '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
+      ]
+    },
+    features: [
+      {
+        title: '強力なパフォーマンス',
+        description: '2基の最大400W対応の第4世代AMD EPYC™ 9004シリーズプロセッサー（Genoa）、24枚のDDR5 DIMMをサポート',
+        image: '/products/servers/dfx-dh226h-v1/02.jpg',
+        imagePosition: 'right'
+      },
+      {
+        title: '超高速相互接続',
+        description: 'PCIe 5.0プロトコルと8つのフルハイト標準PCIe拡張スロットに対応することで、より柔軟な構成を実現、PCIe帯域幅を100%増加、超高速相互接続が可能',
+        image: '/products/servers/dfx-dh226h-v1/03.jpg'
+      },
+      {
+        title: '高速フラッシュ',
+        description: '12×SAS/SATA+4×NVMe U.2 SSD対応、高速フラッシュメモリー、高速なパフォーマンス',
+        image: '/products/servers/dfx-dh226h-v1/04.jpg'
+      }
+    ],
+    reliability: [
+      {
+        title: 'ヒートシンクあたりの放熱性能が50%向上',
+        description: 'ヒートパイプ拡張放熱技術により、優れた放熱とより強い温度適応性を実現',
+        image: '/products/servers/dfx-dh226h-v1/05.jpg'
+      },
+      {
+        title: '障害データ収集',
+        description: 'CPUクラッシュ時の自動障害情報収集と迅速なシステム障害箇所特定に対応',
+        image: '/products/servers/dfx-dh226h-v1/06.jpg'
+      }
+    ],
+    energySaving: {
+      image: '/products/servers/dfx-dh226h-v1/07.jpg',
+      imagePosition: 'bottom',
+      points: [
+        {
+          icon: 'ThermometerSun',
+          title: '業界をリードする電源技術、より高い効率',
+          description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'Gauge',
+          title: 'インテリジェントなサービス状況把握、動的な負荷調整',
+          description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
+        },
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
+        }
+      ]
+    },
+    oandm: {
+      features: [
+        {
+          icon: 'Rocket',
+          title: '20倍向上のアップグレード効率',
+          description: 'ゼロ再起動のアップグレードと非接触型アップグレードに対応'
+        },
+        {
+          icon: 'Gauge',
+          title: '10倍向上の展開効率',
+          description: '展開の待機時間がゼロ、75%の合理化された展開手順がツールによって実行可能'
+        },
+        {
+          icon: 'Search',
+          title: '100%のインベントリー精度',
+          description: 'アセットインベントリーミスを完全排除、サードパーティのサーバーを管理可能で、資産位置の自動識別とリアルタイムの追跡に対応'
+        }
+      ]
+    },
     specs: [],
     shortFeatures: [],
+    showSpecs: false,
   },
   {
     id: 'dfx-dh220-v1',
     order: 6,
     displayType: 'fullpage',
     name: 'DFX Server DH220 V1',
-    description: '（製品の短い説明文）',
-    mainImage: '/products/servers/dfx-dh220-v1/main.png',
+    description: 'クラウドから分散ストレージまで、多様なワークロードに対応する高性能2U2ソケットサーバー。',
+    mainImage: '/products/servers/dfx-dh220-v1/main.jpg',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH220 V1 | XX-online',
-      description: '（検索エンジン向けの説明文）'
+      description: 'DFX Server DH220 V1は、クラウドコンピューティング、仮想化、分散型ストレージ、ビッグデータ処理などのニーズに応える次世代の2U2ソケットラックサーバーです。'
     },
-    hero: { title: 'DFX Server DH220 V1', subtitle: '', image: '/products/servers/dfx-dh220-v1/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
-    specs: [],
+    hero: { 
+      title: 'DFX Server DH220 V1', 
+      subtitle: 'クラウドから分散ストレージまで、多様なワークロードに対応する高性能2U2ソケットサーバー。', 
+      image: '/products/servers/dfx-dh220-v1/main.jpg' 
+    },
+    introduction: { 
+      title: '次世代の2U2ソケットラックサーバー', 
+      description: 'DFX Server DH220 V1は、インターネット、インターネットデータセンター（IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。ITコア業務、クラウドコンピューティング、仮想化、分散型ストレージ、ビッグデータ処理、エンタープライズまたは電気通信サービスの運用、およびその他の複雑なワークロードに適します。',
+      image: '/products/servers/dfx-dh220-v1/main.jpg',
+      bullets: [
+        '主な運用: クラウドコンピューティング、仮想化、分散型ストレージ、ビッグデータ処理',
+        '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
+      ]
+    },
+    features: [
+      {
+        title: '軽量コンピューティング、エネルギー節約と消費電力削減の実現',
+        description: '低電力のファンモジュールで放熱のニーズを満たし、簡素化したエアダクト設計で迅速な放熱を実現',
+        image: '/products/servers/dfx-dh220-v1/01.png'
+      },
+      {
+        title: '簡素化した設計、柔軟で使いやすい',
+        description: '4つのライザーフリーの標準PCIeスロットをサポートし、柔軟な構成とツール不要のメンテナンスに対応',
+        image: '/products/servers/dfx-dh220-v1/02.png'
+      }
+    ],
+    reliability: [
+      {
+        title: 'ヒートシンクあたりの放熱性能が50%向上',
+        description: 'ヒートパイプ拡張放熱技術により、優れた放熱とより強い温度適応性を実現',
+        image: '/products/servers/dfx-dh220-v1/03.jpg'
+      },
+      {
+        title: 'システムのダウンタイムが66%削減',
+        description: '自社開発したAIメモリー障害自己修復機能により、システムの安定稼働を保証',
+        image: '/products/servers/dfx-dh220-v1/04.jpg'
+      }
+    ],
+    energySaving: {
+      image: '/products/servers/dfx-dh220-v1/05.jpg',
+      imagePosition: 'bottom',
+      points: [
+        {
+          icon: 'ThermometerSun',
+          title: '業界をリードする電源技術、より高い効率',
+          description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'Gauge',
+          title: 'インテリジェントなサービス状況把握、動的な負荷調整',
+          description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
+        },
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
+        }
+      ]
+    },
+    oandm: {
+      features: [
+        {
+          icon: 'Rocket',
+          title: '20倍向上のアップグレード効率',
+          description: 'ゼロ再起動のアップグレードと非接触型アップグレードに対応'
+        },
+        {
+          icon: 'Gauge',
+          title: '10倍向上の展開効率',
+          description: '展開の待機時間がゼロ、75%の合理化された展開手順がツールによって実行可能'
+        },
+        {
+          icon: 'Search',
+          title: '100%のインベントリー精度',
+          description: 'アセットインベントリーミスを完全排除、サードパーティのサーバーを管理可能で、資産位置の自動識別とリアルタイムの追跡に対応'
+        }
+      ]
+    },
+    specs: [
+      { label: 'サーバータイプ', value: '2Uラックサーバー' },
+      { label: 'プロセッサー', value: '1/2基の第4/5世代インテル®Xeon®スケーラブルプロセッサー、プロセッサーあたり最大TDP 225W対応' },
+      { label: 'チップセット', value: 'Emmitsburg PCH' },
+      { label: 'メモリー', value: '16枚のDDR5 DIMM（最大4,800MT/s）' },
+      { label: 'ローカルストレージ', value: 'さまざまなハードディスク構成に対応（ハードディスクがホットスワップ対応）：8～31×2.5インチSAS/SATAハードディスク/SSD、10～14×3.5インチSAS/SATAハードディスク、4×NVMe SSD、最大31×2.5インチハードディスク。フラッシュストレージに対応：2×M.2 SSD' },
+      { label: 'RAIDサポート', value: 'RAID0、1、10、1E、5、50、6、60に対応し、スーパーキャパシタによるキャッシュデータの電源障害保護、RAIDレベルの移行、ディスクローミング、自己診断、Webによるリモート設定などの機能を提供' },
+      { label: 'ネットワーク', value: '複数タイプのネットワーク拡張機能に対応。OCP 3.0 NIC対応（1つのFlexIOカードスロットが1枚のOCP 3.0 NICをサポート、必要に応じて構成可能）' },
+      { label: 'PCIe拡張', value: '最大8個のPCIe拡張スロットに対応。1つのOCP 3.0 NIC専用のFlexIOスロット、1つのRAIDコントローラカード専用のスロット、6つの標準PCIeスロット' },
+      { label: 'GPUアクセラレータカード', value: '4枚の75WのハーフハイトハーフレングスGPUアクセラレータカード' },
+      { label: 'ファンモジュール', value: '4台のホットスワップ対応の二重反転ファンモジュール、N+1冗長対応' },
+      { label: '電源モジュール', value: '1+1冗長とホットスワップ対応の900W/1200W/1500W/2000W/3000W Platinum/Titanium電源モジュール' },
+      { label: '管理', value: 'iBMCチップは、1つの管理用GEネットワークポートを統合しており、故障診断、自動O&M、ハードウェアセキュリティ強化などの包括的な管理機能を提供。iBMCは、Redfish、SNMP、IPMI 2.0などの標準インターフェースに対応し、HTML5/VNC KVMに基づいたリモート管理ユーザーインターフェースを提供し、監視、診断、設定、エージェントレス、リモートコントロールなどの、管理の複雑さを簡素化する帯域外管理機能をサポート。オプションのFusionDirector管理ソフトウェアは、5つのインテリジェントテクノロジーなどの高度な管理機能を提供し、ライフサイクル全体にわたるインテリジェント化・自動化・視覚化・洗練された管理を実現' },
+      { label: 'OS', value: 'xFusion FusionOS、Microsoft Windows Server、SUSE Linux Enterprise Server、VMware ESXi、Red Hat Enterprise Linux、CentOS、Oracle、Ubuntu、Debian、openEuler' },
+      { label: 'セキュリティ特性', value: 'パワーオンパスワード、管理者パスワード、TPM 2.0、セキュリティベゼル、セキュアブート、カバーオープン検知' },
+      { label: '動作温度', value: '動作温度：5℃～35℃（ASHRAE Class A1/A2/A3に準拠）' },
+      { label: '認証', value: 'CE、UL、CCC、FCC、VCCI、RoHS' },
+      { label: '取り付けレール', value: 'L型レール、伸縮レール、ホールディングレール' },
+      { label: '寸法（高さ×幅×奥行）', value: '3.5インチハードディスクシャーシ：86.1mm×447mm×798mm、2.5インチハードディスクシャーシ：86.1mm×447mm×798mm' }
+    ],
     shortFeatures: [],
   },
   {
