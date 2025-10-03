@@ -34,7 +34,7 @@ export type ProductFeature = {
   description: string;
   image: string;
   bullets?: string[];
-  imagePosition?: 'top' | 'center' | 'bottom' | 'left' | 'right';
+  imagePosition?: string;
 };
 
 export type ProductOandMFeature = {
@@ -86,7 +86,7 @@ export interface ServerProduct extends BaseProduct {
   energySaving: {
     image: string;
     points: ProductEnergySavingPoint[];
-    imagePosition?: 'top' | 'center' | 'bottom';
+    imagePosition?: string;
   };
   oandm: {
     features: ProductOandMFeature[];
@@ -94,6 +94,7 @@ export interface ServerProduct extends BaseProduct {
   specs: ProductSpec[];
   datasheetUrl?: string;
   shortFeatures: string[];
+  showSpecs?: boolean;
 }
 
 // ケーブル製品：hero は存在しない

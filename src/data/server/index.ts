@@ -257,48 +257,119 @@ export const serverProducts: ServerProduct[] = [
       '超大容量ストレージ',
       '柔軟な拡張性'
     ],
-  },
-  {
-    id: 'dfx-dh220h-v2',
-    order: 12,
-    displayType: 'fullpage',
-    name: 'DFX Server DH220H V2',
-    description: '（製品の短い説明文）',
-    mainImage: '/products/servers/dfx-dh220h-v2/main.png',
-    category: 'cpu-server',
-    meta: {
-      title: 'DFX Server DH220H V2 | XX-online',
-      description: '（検索エンジン向けの説明文）'
-    },
-    hero: { title: 'DFX Server DH220H V2', subtitle: '', image: '/products/servers/dfx-dh220h-v2/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
-    specs: [],
-    shortFeatures: [],
+    showSpecs: false,
   },
   {
     id: 'dfx-dh120h-v1',
     order: 3,
     displayType: 'fullpage',
     name: 'DFX Server DH120H V1',
-    description: '（製品の短い説明文）',
-    mainImage: '/products/servers/dfx-dh120h-v1/main.png',
+    description: 'インターネット、IDC、クラウド、エンタープライズ、電気通信サービスなど、幅広いニーズに応える次世代の1U2ソケットラックサーバーです。',
+    mainImage: '/products/servers/dfx-dh120h-v1/hero.jpg',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH120H V1 | XX-online',
-      description: '（検索エンジン向けの説明文）'
+      description: 'DFX Server DH120H V1は、HPC、高密度仮想化、OAなどのシナリオに適した、柔軟性と信頼性に優れた次世代の1U2ソケットラックサーバーです。'
     },
-    hero: { title: 'DFX Server DH120H V1', subtitle: '', image: '/products/servers/dfx-dh120h-v1/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
-    specs: [],
+    hero: { 
+      title: 'DFX Server DH120H V1', 
+      subtitle: '次世代の1U2ソケットラックサーバー', 
+      image: '/products/servers/dfx-dh120h-v1/hero.jpg' 
+    },
+    introduction: { 
+      title: '次世代の1U2ソケットラックサーバー', 
+      description: 'DFX Server DH120H V1は、インターネット、インターネットデータセンター（IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の1U2ソケットラックサーバーです。ITコア業務から複雑なワークロードまで柔軟に対応します。',
+      image: '/products/servers/dfx-dh120h-v1/hero.jpg',
+      bullets: [
+        '主な運用シナリオ: HPC, 高密度仮想化, OA',
+        '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理・導入'
+      ]
+    },
+    features: [
+      {
+        title: '高密度コンピューティング',
+        description: '1Uスペースに2基の最大385WのCPUと32枚のDDR5 DIMMを搭載可能',
+        image: '/products/servers/dfx-dh120h-v1/01.jpg'
+      },
+      {
+        title: '超高速相互接続、より高速な運用',
+        description: 'PCIe 5.0、400Gbit/s NICの相互接続に対応',
+        image: '/products/servers/dfx-dh120h-v1/02.jpg'
+      }
+    ],
+    reliability: [
+      {
+        title: 'ヒートシンクあたりの放熱性能が50%向上',
+        description: 'ヒートパイプ拡張放熱技術により、優れた放熱とより強い温度適応性を実現',
+        image: '/products/servers/dfx-dh120h-v1/03.jpg'
+      },
+      {
+        title: 'システムのダウンタイムが66%削減',
+        description: '自社開発したAIメモリー障害自己修rif修機能により、システムの安定稼働を保証',
+        image: '/products/servers/dfx-dh120h-v1/04.jpg'
+      }
+    ],
+    energySaving: { 
+      image: '/products/servers/dfx-dh120h-v1/05.jpg',
+      imagePosition: '50% 100%',
+      points: [
+        {
+          icon: 'ThermometerSun',
+          title: '業界をリードする電源技術、より高い効率',
+          description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'Gauge',
+          title: 'インテリジェントなサービス状況把握、動的な負荷調整',
+          description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
+        },
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
+        }
+      ]
+    },
+    oandm: { 
+      features: [
+        {
+          icon: 'Rocket',
+          title: '20倍向上のアップグレード効率',
+          description: 'バージョンの自動プッシュと非接触型アップグレードに対応'
+        },
+        {
+          icon: 'Gauge',
+          title: '10倍向上の展開効率',
+          description: '75%の合理化された展開手順がツールによって実行可能'
+        },
+        {
+          icon: 'Search',
+          title: '100%のインベントリー精度',
+          description: 'すべてのベンダーのサーバーを管理可能で、資産位置の自動識別とリアルタイムの追跡に対応'
+        }
+      ]
+    },
+    specs: [
+      { label: 'サーバータイプ', value: '1Uラックサーバー' },
+      { label: 'プロセッサー', value: '1/2基の第4/5世代インテル®Xeon®スケーラブルプロセッサー、プロセッサーあたり最大TDP 385W対応' },
+      { label: 'チップセット', value: 'Emmitsburg PCH' },
+      { label: 'メモリー', value: '32枚のDDR5 DIMM（最大5,600MT/s）' },
+      { label: 'ローカルストレージ', value: 'さまざまなハードディスク構成に対応（ハードディスクがホットスワップ対応）：• 8～10×2.5インチSAS/SATAハードディスク/SSD（2/4/6/8/10×NVMe SSD、合計10台以下）• 4×3.5インチSAS/SATAハードディスク/SSD フラッシュストレージに対応：• 2×M.2 SSD' },
+      { label: 'RAIDサポート', value: 'RAID0、1、10、1E、5、50、6、60に対応し、スーパーキャパシタによるキャッシュデータの電源障害保護、RAIDレベルの移行、ディスクローミング、自己診断、Webによるリモート設定などの機能を提供' },
+      { label: 'ネットワーク', value: '多種のネットワーク拡張機能に対応 OCP 3.0 NIC対応（2つのFlexIOカードスロットがそれぞれ2枚のOCP 3.0 NICをサポート、必要に応じて構成可能、ホットスワップ対応）、PCIe 5.0対応' },
+      { label: 'PCIe拡張', value: '5つのPCIeスロットに対応：2つのOCP 3.0 NIC専用のFlexIOスロット、3つの標準PCIeスロット（1つがPCIe 5.0に対応）' },
+      { label: 'ファンモジュール', value: '8台のホットスワップ対応の二重反転ファンモジュール、N+1冗長対応' },
+      { label: '電源モジュール', value: '1+1冗長とホットスワップ対応の900W/1200W/1500W/2000W Platinum/Titanium電源モジュール' },
+      { label: '管理', value: 'iBMCチップは、1つの管理用GEネットワークポートを統合しており、故障診断、自動O&M、ハードウェアセキュリティ強化などの包括的な管理機能を提供 • iBMCは、Redfish、SNMP、IPMI 2.0などの標準インターフェースに対応し、HTML5/VNC KVMに基づいたリモート管理ユーザーインターフェースを提供し、監視、診断、設定、エージェントレス、リモートコントロールなどの、管理の複雑さを簡素化する帯域外管理機能をサポート • オプションのFusionDirector管理ソフトウェアは、5つのインテリジェントテクノロジーなどの高度な管理機能を提供することで、ライフサイクル全体にわたるインテリジェント化・自動化・視覚化・洗練された管理を実現' },
+      { label: 'OS', value: 'xFusion FusionOS、Microsoft Windows Server、SUSE Linux Enterprise Server、VMware ESXi、Red Hat Enterprise Linux、CentOS、Oracle、Ubuntu、Debian、openEulerより多くの対応OSについては、こちらを参照してください' },
+      { label: 'セキュリティ特性', value: 'パワーオンパスワード、管理者パスワード、TPM 2.0、セキュリティベゼル、セキュアブート、カバー開閉検知' },
+      { label: '動作温度', value: '5°C～45°C（ASHRAE Class A1/A2/A3/A4に準拠）' },
+      { label: '認証', value: 'CE、UL、CCC、FCC、VCCI、RoHS' },
+      { label: '取り付けレール', value: 'L型レール、伸縮レール、ホールディングレール' },
+      { label: '寸法（高さ×幅×奥行）', value: '3.5インチハードディスクシャーシ：43mm×447mm×798mm 2.5インチハードディスクシャーシ：43mm×447mm×798mm' }
+    ],
     shortFeatures: [],
+    showSpecs: true,
   },
   {
     id: 'dfx-dh226-v1',

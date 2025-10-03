@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { ServerProduct } from '@/data/types';
 import { BatteryCharging, ThermometerSun, Gauge, LucideIcon } from 'lucide-react';
-import { ElementType } from 'react';
+import { ElementType, CSSProperties } from 'react';
 
 // Icon mapping
 const iconMap: { [key: string]: LucideIcon } = {
@@ -15,17 +15,29 @@ type ProductEnergySavingProps = {
 };
 
 export function ProductEnergySaving({ content }: ProductEnergySavingProps) {
-  // To ensure Tailwind's JIT compiler detects the classes, we list them completely.
   const getPositionClasses = () => {
     switch (content.imagePosition) {
       case 'top':
-        return 'object-top lg:object-center';
+        return 'object-top';
       case 'bottom':
-        return 'object-bottom lg:object-center';
+        return 'object-bottom';
+      case 'left':
+        return 'object-left';
+      case 'right':
+        return 'object-right';
       case 'center':
-      default:
         return 'object-center';
+      default:
+        return ''; // Return empty if it's a custom value
     }
+  };
+
+  const getPositionStyles = (): CSSProperties => {
+    const keywords = ['top', 'bottom', 'left', 'right', 'center'];
+    if (content.imagePosition && !keywords.includes(content.imagePosition)) {
+      return { objectPosition: content.imagePosition };
+    }
+    return {};
   };
 
   return (
@@ -40,6 +52,7 @@ export function ProductEnergySaving({ content }: ProductEnergySavingProps) {
               alt="効率的な省エネ"
               fill
               className={`object-cover ${getPositionClasses()}`}
+              style={getPositionStyles()}
             />
           </div>
 
