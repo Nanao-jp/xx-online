@@ -891,20 +891,114 @@ export const serverProducts: ServerProduct[] = [
     order: 9,
     displayType: 'fullpage',
     name: 'DFX Server DH520 V2',
-    description: '製品ページ準備中',
+    description: 'デジタル通貨、コールドストレージ、SDS、ビデオストレージに最適な次世代の4U2ソケットラックサーバー。',
     mainImage: '/products/servers/dfx-dh520-v2/main.png',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH520 V2 | XX-online',
-      description: '製品ページ準備中'
+      description: 'デジタル通貨、コールドストレージ、SDS、ビデオストレージに最適な次世代の4U2ソケットラックサーバー。低消費電力、柔軟な拡張性、高信頼性を実現。'
     },
-    hero: { title: 'DFX Server DH520 V2', subtitle: '', image: '/products/servers/dfx-dh520-v2/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
-    specs: [],
+    hero: { title: 'DFX Server DH520 V2', subtitle: 'デジタル通貨、コールドストレージ、SDS、ビデオストレージに最適な4U2ソケットラックサーバー。', image: '/products/servers/dfx-dh520-v2/main.png' },
+    introduction: { 
+      title: '次世代の4U2ソケットラックサーバー', 
+      description: 'DFX Server DH520 V2は、インターネット、インターネットデータセンター（Internet Data Center、IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の4U2ソケットラックサーバーです。ITコア業務、クラウドコンピューティング、仮想化、分散型ストレージ、ビッグデータ処理、エンタープライズまたは電気通信サービスの運用、およびその他の複雑なワークロードに適します。低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入などのメリットを備えています。', 
+      image: '/products/servers/dfx-dh520-v2/main.png',
+      bullets: [
+        '主な運用: デジタル通貨、コールドストレージ、SDS、ビデオストレージ',
+        '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
+      ]
+    },
+    features: [
+      {
+        title: '超大容量ストレージ',
+        description: '44×3.5インチハードディスク＋4×NVMe U.2 SSDをサポート',
+        image: '/products/servers/dfx-dh520-v2/01.jpg',
+        imagePosition: 'right'
+      },
+      {
+        title: '柔軟な構成',
+        description: '最大10個の標準PCIe拡張スロットをサポート',
+        image: '/products/servers/dfx-dh520-v2/02.jpg'
+      },
+      {
+        title: '強力な演算能力',
+        description: 'インテルの最新のSapphire Rapidsプロセッサー（最大350W対応）と32枚のDDR5 DIMMをサポート',
+        image: '/products/servers/dfx-dh520-v2/03.jpg'
+      }
+    ],
+    reliability: [
+      {
+        title: 'ヒートシンクあたりの放熱性能が50%向上',
+        description: 'ヒートパイプ拡張放熱技術により、優れた放熱とより強い温度適応性を実現',
+        image: '/products/servers/dfx-dh520-v2/04.jpg'
+      },
+      {
+        title: 'システムのダウンタイムが66%削減',
+        description: '自社開発したAIメモリー障害自己修復機能により、システムの安定稼働を保証',
+        image: '/products/servers/dfx-dh520-v2/05.jpg'
+      }
+    ],
+    energySaving: {
+      image: '/products/servers/dfx-dh520-v2/06.jpg',
+      imagePosition: 'bottom',
+      points: [
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
+        },
+        {
+          icon: 'ThermometerSun',
+          title: '業界をリードする電源技術、より高い効率',
+          description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'Gauge',
+          title: 'インテリジェントなサービス状況把握、動的な負荷調整',
+          description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
+        }
+      ]
+    },
+    oandm: {
+      features: [
+        {
+          icon: 'Rocket',
+          title: '20倍向上のアップグレード効率',
+          description: 'バージョンの自動プッシュと非接触型アップグレードに対応'
+        },
+        {
+          icon: 'Gauge',
+          title: '10倍向上の展開効率',
+          description: '75%の合理化された展開手順がツールによって実行可能'
+        },
+        {
+          icon: 'Search',
+          title: '100%のインベントリー精度',
+          description: 'すべてのベンダーのサーバーを管理可能で、資産位置の自動識別とリアルタイムの追跡に対応'
+        }
+      ]
+    },
+    specs: [
+      { label: 'サーバータイプ', value: '4Uラックサーバー' },
+      { label: 'プロセッサー', value: '1基または2基の第4世代インテル®Xeon®スケーラブルプロセッサー（Sapphire Rapidsシリーズ）、プロセッサーあたり最大TDP 350W対応' },
+      { label: 'チップセット', value: 'Emmitsburg PCH' },
+      { label: 'メモリー', value: '32枚のDDR5 DIMM（最大4800MT/s）' },
+      { label: 'ローカルストレージ', value: 'さまざまなハードディスク構成に対応（ハードディスクがホットスワップ対応）：4×2.5インチSAS/SATAハードディスク/SSD、24～44×3.5インチSAS/SATAハードディスク、4×NVMe SSD。フラッシュストレージに対応：2×M.2 SSD' },
+      { label: 'RAIDサポート', value: 'RAID0、1、10、1E、5、50、6、60に対応し、スーパーキャパシタによるキャッシュデータの電源障害保護、RAIDレベルの移行、ディスクローミング、自己診断、Webによるリモート設定などの機能を提供' },
+      { label: 'ネットワーク', value: '多種のネットワーク拡張機能に対応。OCP 3.0 NIC対応（2つのFlexIOカードスロットがそれぞれ2枚のOCP 3.0 NICをサポート、必要に応じて構成可能、ホットスワップ対応）、PCIe 5.0対応' },
+      { label: 'PCIe拡張', value: '最大10個のPCIe拡張スロットに対応。2つのOCP 3.0 NIC専用のFlexIOスロット、10個の標準PCIeスロット（PCIe 5.0対応）' },
+      { label: 'GPUアクセラレータカード', value: '8枚のシングル幅GPUアクセラレータカード*' },
+      { label: 'ファンモジュール', value: '6台または8台のホットスワップ対応の二重反転ファンモジュール、N+1冗長対応' },
+      { label: '電源モジュール', value: '1+1冗長とホットスワップ対応の900W/1200W/1500W/2000W/3000W Platinum/Titanium電源モジュール' },
+      { label: '管理', value: 'iBMCチップは、1つの管理用GEネットワークポートを統合しており、故障診断、自動O&M、ハードウェアセキュリティ強化などの包括的な管理機能を提供。iBMCは、Redfish、SNMP、IPMI 2.0などの標準インターフェースに対応し、HTML5/VNC KVMに基づいたリモート管理ユーザーインターフェースを提供し、監視、診断、設定、エージェントレス、リモートコントロールなどの、管理の複雑さを簡素化する帯域外管理機能をサポート。オプションのFusionDirector管理ソフトウェアは、5つのインテリジェントテクノロジーなどの高度な管理機能を提供することで、ライフサイクル全体にわたるインテリジェント化・自動化・視覚化・洗練された管理を実現' },
+      { label: 'OS', value: 'xFusion FusionOS、Microsoft Windows Server、SUSE Linux Enterprise Server、VMware ESXi、Red Hat Enterprise Linux、CentOS、Oracle、Ubuntu、Debian、openEuler' },
+      { label: 'セキュリティ特性', value: 'パワーオンパスワード、管理者パスワード、TPM 2.0、セキュリティベゼル、セキュアブート、カバーオープン検知' },
+      { label: '動作温度', value: '5°C～35°C（ASHRAE Class A1/A2に準拠）' },
+      { label: '認証', value: 'CE、UL、CCC、FCC、VCCI、RoHS' },
+      { label: '取り付けレール', value: 'L型レール、伸縮レール、ホールディングレール' },
+      { label: '寸法（高さ×幅×奥行）', value: '3.5インチハードディスクシャーシ：175mm×447mm×798mm' },
+      { label: '注記', value: '*計画情報であり、現在の設定可能な情報はテクニカルホワイトペーパーを基準とします。' }
+    ],
     shortFeatures: [],
   },
   {
@@ -941,6 +1035,27 @@ export const serverProducts: ServerProduct[] = [
       description: '製品ページ準備中'
     },
     hero: { title: 'DFX Server DH226H V2', subtitle: '', image: '/products/servers/dfx-dh226h-v2/main.png' },
+    introduction: { title: '', description: '', image: '' },
+    features: [],
+    reliability: [],
+    energySaving: { image: '', points: [] },
+    oandm: { features: [] },
+    specs: [],
+    shortFeatures: [],
+  },
+  {
+    id: 'dfx-dh220h-v2',
+    order: 12,
+    displayType: 'fullpage',
+    name: 'DFX Server DH220H V2',
+    description: '製品ページ準備中',
+    mainImage: '/products/servers/dfx-dh220h-v2/main.png',
+    category: 'cpu-server',
+    meta: {
+      title: 'DFX Server DH220H V2 | XX-online',
+      description: '製品ページ準備中'
+    },
+    hero: { title: 'DFX Server DH220H V2', subtitle: '', image: '/products/servers/dfx-dh220h-v2/main.png' },
     introduction: { title: '', description: '', image: '' },
     features: [],
     reliability: [],
