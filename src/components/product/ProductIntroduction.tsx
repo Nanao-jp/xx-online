@@ -32,7 +32,7 @@ export function ProductIntroduction({ content }: ProductIntroductionProps) {
             />
           </div>
           <div className="mt-8 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
               {content.title}
             </h2>
             
@@ -76,8 +76,8 @@ export function ProductIntroduction({ content }: ProductIntroductionProps) {
             {content.bullets && (
               <ul className="mt-8 space-y-4">
                 {content.bullets.map((bullet, index) => (
-                  <li key={index} className="flex items-start text-gray-200 bg-white/5 backdrop-blur-sm p-3 rounded-lg border border-white/10">
-                    <CheckCircle2 className="w-6 h-6 text-orange-400 mr-4 mt-1 flex-shrink-0" />
+                  <li key={index} className="flex items-center text-gray-200">
+                    <CheckCircle2 className="w-6 h-6 text-orange-400 mr-4 flex-shrink-0" />
                     <span className="whitespace-nowrap">{bullet}</span>
                   </li>
                 ))}

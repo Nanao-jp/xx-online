@@ -68,7 +68,7 @@ export function ProductEnergySaving({ energySaving }: ProductEnergySavingProps) 
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center">
           {energySaving.image && (
-            <div className="relative w-full aspect-video lg:h-[70vh] lg:aspect-auto rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first border-4 border-white ring-1 ring-gray-200">
+            <div className="relative w-full h-[70vh] rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first border-4 border-white ring-1 ring-gray-200">
               <Image
                 src={energySaving.image}
                 alt="効率的な省エネ"
