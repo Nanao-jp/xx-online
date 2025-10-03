@@ -682,13 +682,13 @@ export const serverProducts: ServerProduct[] = [
     displayType: 'fullpage',
     name: 'DFX Server DH220H V1',
     description: '（製品の短い説明文）',
-    mainImage: '/products/servers/dfx-dh220h-v1/main.png',
+    mainImage: '/products/servers/dfx-dh220h-v1/main.jpg',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH220H V1 | XX-online',
       description: '（検索エンジン向けの説明文）'
     },
-    hero: { title: 'DFX Server DH220H V1', subtitle: '', image: '/products/servers/dfx-dh220h-v1/main.png' },
+    hero: { title: 'DFX Server DH220H V1', subtitle: '', image: '/products/servers/dfx-dh220h-v1/main.jpg' },
     introduction: { title: '', description: '', image: '' },
     features: [],
     reliability: [],
