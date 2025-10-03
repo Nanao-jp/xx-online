@@ -22,7 +22,7 @@ export default function ProductDetailView({ product }: { product: Product }) {
         <ProductReliability features={product.reliability} />
         <ProductEnergySaving content={product.energySaving} />
         <ProductOandM content={product.oandm} />
-        <ProductSpecs specs={product.specs} datasheetUrl={product.datasheetUrl} />
+        {/* <ProductSpecs specs={product.specs} datasheetUrl={product.datasheetUrl} /> */}
       </>
     );
   }

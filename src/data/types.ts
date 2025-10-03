@@ -8,7 +8,6 @@ export type ProductSpec = {
 };
 
 // カテゴリを判別キーとして明確化
-export type ServerCategory = 'gpu-server' | 'cpu-server';
 export type CableCategory = 'aoc' | 'dac' | 'mpo';
 export type TransceiverCategory =
   | '1.6t'
@@ -17,6 +16,11 @@ export type TransceiverCategory =
   | '200g'
   | '100g'
   | 'coherent';
+
+// Server-specific categories
+export type ServerCategory = 'gpu-server' | 'cpu-server';
+
+// Union of all possible categories
 export type Category = ServerCategory | CableCategory | TransceiverCategory;
 
 export type HeroData = {
@@ -30,6 +34,7 @@ export type ProductFeature = {
   description: string;
   image: string;
   bullets?: string[];
+  imagePosition?: 'top' | 'center' | 'bottom' | 'left' | 'right';
 };
 
 export type ProductOandMFeature = {
@@ -74,6 +79,7 @@ export interface ServerProduct extends BaseProduct {
     title: string;
     description: string;
     image: string;
+    bullets?: string[];
   };
   features: ProductFeature[];
   reliability: ProductFeature[];

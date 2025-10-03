@@ -6,29 +6,40 @@ type ProductReliabilityProps = {
 }
 
 export function ProductReliability({ features }: ProductReliabilityProps) {
+  if (!features || features.length === 0) {
+    return null;
+  }
+
   return (
     <section className="py-16 sm:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
             高い信頼性と安全性
           </h2>
         </div>
-        <div className="space-y-12">
-          {features.map((feature, index) => (
-            <div
-              key={feature.title}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
-            >
-              <div className={`relative w-full h-80 rounded-lg overflow-hidden ${index % 2 === 1 ? 'lg:order-last' : ''}`}>
-                <Image
-                  src={feature.image}
-                  alt={feature.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="text-center lg:text-left">
+      </div>
+      
+      <div className="space-y-20">
+        {features.map((feature, index) => (
+          <div key={index}>
+            <div className="relative w-full aspect-video md:h-[600px] overflow-hidden">
+              <Image
+                src={feature.image}
+                alt={feature.title}
+                fill
+                className={`object-cover ${
+                  feature.imagePosition === 'top' ? 'object-top' :
+                  feature.imagePosition === 'bottom' ? 'object-bottom' :
+                  feature.imagePosition === 'left' ? 'object-left' :
+                  feature.imagePosition === 'right' ? 'object-right' :
+                  'object-center'
+                }`}
+                sizes="100vw"
+              />
+            </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="max-w-3xl mx-auto text-center mt-8">
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
                   {feature.title}
                 </h3>
@@ -37,8 +48,8 @@ export function ProductReliability({ features }: ProductReliabilityProps) {
                 </p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

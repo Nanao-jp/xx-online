@@ -71,6 +71,24 @@ export default function Products() {
               {/* Server Products */}
               {activeTab === 'server' && (
                 <div className="space-y-16">
+                  {/* CPU Servers Section */}
+                  <div>
+                    <div className="flex items-center mb-8">
+                      <div className="flex items-center bg-orange-50 px-4 py-2 rounded-full">
+                        <Cpu className="w-5 h-5 text-orange-600 mr-2" />
+                        <h2 className="text-lg font-bold text-orange-800">CPUサーバー</h2>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {allProducts
+                        .filter((p) => p.category === 'cpu-server')
+                        .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+                        .map((product) => (
+                          <ProductCard key={product.id} product={product} />
+                        ))}
+                    </div>
+                  </div>
+
                   {/* GPU Servers Section */}
                   <div>
                     <div className="flex items-center mb-8">
@@ -86,19 +104,6 @@ export default function Products() {
                         .map((product) => (
                         <ProductCard key={product.id} product={product} />
                       ))}
-                    </div>
-                  </div>
-
-                  {/* CPU Servers Section */}
-                  <div>
-                    <div className="flex items-center mb-8">
-                      <div className="flex items-center bg-gray-50 px-4 py-2 rounded-full">
-                        <Cpu className="w-5 h-5 text-gray-600 mr-2" />
-                        <h2 className="text-lg font-bold text-gray-700">CPUサーバー</h2>
-                      </div>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {renderEmptyState('CPUサーバー')}
                     </div>
                   </div>
                 </div>
