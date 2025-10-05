@@ -80,6 +80,7 @@ export interface ServerProduct extends BaseProduct {
     description: string;
     image: string;
     bullets?: string[];
+    imageFlip?: boolean;
   };
   features: ProductFeature[];
   reliability: ProductFeature[];
@@ -91,10 +92,12 @@ export interface ServerProduct extends BaseProduct {
   oandm: {
     features: ProductOandMFeature[];
   };
+  security?: ProductFeature[];
   specs: ProductSpec[];
   datasheetUrl?: string;
   shortFeatures: string[];
   showSpecs?: boolean;
+  showSecurity?: boolean;
 }
 
 // ケーブル製品：hero は存在しない

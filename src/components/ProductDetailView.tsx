@@ -7,6 +7,7 @@ import ProductHero from './product/ProductHero';
 import { ProductIntroduction } from './product/ProductIntroduction';
 import { ProductFeatures } from './product/ProductFeatures';
 import { ProductReliability } from './product/ProductReliability';
+import { ProductSecurity } from './product/ProductSecurity';
 import { ProductEnergySaving } from './product/ProductEnergySaving';
 import { ProductOandM } from './product/ProductOandM';
 import { ProductSpecs } from './product/ProductSpecs';
@@ -20,6 +21,7 @@ export default function ProductDetailView({ product }: { product: Product }) {
         <ProductIntroduction content={product.introduction} />
         <ProductFeatures features={product.features} />
         <ProductReliability reliability={product.reliability} />
+        {product.showSecurity !== false && <ProductSecurity security={product.security} />}
         <ProductEnergySaving energySaving={product.energySaving} />
         <ProductOandM oandm={product.oandm} />
         {product.showSpecs !== false && <ProductSpecs specs={product.specs} datasheetUrl={product.datasheetUrl} />}

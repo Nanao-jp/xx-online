@@ -15,7 +15,7 @@ export function ProductIntroduction({ content }: ProductIntroductionProps) {
           src={content.image}
           alt={content.title}
           fill
-          className="object-cover"
+          className={`object-cover ${content.imageFlip ? 'scale-x-[-1]' : ''}`}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/60"></div>
       </div>
@@ -28,7 +28,7 @@ export function ProductIntroduction({ content }: ProductIntroductionProps) {
               src={content.image}
               alt={content.title}
               fill
-              className="object-contain"
+              className={`object-contain ${content.imageFlip ? 'scale-x-[-1]' : ''}`}
             />
           </div>
           <div className="mt-8 text-center">

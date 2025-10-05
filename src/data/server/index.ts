@@ -1027,63 +1027,210 @@ export const serverProducts: ServerProduct[] = [
     order: 11,
     displayType: 'fullpage',
     name: 'DFX Server DH226H V2',
-    description: '製品ページ準備中',
+    description: 'ITコア業務、クラウドコンピューティング、高性能計算に最適な次世代の2U2ソケットラックサーバー。',
     mainImage: '/products/servers/dfx-dh226h-v2/main.png',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH226H V2 | XX-online',
-      description: '製品ページ準備中'
+      description: 'ITコア業務、クラウドコンピューティング、高性能計算に最適な次世代の2U2ソケットラックサーバー。高性能、柔軟な拡張性、高信頼性を実現。'
     },
-    hero: { title: 'DFX Server DH226H V2', subtitle: '', image: '/products/servers/dfx-dh226h-v2/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
+    hero: { title: 'DFX Server DH226H V2', subtitle: 'ITコア業務、クラウドコンピューティング、高性能計算に最適な2U2ソケットラックサーバー。', image: '/products/servers/dfx-dh226h-v2/main.png' },
+    introduction: { 
+      title: '次世代の2U2ソケットラックサーバー', 
+      description: 'DFX Server DH226H V2は、HPC、インターネット、インターネットデータセンター（Internet Data Center、IDC）、クラウドコンピューティング、エンタープライズなどのニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。ITコア業務、クラウドコンピューティング、仮想化、高性能計算、エンタープライズ、およびその他の複雑なワークロードに適します。高性能、柔軟な拡張性、高信頼性、容易な管理、容易な導入などのメリットを備えています。',
+      image: '/products/servers/dfx-dh226h-v2/01.png',
+      imageFlip: true,
+      bullets: [
+        '主な運用: ITコア業務、クラウドコンピューティング、高性能計算',
+        '主なメリット: 高性能、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
+      ]
+    },
+    features: [
+      {
+        title: '強力な演算能力',
+        description: '192コアのCPUを2つ対応（最大TDP 500W）',
+        image: '/products/servers/dfx-dh226h-v2/01.png',
+        imagePosition: 'left'
+      },
+      {
+        title: '豊富なI/O拡張性',
+        description: '最大12個のPCIe スロットに対応（2個のOCP 3.0専用のスロットを含む）',
+        image: '/products/servers/dfx-dh226h-v2/02.png'
+      },
+      {
+        title: '柔軟なストレージ構成',
+        description: '2.5/3.5インチ×SAS/SATA/NVMeハードディスク、2×M.2 SSDハードディスク',
+        image: '/products/servers/dfx-dh226h-v2/03.png'
+      }
+    ],
+    reliability: [
+      {
+        title: '高温環境下での安定動作を実現',
+        description: '独自の放熱技術により50℃以上の環境でもサーバーが安定稼働を実現',
+        image: '/products/servers/dfx-dh226h-v2/06.png'
+      },
+      {
+        title: '高精度放熱アルゴリズム',
+        description: 'MPC-PID 2.0高精度放熱アルゴリズムで高効率・省エネを実現',
+        image: '/products/servers/dfx-dh226h-v2/07.png'
+      }
+    ],
+    security: [
+      {
+        title: 'データ保護認証',
+        description: 'FIPS認証、機密情報に対する強固なデータ保護と暗号化を実現',
+        image: '/products/servers/dfx-dh226h-v2/05.png'
+      }
+    ],
     energySaving: { image: '', points: [] },
     oandm: { features: [] },
     specs: [],
     shortFeatures: [],
+    showSecurity: false,
+    showSpecs: false
   },
   {
     id: 'dfx-dh220h-v2',
     order: 12,
     displayType: 'fullpage',
     name: 'DFX Server DH220H V2',
-    description: '製品ページ準備中',
+    description: 'AI推論、クラウドコンピューティング、仮想化、高性能計算に最適な次世代の2U2ソケットラックサーバー。',
     mainImage: '/products/servers/dfx-dh220h-v2/main.png',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH220H V2 | XX-online',
-      description: '製品ページ準備中'
+      description: 'AI推論、クラウドコンピューティング、仮想化、高性能計算に最適な次世代の2U2ソケットラックサーバー。低消費電力、柔軟な拡張性、高信頼性を実現。'
     },
-    hero: { title: 'DFX Server DH220H V2', subtitle: '', image: '/products/servers/dfx-dh220h-v2/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
+    hero: { title: 'DFX Server DH220H V2', subtitle: 'AI推論、クラウドコンピューティング、仮想化、高性能計算に最適な2U2ソケットラックサーバー。', image: '/products/servers/dfx-dh220h-v2/main.png' },
+    introduction: { 
+      title: '次世代の2U2ソケットラックサーバー', 
+      description: 'DFX Server DH220H V2は、インターネット、通信キャリア、政府や企業、金融、製造などの業界ニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。AI推論、クラウドコンピューティング、仮想化、高性能計算、グラフィックス処理、VDI、ビッグデータ分析など、さまざまな運用シナリオに適しています。低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入などのメリットを備えています。',
+      image: '/products/servers/dfx-dh220h-v2/00.png',
+      bullets: [
+        '主な運用: AI推論、クラウドコンピューティング、仮想化、高性能計算',
+        '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
+      ]
+    },
+    features: [
+      {
+        title: '強力で多様な演算能力',
+        description: '2基のインテル® Xeon®6プロセッサーを搭載可能、4枚のデュアル幅GPUカードに対応',
+        image: '/products/servers/dfx-dh220h-v2/01.jpg'
+      },
+      {
+        title: 'I/O拡張',
+        description: '最大21個のPCIeスロットをサポート、PCIe 5.0、フロントアクセスに対応',
+        image: '/products/servers/dfx-dh220h-v2/02.png'
+      },
+      {
+        title: '優れたストレージ、柔軟な構成',
+        description: 'さまざまなハードディスク構成（ハードディスクがホットスワップ可能）に対応：20×3.5インチSAS/SATAハードディスク、33×2.5インチフロントSAS/SATAハードディスクまたは24×NVMeハードディスク、36×E3.S SSDハードディスク',
+        image: '/products/servers/dfx-dh220h-v2/03.png',
+        imagePosition: 'right'
+      }
+    ],
+    reliability: [
+      {
+        title: '保守効率が50%向上',
+        description: 'PCIeリンクの精密診断により、高速な故障検出を実現',
+        image: '/products/servers/dfx-dh220h-v2/04.png',
+        imagePosition: 'bottom'
+      },
+      {
+        title: 'システムのダウンタイムを66%削減',
+        description: '独自開発のAIメモリー障害自己修復技術により、メモリリンクの精密診断を実現',
+        image: '/products/servers/dfx-dh220h-v2/05.png',
+        imagePosition: 'bottom'
+      }
+    ],
+    energySaving: { 
+      image: '/products/servers/dfx-dh220h-v2/06.png', 
+      points: [
+        {
+          title: '動的エネルギー管理と効率の最適化',
+          description: 'DEMT 3.0動的エネルギー管理技術は､ワークロードに応じた自動最適化により、再起動不要・中断なしでエネルギー効率を最大化',
+          icon: 'Gauge'
+        },
+        {
+          title: '業界をリードする電源技術、変換効率97%',
+          description: '3つのコア技術で電力と効率を向上させ、高い電力変換率を実現',
+          icon: 'BatteryCharging'
+        }
+      ]
+    },
     oandm: { features: [] },
     specs: [],
     shortFeatures: [],
+    showSpecs: false
   },
   {
     id: 'dfx-dh216-v2',
     order: 13,
     displayType: 'fullpage',
     name: 'DFX Server DH216 V2',
-    description: '製品ページ準備中',
+    description: '仮想化、ビッグデータ、AI推論に最適な次世代の2U1ソケットラックサーバー。',
     mainImage: '/products/servers/dfx-dh216-v2/main.png',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH216 V2 | XX-online',
-      description: '製品ページ準備中'
+      description: '仮想化、ビッグデータ、AI推論に最適な次世代の2U1ソケットラックサーバー。高性能、柔軟な拡張性、高信頼性を実現。'
     },
-    hero: { title: 'DFX Server DH216 V2', subtitle: '', image: '/products/servers/dfx-dh216-v2/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
+    hero: { title: 'DFX Server DH216 V2', subtitle: '仮想化、ビッグデータ、AI推論に最適な2U1ソケットラックサーバー。', image: '/products/servers/dfx-dh216-v2/main.png' },
+    introduction: { 
+      title: '次世代の2U1ソケットラックサーバー', 
+      description: 'DFX Server DH216 V2は、仮想化、ビッグデータ、データベース、クラウドシナリオ、AI推論、小規模企業などのニーズに応えて開発した、幅広く利用されている次世代の2U1ソケットラックサーバーです。インターネット、エンタープライズ、通信キャリアおよびその他の複雑なワークロードに適しています。高性能、柔軟な拡張性、高信頼性、容易な管理、容易な導入などのメリットを備えています。',
+      image: '/products/servers/dfx-dh216-v2/00.png',
+      imageFlip: true,
+      bullets: [
+        '主な運用: 仮想化、ビッグデータ、AI推論',
+        '主なメリット: 高性能、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
+      ]
+    },
+    features: [
+      {
+        title: '最適なCPUとGPUのバランス',
+        description: '1×CPU＋4×デュアル幅GPUカードに対応、または1×CPU＋10×シングル幅GPUカードに対応',
+        image: '/products/servers/dfx-dh216-v2/01.png',
+        imagePosition: 'right'
+      },
+      {
+        title: '互換性の向上',
+        description: '多様なGPUアクセラレーターカードに対応',
+        image: '/products/servers/dfx-dh216-v2/02.png',
+        imagePosition: 'bottom'
+      },
+      {
+        title: 'より強力な汎用コンピューティングパフォーマンス',
+        description: '192コアのCPUを１つ対応（最大TDP 500W）、SPECテストで世界第1位を獲得（2025年4月16日時点のデータによる）',
+        image: '/products/servers/dfx-dh216-v2/03.png',
+        imagePosition: 'bottom'
+      }
+    ],
+    reliability: [
+      {
+        title: '卓越した放熱性能',
+        description: '独自の放熱技術MPC-PID2.0により50℃以上の環境でもサーバーが安定稼働を実現',
+        image: '/products/servers/dfx-dh216-v2/05.png'
+      },
+      {
+        title: '優れた省エネルギー性能',
+        description: '動的なバス電圧調整技術により、サーバーの消費電力を最小化、SPECPowerテストで世界第1位を獲得（2025年4月16日時点のデータによる）',
+        image: '/products/servers/dfx-dh216-v2/06.png'
+      }
+    ],
+    security: [
+      {
+        title: '業界をリードするセキュリティ技術',
+        description: 'セキュリティ認証：CC EAL4+認証、高度な脅威に対する実証済みのセキュリティを提供｜データ保護認証：FIPS認証、機密情報に対する強固なデータ保護と暗号化を実現',
+        image: '/products/servers/dfx-dh216-v2/04.png'
+      }
+    ],
     energySaving: { image: '', points: [] },
     oandm: { features: [] },
     specs: [],
     shortFeatures: [],
+    showSecurity: true,
+    showSpecs: false
   },
   {
     id: 'dfx-dh520g-v1',
