@@ -10,7 +10,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh116-v1/g5200v7-ai-server.jpg',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH116 V1 | XX-online',
+      title: 'DFX Server DH116 V1 | Starseeds Digital',
       description: '強力な性能、高い信頼性、効率的な省エネルギーを兼ね備えたDFX Server DH116 V1の詳細な技術仕様と特徴をご紹介します。'
     },
     hero: {
@@ -138,7 +138,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh126-v1/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH126 V1 | XX-online',
+      title: 'DFX Server DH126 V1 | Starseeds Digital',
       description: 'DFX Server DH126 V1は、仮想化からAI推論まで、多様なワークロードに対応する高性能2U2ソケットサーバーです。'
     },
     hero: { 
@@ -260,7 +260,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh120h-v1/hero.jpg',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH120H V1 | XX-online',
+      title: 'DFX Server DH120H V1 | Starseeds Digital',
       description: 'DFX Server DH120H V1は、HPC、高密度仮想化、OAなどのシナリオに適した、柔軟性と信頼性に優れた次世代の1U2ソケットラックサーバーです。'
     },
     hero: { 
@@ -372,7 +372,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh226-v1/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH226 V1 | XX-online',
+      title: 'DFX Server DH226 V1 | Starseeds Digital',
       description: 'DFX Server DH226 V1は、仮想化、クラウドコンピューティング、AI推論などのシナリオに適した、高性能と柔軟な拡張性を両立した次世代の2U2ソケットラックサーバーです。'
     },
     hero: { 
@@ -477,7 +477,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh226h-v1/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH226H V1 | XX-online',
+      title: 'DFX Server DH226H V1 | Starseeds Digital',
       description: '仮想化からAI推論まで、多様なワークロードに対応する高性能2U2ソケットサーバー。低消費電力、柔軟な拡張性、高信頼性を実現。'
     },
     hero: { title: 'DFX Server DH226H V1', subtitle: '仮想化からAI推論まで、多様なワークロードに対応する高性能2U2ソケットサーバー。', image: '/products/servers/dfx-dh226h-v1/main.png' },
@@ -573,7 +573,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh220-v1/main.jpg',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH220 V1 | XX-online',
+      title: 'DFX Server DH220 V1 | Starseeds Digital',
       description: 'DFX Server DH220 V1は、クラウドコンピューティング、仮想化、分散型ストレージ、ビッグデータ処理などのニーズに応える次世代の2U2ソケットラックサーバーです。'
     },
     hero: { 
@@ -685,7 +685,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh220h-v1/main.jpg',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH220H V1 | XX-online',
+      title: 'DFX Server DH220H V1 | Starseeds Digital',
       description: 'SDS、VDI、CDN、仮想化、ビッグデータ、AI推論など多様なワークロードに対応する次世代の2U2ソケットラックサーバー。低消費電力、柔軟な拡張性、高信頼性を実現。'
     },
     hero: { title: 'DFX Server DH220H V1', subtitle: 'SDS、VDI、CDN、仮想化、ビッグデータ、AI推論など多様なワークロードに対応する2U2ソケットラックサーバー。', image: '/products/servers/dfx-dh220h-v1/main.jpg' },
@@ -801,7 +801,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh240h-v1/main.jpg',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH240H V1 | XX-online',
+      title: 'DFX Server DH240H V1 | Starseeds Digital',
       description: '高パフォーマンスデータベース、HPC、高密度仮想化に最適な2U4ソケットラックサーバー。高性能計算、大容量ストレージ、低消費電力を実現。'
     },
     hero: { title: 'DFX Server DH240H V1', subtitle: '高パフォーマンスデータベース、HPC、高密度仮想化に最適な2U4ソケットラックサーバー。', image: '/products/servers/dfx-dh240h-v1/main.jpg' },
@@ -895,7 +895,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh520-v2/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH520 V2 | XX-online',
+      title: 'DFX Server DH520 V2 | Starseeds Digital',
       description: 'デジタル通貨、コールドストレージ、SDS、ビデオストレージに最適な次世代の4U2ソケットラックサーバー。低消費電力、柔軟な拡張性、高信頼性を実現。'
     },
     hero: { title: 'DFX Server DH520 V2', subtitle: 'デジタル通貨、コールドストレージ、SDS、ビデオストレージに最適な4U2ソケットラックサーバー。', image: '/products/servers/dfx-dh520-v2/main.png' },
@@ -1010,7 +1010,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh520s-v2/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH520S V2 | XX-online',
+      title: 'DFX Server DH520S V2 | Starseeds Digital',
       description: '製品ページ準備中'
     },
     hero: { title: 'DFX Server DH520S V2', subtitle: '', image: '/products/servers/dfx-dh520s-v2/main.png' },
@@ -1031,7 +1031,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh226h-v2/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH226H V2 | XX-online',
+      title: 'DFX Server DH226H V2 | Starseeds Digital',
       description: 'ITコア業務、クラウドコンピューティング、高性能計算に最適な次世代の2U2ソケットラックサーバー。高性能、柔軟な拡張性、高信頼性を実現。'
     },
     hero: { title: 'DFX Server DH226H V2', subtitle: 'ITコア業務、クラウドコンピューティング、高性能計算に最適な2U2ソケットラックサーバー。', image: '/products/servers/dfx-dh226h-v2/main.png' },
@@ -1098,7 +1098,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh220h-v2/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH220H V2 | XX-online',
+      title: 'DFX Server DH220H V2 | Starseeds Digital',
       description: 'AI推論、クラウドコンピューティング、仮想化、高性能計算に最適な次世代の2U2ソケットラックサーバー。低消費電力、柔軟な拡張性、高信頼性を実現。'
     },
     hero: { title: 'DFX Server DH220H V2', subtitle: 'AI推論、クラウドコンピューティング、仮想化、高性能計算に最適な2U2ソケットラックサーバー。', image: '/products/servers/dfx-dh220h-v2/main.png' },
@@ -1172,7 +1172,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh216-v2/main.png',
     category: 'cpu-server',
     meta: {
-      title: 'DFX Server DH216 V2 | XX-online',
+      title: 'DFX Server DH216 V2 | Starseeds Digital',
       description: '仮想化、ビッグデータ、AI推論に最適な次世代の2U1ソケットラックサーバー。高性能、柔軟な拡張性、高信頼性を実現。'
     },
     hero: { title: 'DFX Server DH216 V2', subtitle: '仮想化、ビッグデータ、AI推論に最適な2U1ソケットラックサーバー。', image: '/products/servers/dfx-dh216-v2/main.png' },
@@ -1241,7 +1241,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh520g-v1/main.png',
     category: 'gpu-server',
     meta: {
-      title: 'DFX Server DH520G V1 | XX-online',
+      title: 'DFX Server DH520G V1 | Starseeds Digital',
       description: '製品ページ準備中'
     },
     hero: { title: 'DFX Server DH520G V1', subtitle: '', image: '/products/servers/dfx-dh520g-v1/main.png' },
@@ -1262,7 +1262,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-sh560g-v1/main.png',
     category: 'gpu-server',
     meta: {
-      title: 'DFX Server SH560G V1 | XX-online',
+      title: 'DFX Server SH560G V1 | Starseeds Digital',
       description: '製品ページ準備中'
     },
     hero: { title: 'DFX Server SH560G V1', subtitle: '', image: '/products/servers/dfx-sh560g-v1/main.png' },
@@ -1283,7 +1283,7 @@ export const serverProducts: ServerProduct[] = [
     mainImage: '/products/servers/dfx-dh880/main.png',
     category: 'gpu-server',
     meta: {
-      title: 'DFX Server DH880 | XX-online',
+      title: 'DFX Server DH880 | Starseeds Digital',
       description: '製品ページ準備中'
     },
     hero: { title: 'DFX Server DH880', subtitle: '', image: '/products/servers/dfx-dh880/main.png' },

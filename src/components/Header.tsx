@@ -14,11 +14,11 @@ export default function Header({ className = '' }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: '/about', label: '会社情報' },
-    { href: '/news', label: 'ニュース' },
-    { href: '/solution', label: 'ソリューション' },
+    { href: '/', label: 'ホーム' },
     { href: '/products', label: '製品' },
-    { href: '/service-support', label: 'サービス・サポート' },
+    { href: '/solution', label: '事業内容' },
+    { href: '/news', label: 'ニュース' },
+    { href: '/about', label: '会社概要' },
   ];
 
   // Close mobile menu on route change
@@ -34,7 +34,7 @@ export default function Header({ className = '' }: HeaderProps) {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors duration-300">
-                XX-online
+                Starseeds Digital
               </Link>
             </div>
 

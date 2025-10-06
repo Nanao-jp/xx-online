@@ -14,7 +14,7 @@ export default function News() {
               ニュース
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              XX-onlineの最新情報をお届けします。
+              スターシーズデジタルの最新情報をお届けします。
             </p>
           </div>
         </section>
@@ -28,13 +28,13 @@ export default function News() {
                   <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
                     お知らせ
                   </span>
-                  <span className="text-gray-500 text-sm ml-4">2024.12.15</span>
+                  <span className="text-gray-500 text-sm ml-4">2025.10.01</span>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                  新サービス「クラウドセキュリティプラス」をリリースしました
+                  800G OSFP光トランシーバー新製品ラインナップを拡充
                 </h2>
                 <p className="text-gray-600">
-                  AI技術を活用したセキュリティ監視機能を強化した新サービスの提供を開始いたします。
+                  次世代AIデータセンター向けの800G OSFP DR8/2xFR4光トランシーバーの提供を開始いたしました。高速・長距離通信を実現し、大規模AIクラスターの構築をサポートします。
                 </p>
               </article>
 
@@ -43,13 +43,13 @@ export default function News() {
                   <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
                     プレスリリース
                   </span>
-                  <span className="text-gray-500 text-sm ml-4">2024.12.01</span>
+                  <span className="text-gray-500 text-sm ml-4">2025.09.25</span>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                  大手製造業A社とのパートナーシップ締結について
+                  液冷CDUソリューションの国内展開を本格化
                 </h2>
                 <p className="text-gray-600">
-                  工場IoTシステムの構築・運用において包括的なサポートを提供いたします。
+                  高密度GPU環境向けの先進的な液冷技術を活用したCDUソリューションの提供を拡大いたします。省エネルギーと高効率冷却を両立し、データセンターの持続可能性を向上させます。
                 </p>
               </article>
 
@@ -58,13 +58,43 @@ export default function News() {
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                     イベント
                   </span>
-                  <span className="text-gray-500 text-sm ml-4">2024.11.20</span>
+                  <span className="text-gray-500 text-sm ml-4">2025.09.15</span>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                  「ITインフラセミナー2024」に出展いたします
+                  「AI Data Center Expo 2025」に出展いたします
                 </h2>
                 <p className="text-gray-600">
-                  12月20日開催のセミナーにて、最新のクラウドソリューションをご紹介します。
+                  10月23日〜25日開催の展示会にて、最新のAIデータセンターソリューションをご紹介します。GPUサーバー、液冷CDU、高速光モジュールなど、E2Eソリューションを展示予定です。
+                </p>
+              </article>
+
+              <article className="bg-white p-6 rounded-lg border border-gray-200">
+                <div className="flex items-center mb-4">
+                  <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
+                    製品情報
+                  </span>
+                  <span className="text-gray-500 text-sm ml-4">2025.09.01</span>
+                </div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                  NVIDIA H200搭載GPUサーバーの取り扱いを開始
+                </h2>
+                <p className="text-gray-600">
+                  最新のNVIDIA H200 Tensor Core GPUを搭載した高性能AIサーバーの提供を開始しました。大規模言語モデルのトレーニングや推論に最適な性能を提供します。
+                </p>
+              </article>
+
+              <article className="bg-white p-6 rounded-lg border border-gray-200">
+                <div className="flex items-center mb-4">
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                    プレスリリース
+                  </span>
+                  <span className="text-gray-500 text-sm ml-4">2025.08.20</span>
+                </div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                  大手クラウドプロバイダーとの戦略的パートナーシップを締結
+                </h2>
+                <p className="text-gray-600">
+                  AIデータセンターインフラの構築において、包括的なサポートとソリューション提供を行う戦略的パートナーシップを締結いたしました。
                 </p>
               </article>
             </div>
@@ -76,9 +106,9 @@ export default function News() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">XX-online</h3>
+            <h3 className="text-xl font-bold mb-4">スターシーズデジタル</h3>
             <p className="text-gray-400">
-              企業のITインフラを革新し、ビジネス成長を支援します
+              AI駆動のビジネス革新と持続可能な成長を実現し、社会のスマート化を推進
             </p>
           </div>
         </div>

@@ -25,9 +25,12 @@ export default function Home() {
         
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-6xl md:text-8xl font-bold text-white leading-tight tracking-tight">
-            ITインフラを<br />革新する
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6">
+            AI駆動の未来を創る
           </h1>
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+            AIデータセンター向けエンドツーエンドソリューション
+          </p>
         </div>
       </section>
 
@@ -36,10 +39,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              取り扱い製品
+              製品ラインナップ
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              データセンターから企業ネットワークまで、ITインフラの全領域をカバーする高品質な製品群
+              AIデータセンター構築に必要な全ての製品を提供。GPUサーバーから光モジュールまで、E2Eソリューションを実現
             </p>
           </div>
 
@@ -135,23 +138,59 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* CTA Section */}
-          <div className="text-center mt-16">
-            <div className="bg-gray-900 rounded-3xl p-12 text-white">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                お客様のITインフラニーズに最適な製品をご提案
-              </h3>
-              <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                専門エンジニアがお客様の要件をヒアリングし、最適な製品構成をご提案いたします
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-orange-600 text-white px-8 py-3 rounded-xl hover:bg-orange-700 transition-colors duration-300 font-medium">
-                  製品カタログ請求
-                </button>
-                <button className="border border-gray-600 text-white px-8 py-3 rounded-xl hover:bg-gray-800 transition-colors duration-300 font-medium">
-                  技術相談予約
-                </button>
-              </div>
+          {/* Latest News Section */}
+          <div className="mt-16">
+            <div className="flex justify-between items-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900">最新ニュース</h2>
+              <Link href="/news" className="text-orange-600 hover:text-orange-700 font-medium flex items-center">
+                すべて見る <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </div>
+            <div className="space-y-4">
+              <Link href="/news" className="block bg-white p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:shadow-md transition-all duration-300">
+                <div className="flex items-center mb-3">
+                  <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
+                    お知らせ
+                  </span>
+                  <span className="text-gray-500 text-sm ml-4">2025.10.01</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  800G OSFP光トランシーバー新製品ラインナップを拡充
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  次世代AIデータセンター向けの800G OSFP DR8/2xFR4光トランシーバーの提供を開始いたしました。
+                </p>
+              </Link>
+
+              <Link href="/news" className="block bg-white p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:shadow-md transition-all duration-300">
+                <div className="flex items-center mb-3">
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                    プレスリリース
+                  </span>
+                  <span className="text-gray-500 text-sm ml-4">2025.09.25</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  液冷CDUソリューションの国内展開を本格化
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  高密度GPU環境向けの先進的な液冷技術を活用したCDUソリューションの提供を拡大いたします。
+                </p>
+              </Link>
+
+              <Link href="/news" className="block bg-white p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:shadow-md transition-all duration-300">
+                <div className="flex items-center mb-3">
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                    イベント
+                  </span>
+                  <span className="text-gray-500 text-sm ml-4">2025.09.15</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  「AI Data Center Expo 2025」に出展いたします
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  10月23日〜25日開催の展示会にて、最新のAIデータセンターソリューションをご紹介します。
+                </p>
+              </Link>
             </div>
           </div>
         </div>

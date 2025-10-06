@@ -45,9 +45,9 @@ export default function ServiceSupport() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">XX-online</h3>
+            <h3 className="text-xl font-bold mb-4">スターシーズデジタル</h3>
             <p className="text-gray-400">
-              企業のITインフラを革新し、ビジネス成長を支援します
+              AI駆動のビジネス革新と持続可能な成長を実現し、社会のスマート化を推進
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G 2xSR4 OSFP 光トランシーバー | XX-online',
+      title: '800G 2xSR4 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応VCSELベースOSFP光トランシーバー。OM4で最大50m伝送。',
     },
@@ -41,7 +41,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G SR8 OSFP 光トランシーバー | XX-online',
+      title: '800G SR8 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応VCSELベースOSFP光トランシーバー。OM4で最大100m伝送。',
     },
@@ -72,7 +72,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G 2xDR4 OSFP 光トランシーバー | XX-online',
+      title: '800G 2xDR4 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応EMLベースOSFP光トランシーバー。SMFで最大500m伝送。',
     },
@@ -100,7 +100,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G DR8 OSFP 光トランシーバー | XX-online',
+      title: '800G DR8 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応EMLベースOSFP光トランシーバー。SMFで最大500m伝送。',
     },
@@ -128,7 +128,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G 2xFR4 OSFP 光トランシーバー | XX-online',
+      title: '800G 2xFR4 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応EMLベースOSFP光トランシーバー。SMFで最大2km伝送。',
     },
@@ -156,7 +156,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G 2xLR4 OSFP 光トランシーバー | XX-online',
+      title: '800G 2xLR4 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応EMLベースOSFP光トランシーバー。SMFで最大10km伝送。',
     },
@@ -184,7 +184,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G SR8 QSFP-DD 光トランシーバー | XX-online',
+      title: '800G SR8 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応VCSELベースQSFP-DD光トランシーバー。OM4で最大100m伝送。',
     },
@@ -212,7 +212,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G DR8 QSFP-DD 光トランシーバー | XX-online',
+      title: '800G DR8 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応EMLベースQSFP-DD光トランシーバー。SMFで最大500m伝送。',
     },
@@ -240,7 +240,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G 2xFR4 QSFP-DD 光トランシーバー | XX-online',
+      title: '800G 2xFR4 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応EMLベースQSFP-DD光トランシーバー。SMFで最大2km伝送。',
     },
@@ -268,7 +268,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '800g',
     displayType: 'modal',
     meta: {
-      title: '800G 2xLR4 QSFP-DD 光トランシーバー | XX-online',
+      title: '800G 2xLR4 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの800Gbps対応EMLベースQSFP-DD光トランシーバー。SMFで最大10km伝送。',
     },
@@ -296,7 +296,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G SR4 OSFP 光トランシーバー | XX-online',
+      title: '400G SR4 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応VCSELベースOSFP光トランシーバー。OM4で最大50m伝送。',
     },
@@ -324,7 +324,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G SR8 OSFP 光トランシーバー | XX-online',
+      title: '400G SR8 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応VCSELベースOSFP光トランシーバー。OM4で最大100m伝送。',
     },
@@ -352,7 +352,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G DR4 OSFP 光トランシーバー | XX-online',
+      title: '400G DR4 OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応EMLベースOSFP光トランシーバー。SMFで最大500m伝送。',
     },
@@ -380,7 +380,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G DR4+ OSFP 光トランシーバー | XX-online',
+      title: '400G DR4+ OSFP 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応EMLベースOSFP光トランシーバー。SMFで最大2km伝送。',
     },
@@ -408,7 +408,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G SR4 QSFP112 光トランシーバー | XX-online',
+      title: '400G SR4 QSFP112 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応VCSELベースQSFP112光トランシーバー。OM4で最大100m伝送。',
     },
@@ -436,7 +436,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G DR4 QSFP112 光トランシーバー | XX-online',
+      title: '400G DR4 QSFP112 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応EMLベースQSFP112光トランシーバー。SMFで最大500m伝送。',
     },
@@ -464,7 +464,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G FR4 QSFP112 光トランシーバー | XX-online',
+      title: '400G FR4 QSFP112 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応EMLベースQSFP112光トランシーバー。SMFで最大2km伝送。',
     },
@@ -492,7 +492,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G SR8 QSFP-DD 光トランシーバー | XX-online',
+      title: '400G SR8 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応VCSELベースQSFP-DD光トランシーバー。OM4で最大100m伝送。',
     },
@@ -520,7 +520,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G DR4 QSFP-DD 光トランシーバー | XX-online',
+      title: '400G DR4 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応EMLベースQSFP-DD光トランシーバー。SMFで最大500m伝送。',
     },
@@ -548,7 +548,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G FR4 QSFP-DD 光トランシーバー | XX-online',
+      title: '400G FR4 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応EMLベースQSFP-DD光トランシーバー。SMFで最大2km伝送。',
     },
@@ -576,7 +576,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '400g',
     displayType: 'modal',
     meta: {
-      title: '400G LR4 QSFP-DD 光トランシーバー | XX-online',
+      title: '400G LR4 QSFP-DD 光トランシーバー | Starseeds Digital',
       description:
         'データセンター向けの400Gbps対応EMLベースQSFP-DD光トランシーバー。SMFで最大10km伝送。',
     },
@@ -604,7 +604,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '200g',
     displayType: 'modal',
     meta: {
-      title: '200G SR4 QSFP56 光トランシーバー | XX-online',
+      title: '200G SR4 QSFP56 光トランシーバー | Starseeds Digital',
       description:
         'イーサネット向けの200Gbps対応VCSELベースQSFP56光トランシーバー。MMFで最大100m伝送。',
     },
@@ -632,7 +632,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '200g',
     displayType: 'modal',
     meta: {
-      title: '200G FR4 QSFP56 光トランシーバー | XX-online',
+      title: '200G FR4 QSFP56 光トランシーバー | Starseeds Digital',
       description:
         '200Gbps対応QSFP56光トランシーバー。SMFで最大2km伝送。',
     },
@@ -660,7 +660,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '200g',
     displayType: 'modal',
     meta: {
-      title: '200G LR4 QSFP56 光トランシーバー | XX-online',
+      title: '200G LR4 QSFP56 光トランシーバー | Starseeds Digital',
       description:
         '200Gbps対応QSFP56光トランシーバー。SMFで最大10km伝送。',
     },
@@ -688,7 +688,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G SR4 QSFP28 光トランシーバー | XX-online',
+      title: '100G SR4 QSFP28 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応QSFP28光トランシーバー。MMFで最大100m伝送。',
     },
@@ -716,7 +716,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G SWDM4 QSFP28 光トランシーバー | XX-online',
+      title: '100G SWDM4 QSFP28 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応VCSELベースQSFP28光トランシーバー。MMFで最大100m伝送。',
     },
@@ -744,7 +744,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G CWDM4 QSFP28 光トランシーバー | XX-online',
+      title: '100G CWDM4 QSFP28 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応QSFP28光トランシーバー。SMFで最大2km伝送。',
     },
@@ -772,7 +772,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 LR4 光トランシーバー | XX-online',
+      title: '100G QSFP28 LR4 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応QSFP28光トランシーバー。SMFで最大10km伝送。',
     },
@@ -804,7 +804,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 ER4 Lite 光トランシーバー | XX-online',
+      title: '100G QSFP28 ER4 Lite 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大30km伝送。',
     },
@@ -832,7 +832,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 ER4 光トランシーバー | XX-online',
+      title: '100G QSFP28 ER4 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大40km伝送。',
     },
@@ -860,7 +860,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 ZR4 光トランシーバー | XX-online',
+      title: '100G QSFP28 ZR4 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大80km伝送。',
     },
@@ -888,7 +888,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 DR1 光トランシーバー | XX-online',
+      title: '100G QSFP28 DR1 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大500m伝送。',
     },
@@ -916,7 +916,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 FR1 光トランシーバー | XX-online',
+      title: '100G QSFP28 FR1 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大2km伝送。',
     },
@@ -944,7 +944,7 @@ export const transceiverProducts: TransceiverProduct[] = [
     category: '100g',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 LR1 光トランシーバー | XX-online',
+      title: '100G QSFP28 LR1 光トランシーバー | Starseeds Digital',
       description:
         '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大10km伝送。',
     },

@@ -9,7 +9,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '800G OSFP/QSFP-DD AOC | XX-online',
+      title: '800G OSFP/QSFP-DD AOC | Starseeds Digital',
       description: 'QSFP MSAおよびIEEE 802.3ckに準拠した、データセンター向け800G OSFP/QSFP-DDアクティブ光ケーブル。'
     },
     specs: [
@@ -33,7 +33,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '400G QSFP-DD AOC | XX-online',
+      title: '400G QSFP-DD AOC | Starseeds Digital',
       description: 'QSFP-DD MSAおよびIEEE 802.3cmに準拠しています。'
     },
     specs: [
@@ -57,7 +57,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '400G OSFP AOC | XX-online',
+      title: '400G OSFP AOC | Starseeds Digital',
       description: 'OSFP MSAおよびIEEE 802.3cmに準拠しています。'
     },
     specs: [
@@ -81,7 +81,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '400G QSFP-DD to 4x100G QSFP56 AOC | XX-online',
+      title: '400G QSFP-DD to 4x100G QSFP56 AOC | Starseeds Digital',
       description: 'QSFP-DD MSAおよびIEEE 802.3cm/cdに準拠しています。'
     },
     specs: [
@@ -105,7 +105,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '400G QSFP-DD to 2x200G QSFP56 AOC | XX-online',
+      title: '400G QSFP-DD to 2x200G QSFP56 AOC | Starseeds Digital',
       description: 'QSFP-DD MSAおよびIEEE 802.3cm/cdに準拠しています。'
     },
     specs: [
@@ -129,7 +129,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '200G QSFP56 AOC | XX-online',
+      title: '200G QSFP56 AOC | Starseeds Digital',
       description: 'QSFP MSAおよびIEEE 802.3cdに準拠しています。'
     },
     specs: [
@@ -153,7 +153,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '200G QSFP56 to 2x100G QSFP56 AOC | XX-online',
+      title: '200G QSFP56 to 2x100G QSFP56 AOC | Starseeds Digital',
       description: 'QSFP MSAおよびIEEE 802.3cdに準拠しています。'
     },
     specs: [
@@ -177,7 +177,7 @@ export const cableProducts: CableProduct[] = [
     category: 'aoc',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 AOC | XX-online',
+      title: '100G QSFP28 AOC | Starseeds Digital',
       description: 'QSFP28 MSAおよびIEEE 802.3bmに準拠しています。'
     },
     specs: [
@@ -201,7 +201,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '800G OSFP/QSFP-DD DAC | XX-online',
+      title: '800G OSFP/QSFP-DD DAC | Starseeds Digital',
       description: 'OSFP/QSFP-DD MSAおよびIEEE 802.3ckイーサネット転送プロトコルに準拠しています。'
     },
     specs: [
@@ -225,7 +225,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '400G QSFP-DD/QSFP112 DAC | XX-online',
+      title: '400G QSFP-DD/QSFP112 DAC | Starseeds Digital',
       description: 'OSFP/QSFP-DD MSAおよびIEEE 802.3cdイーサネット転送プロトコルに準拠しています。'
     },
     specs: [
@@ -249,7 +249,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '200G QSFP-DD/QSFP56 DAC | XX-online',
+      title: '200G QSFP-DD/QSFP56 DAC | Starseeds Digital',
       description: 'QSFP-DD/QSFP56 MSAおよびIEEE 802.3cdイーサネット転送プロトコルに準拠しています。'
     },
     specs: [
@@ -273,7 +273,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '100G QSFP28 DAC | XX-online',
+      title: '100G QSFP28 DAC | Starseeds Digital',
       description: 'QSFP28 MSAおよびIEEE 802.3bjイーサネット転送プロトコルに準拠しています。'
     },
     specs: [
@@ -297,7 +297,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '800Gbps OSFP to 2x400G OSFP DAC | XX-online',
+      title: '800Gbps OSFP to 2x400G OSFP DAC | Starseeds Digital',
       description: 'OSFP MSAおよびIEEE 802.3ckに準拠した、高性能、低コスト、低遅延、低消費電力のI/Oソリューションです。'
     },
     specs: [
@@ -321,7 +321,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '400Gbps QSFP-DD/OSFP to 2x200G QSFP56 DAC | XX-online',
+      title: '400Gbps QSFP-DD/OSFP to 2x200G QSFP56 DAC | Starseeds Digital',
       description: 'QSFP-DD/QSFP56 MSAおよびIEEE 802.3cd規格に準拠した、高性能、低コスト、低遅延、低消費電力のI/Oソリューションです。'
     },
     specs: [
@@ -345,7 +345,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '400Gbps QSFP-DD To 4x100G QSFP56 DAC | XX-online',
+      title: '400Gbps QSFP-DD To 4x100G QSFP56 DAC | Starseeds Digital',
       description: 'QSFP-DD/QSFP56 MSAおよびIEEE 802.3cd規格に準拠した、高性能、低コスト、低遅延、低消費電力のI/Oソリューションです。'
     },
     specs: [
@@ -369,7 +369,7 @@ export const cableProducts: CableProduct[] = [
     category: 'dac',
     displayType: 'modal',
     meta: {
-      title: '200Gbps QSFP-DD To 2x100G QSFP28 DAC | XX-online',
+      title: '200Gbps QSFP-DD To 2x100G QSFP28 DAC | Starseeds Digital',
       description: 'QSFP-DD/QSFP28 MSAおよびIEEE 802.3cd規格に準拠した、高性能、低コスト、低遅延、低消費電力のI/Oソリューションです。'
     },
     specs: [
