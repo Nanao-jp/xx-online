@@ -1237,21 +1237,131 @@ export const serverProducts: ServerProduct[] = [
     order: 14,
     displayType: 'fullpage',
     name: 'DFX Server DH520G V1',
-    description: '製品ページ準備中',
+    description: '大容量ストレージAIのニーズに応えた次世代の4U2ソケットAIサーバー',
     mainImage: '/products/servers/dfx-dh520g-v1/main.png',
     category: 'gpu-server',
     meta: {
       title: 'DFX Server DH520G V1 | Starseeds Digital',
-      description: '製品ページ準備中'
+      description: '大容量ストレージAIのニーズに応えた次世代の4U2ソケットAIサーバー。強力な性能、高い信頼性、省エネルギー、容易な管理を備え、音声、画像、ビデオ分析などのAIワークロードに最適。'
     },
-    hero: { title: 'DFX Server DH520G V1', subtitle: '', image: '/products/servers/dfx-dh520g-v1/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
-    specs: [],
-    shortFeatures: [],
+    hero: { 
+      title: 'DFX Server DH520G V1', 
+      subtitle: '大容量ストレージと高性能GPUを搭載した4U2ソケットAIサーバー', 
+      image: '/products/servers/dfx-dh520g-v1/main.png' 
+    },
+    introduction: { 
+      title: '次世代の4U2ソケットAIサーバー', 
+      description: 'DFX Server DH520G V1は、大容量ストレージAIのニーズに応えた次世代の4U2ソケットAIサーバーです。DH520G V1は、強力な性能、高い信頼性と安全性、効率的な省エネルギー、容易な管理、容易な導入などの特長を備えており、トレーニングと推論のワークロードに利用でき、音声、画像、ビデオ分析などのシナリオに適します。', 
+      image: '/products/servers/dfx-dh520g-v1/00.jpg' 
+    },
+    features: [
+      {
+        title: '超大容量ストレージ',
+        description: 'AIワークロードに必要な大容量データを格納できる、柔軟なストレージ構成をサポート。多様なドライブオプションで、あらゆるストレージニーズに対応します。',
+        image: '/products/servers/dfx-dh520g-v1/01.jpg',
+        bullets: [
+          '最大28×2.5/3.5インチSAS/SATAハードディスクに対応',
+          '最大4×NVMe SSDに対応',
+          '2×M.2 SSDに対応'
+        ]
+      },
+      {
+        title: '柔軟な拡張性',
+        description: '豊富な拡張スロットにより、将来的なニーズにも柔軟に対応。ネットワークやストレージの拡張が容易に行えます。',
+        image: '/products/servers/dfx-dh520g-v1/02.jpg',
+        bullets: [
+          '最大10×標準PCIe拡張スロットに対応',
+          '2×OCP 3.0ネットワークカードに対応'
+        ]
+      },
+      {
+        title: '極めて優れた演算能力',
+        description: '最新世代のIntel Xeonプロセッサーと高性能GPUの組み合わせにより、大規模なAIトレーニングと推論を高速に処理します。',
+        image: '/products/servers/dfx-dh520g-v1/03.jpg',
+        bullets: [
+          '第4/5世代インテル®Xeon®スケーラブルプロセッサー、プロセッサーあたり最大TDP 350W対応',
+          '4×フルハイトフルレングスデュアル幅のGPUカードに対応',
+          'GPUパススルー設計により、CPUとGPU間の通信にPCIeスイッチが不要'
+        ]
+      }
+    ],
+    reliability: [
+      {
+        title: 'ヒートシンクあたりの放熱性能が50%向上',
+        description: 'ヒートパイプ拡張放熱技術により、優れた放熱とより強い温度適応性を実現',
+        image: '/products/servers/dfx-dh520g-v1/04.jpg'
+      },
+      {
+        title: 'システムのダウンタイムが66%削減',
+        description: '自社開発したAIメモリー障害自己修復機能により、システムの安定稼働を保証',
+        image: '/products/servers/dfx-dh520g-v1/05.jpg'
+      }
+    ],
+    energySaving: { 
+      image: '/products/servers/dfx-dh520g-v1/06.jpg',
+      imagePosition: 'bottom',
+      points: [
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
+        },
+        {
+          icon: 'ThermometerSun',
+          title: '業界をリードする電源技術、より高い効率',
+          description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'Gauge',
+          title: 'インテリジェントなサービス状況把握、動的な負荷調整',
+          description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
+        }
+      ]
+    },
+    oandm: { 
+      features: [
+        {
+          icon: 'Rocket',
+          title: '20倍向上のアップグレード効率',
+          description: 'バージョンの自動プッシュと非接触型アップグレードに対応'
+        },
+        {
+          icon: 'Gauge',
+          title: '10倍向上の展開効率',
+          description: '75%の合理化された展開手順がツールによって実行可能'
+        },
+        {
+          icon: 'Search',
+          title: '100%のインベントリー精度',
+          description: 'すべてのベンダーのサーバーを管理可能で、資産位置の自動識別とリアルタイムの追跡に対応'
+        }
+      ]
+    },
+    specs: [
+      { label: '形態', value: '4U AIサーバー' },
+      { label: 'プロセッサー', value: '1基または2基の第4/5世代インテル®Xeon®スケーラブルプロセッサー、プロセッサーあたり最大TDP 350W、Montage Jintide®プロセッサー対応' },
+      { label: 'チップセット', value: 'Emmitsburg PCH' },
+      { label: 'メモリー', value: '32個のDDR5メモリースロット、最大速度5600MT/s' },
+      { label: 'ローカルストレージ', value: '最大28×3.5インチSAS/SATAハードディスク, 最大4×NVMe SSD, 2×M.2 SSD (ホットスワップ対応)' },
+      { label: 'RAIDサポート', value: 'RAID 0, 1, 10, 1E, 5, 50, 6, 60に対応し、スーパーキャパシタによるキャッシュデータの電源障害保護、RAIDレベルの移行、ディスクローミング、自己診断、Webによるリモート設定などの機能を提供' },
+      { label: 'GPUアクセラレータカード', value: '4枚のデュアル幅または10枚のシングル幅GPUアクセラレータカード' },
+      { label: 'ネットワーク', value: '複数タイプのネットワーク拡張機能に対応。必要に応じて2枚のOCP 3.0 NIC（通知式ホットスワップ対応、PCIe 5.0対応）を構成可能' },
+      { label: 'PCIe拡張', value: '最大10個のPCIe 5.0対応の標準PCIeスロット' },
+      { label: 'ファンモジュール', value: '8台のホットスワップ対応の二重反転ファンモジュール、N+1冗長対応' },
+      { label: '電源モジュール', value: '4台のホットスワップ対応の電源モジュール。PSU1とPSU2、PSU3とPSU4は1+1冗長対応。オプション仕様：1500W Platinum PSU、2000W Platinum/Titanium PSU' },
+      { label: '管理', value: 'iBMCチップによる包括的な管理機能。Redfish、SNMP、IPMI 2.0などの標準インターフェース対応。HTML5/VNC KVMベースのリモート管理UI。オプションのFusionDirector管理ソフトウェアで高度な管理機能を提供' },
+      { label: 'OS', value: 'xFusion FusionOS、Microsoft Windows Server、SUSE Linux Enterprise Server、VMware ESXi、Red Hat Enterprise Linux、CentOS、Oracle、Ubuntu、Debian、openEuler' },
+      { label: 'セキュリティ特性', value: 'パワーオンパスワード、管理者パスワード、TPM 2.0、セキュリティベゼル、セキュアブート、カバーオープン検知' },
+      { label: '動作温度', value: '5°C～35°C（ASHRAE Class A1/A2に準拠）' },
+      { label: '認証', value: 'CE、UL、CCC、FCC、VCCI、RoHS' },
+      { label: '取り付けレール', value: 'L型レール、伸縮レール、ホールディングレール' },
+      { label: '寸法（高さ×幅×奥行）', value: '175mm×447mm×798mm' }
+    ],
+    shortFeatures: [
+      '最大28台ストレージ',
+      'GPU×4基対応',
+      '高性能Xeon搭載'
+    ],
   },
   {
     id: 'dfx-sh560g-v1',
