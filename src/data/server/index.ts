@@ -1437,20 +1437,83 @@ export const serverProducts: ServerProduct[] = [
     order: 16,
     displayType: 'fullpage',
     name: 'DFX Server DH880',
-    description: '製品ページ準備中',
-    mainImage: '/products/servers/dfx-dh880/main.png',
+    description: '8×GPUモジュールと12×標準PCIe拡張を備えた次世代フラグシップAIサーバー',
+    mainImage: '/products/servers/dfx-dh880/main.jpg',
     category: 'gpu-server',
     meta: {
       title: 'DFX Server DH880 | Starseeds Digital',
-      description: '製品ページ準備中'
+      description: '次世代のフラグシップAIサーバー。8×GPUモジュールをサポートし、12×標準PCIeカードと2×OCPカードの拡張能力を備えています。AIトレーニング、HPC、画像およびデータ分析などの高性能シナリオで利用されています。'
     },
-    hero: { title: 'DFX Server DH880', subtitle: '', image: '/products/servers/dfx-dh880/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
+    hero: { title: 'DFX Server DH880', subtitle: '8×GPUモジュールと12×標準PCIe拡張を備えた次世代フラグシップAIサーバー', image: '/products/servers/dfx-dh880/main.jpg' },
+    introduction: {
+      title: '次世代フラグシップAIサーバー',
+      description: 'DFX Server DH880は、次世代のフラグシップAIサーバーです。8×GPUモジュールをサポートし、12×標準PCIeカードと2×OCPカードの拡張能力を備えています。また、8×2.5インチハードディスクと8×NVMe SSDに対応することで、超大容量または超高速ストレージを提供します。\n\nDH880は、AIトレーニング、HPC、画像およびデータ分析などの高性能シナリオで利用されています。\n\nDH880は、フラッグシップの演算能力、究極のエネルギー効率、極めて高い信頼性、容易なO&Mなどのメリットを備えています。',
+      image: '/products/servers/dfx-dh880/main.jpg'
+    },
+    features: [
+      {
+        title: 'フラッグシップの演算能力',
+        description: '業界で比類のない演算能力と柔軟性を備えた次世代のアーキテクチャ設計により、あらゆる高性能ワークロードに対応します。',
+        image: '/products/servers/dfx-dh880/01.png',
+        imagePosition: 'right',
+        bullets: [
+          '強力な性能：業界で比類のない演算能力を備えた8×GPUモジュール構成に対応',
+          '極めて高い柔軟性：柔軟なトポロジー - NVIDIAの高性能トポロジーおよびバランス型トポロジーと互換性があります',
+          '最先端のアーキテクチャ設計：シャーシ全体がケーブルフリーであり、RetimerチップなしでPCIe 5.0デバイスに対応'
+        ]
+      },
+      {
+        title: '究極のエネルギー効率',
+        description: '独自の電源設計と高効率な放熱技術により、大幅な電力削減とエネルギー効率の向上を実現します。',
+        image: '/products/servers/dfx-dh880/02.jpg',
+        bullets: [
+          '高効率電源：自社開発の高効率Titanium PSUを採用することにより、サーバーあたり最大160Wの電力を節約可能',
+          '異なる電源の分離：分離された54Vと12V電源の構成により、電力変換による電力損失がなくなり、サーバーあたり最大76Wの電力を節約可能',
+          '高効率な放熱：業界独自のGPUと組み合わせたMPCアルゴリズムにより、ファンの消費電力を1.1%削減。xFusion 8080++ファンを採用することで、放熱能力20%～30%改善、およびエネルギー効率16%向上を実現'
+        ]
+      }
+    ],
+    reliability: [
+      {
+        title: '高信頼性の電源アーキテクチャ',
+        description: 'デュアルバスで電力を供給する54V PSUを採用し、より少ないPSUでより高い冗長性を実現',
+        image: '/products/servers/dfx-dh880/03.jpg'
+      },
+      {
+        title: 'モジュラーデザインと容易なO&M',
+        description: 'サーバーをキャビネットから取り外さずに、モジュール（GPUモジュール、CPUモジュール、ファンモジュール、電源モジュール、I/Oモジュール）を交換できることにより、メンテナンス時間が2.5倍短縮',
+        image: '/products/servers/dfx-dh880/04.jpg',
+        imagePosition: 'bottom'
+      },
+      {
+        title: 'ファンと電源の冗長化',
+        description: 'N+1冗長ファン（2か所）、N+M冗長電源（54V）、N+1冗長電源（12V）により、システムの安定稼働を保証',
+        image: '/products/servers/dfx-dh880/05.jpg'
+      }
+    ],
     energySaving: { image: '', points: [] },
     oandm: { features: [] },
-    specs: [],
+    specs: [
+      { label: '形態', value: '8U AIサーバー' },
+      { label: 'プロセッサー', value: '2基の第4世代インテル®Xeon®スケーラブルプロセッサー（Sapphire Rapids）、プロセッサーあたり最大TDP 350W対応' },
+      { label: 'チップセット', value: 'Emmitsburg PCH' },
+      { label: 'メモリー', value: '32個のメモリースロット、4800MT/s対応、メモリーあたり最大128GB対応' },
+      { label: 'ローカルストレージ', value: '8×2.5インチフロントSAS/SATAハードディスク+8×2.5インチリアNVMe SSD（ホットスワップ可能）、2×M.2 SSD' },
+      { label: 'RAIDサポート', value: 'RAID0、1、10、5、50、6、60に対応し、スーパーキャパシタによるキャッシュデータの電源障害保護、RAIDレベルの移行、ディスクローミング、自己診断、Webによるリモート設定などの機能を提供' },
+      { label: 'GPUモジュール', value: '8×GPUモジュール' },
+      { label: 'ネットワーク', value: '多種のネットワーク拡張機能に対応、必要に応じて最大2枚のOCP 3.0 NIC（通知式ホットスワップ対応）を構成可能' },
+      { label: 'PCIe拡張', value: '最大13個のPCIe拡張スロット（12個のPCIe5.0 x16標準拡張スロット、1つのOCP 3.0スロット）' },
+      { label: 'ファンモジュール', value: 'GPU：10台の54Vファンモジュール、N+1冗長対応 / CPU：5台の12Vファンモジュール、N+1冗長対応' },
+      { label: '電源モジュール（54V）', value: '6台のホットスワップ対応の電源モジュール、キャビネットレベルのN+N冗長対応。3000W Titanium PSU' },
+      { label: '電源モジュール（12V）', value: '2台のホットスワップ対応の電源モジュール、1+1冗長対応。2000W Platinum/Titanium PSUまたは3000W Titanium PSU' },
+      { label: '管理', value: 'iBMCチップによる包括的な管理機能。Redfish、SNMP、IPMI 2.0などの標準インターフェースに対応。オプションのFusionDirector管理ソフトウェア' },
+      { label: 'OS', value: 'Ubuntu、SUSE Linux Enterprise Server、Red Hat Enterprise Linux' },
+      { label: 'セキュリティ特性', value: 'パワーオンパスワード、管理者パスワード、TPM 2.0、セキュアブート' },
+      { label: '動作温度', value: '5°C～35°C' },
+      { label: '認証', value: 'CQC、CE、RoHS' },
+      { label: '取り付けレール', value: 'L型レール' },
+      { label: '寸法（高さ×幅×奥行）', value: '352.8mm×447mm×925mm' }
+    ],
     shortFeatures: [],
   },
 ];
