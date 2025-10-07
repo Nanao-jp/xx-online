@@ -1006,20 +1006,111 @@ export const serverProducts: ServerProduct[] = [
     order: 10,
     displayType: 'fullpage',
     name: 'DFX Server DH520S V2',
-    description: '製品ページ準備中',
-    mainImage: '/products/servers/dfx-dh520s-v2/main.png',
+    description: '分散ストレージとウォーム・コールドストレージに最適化された次世代の4U2ソケットラックサーバー',
+    mainImage: '/products/servers/dfx-dh520s-v2/00.jpg',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH520S V2 | Starseeds Digital',
-      description: '製品ページ準備中'
+      description: 'インターネット、通信、金融、政府機関など多様なニーズに対応する汎用性の高い次世代4U2ソケットラックサーバー。分散ストレージ、ウォーム・コールドストレージに最適。'
     },
-    hero: { title: 'DFX Server DH520S V2', subtitle: '', image: '/products/servers/dfx-dh520s-v2/main.png' },
-    introduction: { title: '', description: '', image: '' },
-    features: [],
-    reliability: [],
-    energySaving: { image: '', points: [] },
-    oandm: { features: [] },
-    specs: [],
+    hero: { title: 'DFX Server DH520S V2', subtitle: '分散ストレージとウォーム・コールドストレージに最適化された次世代の4U2ソケットラックサーバー', image: '/products/servers/dfx-dh520s-v2/00.jpg' },
+    introduction: {
+      title: '次世代の4U2ソケットラックサーバー',
+      description: 'DFX Server DH520S V2は、インターネット、通信、金融、政府機関など多様なニーズに対応するために開発した、汎用性の高い次世代の4U2ソケットラックサーバーです。ITコア業務から複雑なワークロードまで柔軟に対応します。',
+      image: '/products/servers/dfx-dh520s-v2/00.jpg',
+      bullets: [
+        '主な運用：分散ストレージ、ウォーム・コールドストレージ',
+        '主なメリット：大容量ストレージ、低消費電力、高信頼性、容易な管理・導入'
+      ]
+    },
+    features: [
+      {
+        title: '圧倒的なストレージ容量',
+        description: '最大60台の3.5インチSAS/SATAドライブに対応し、TCOを30%以上削減します。',
+        image: '/products/servers/dfx-dh520s-v2/01.jpg',
+        imagePosition: 'right'
+      },
+      {
+        title: '優れた演算能力',
+        description: '第4/5世代インテル®Xeon®スケーラブルプロセッサー（最大TDP 385W対応）と32枚のDDR5 DIMMをサポート',
+        image: '/products/servers/dfx-dh520s-v2/02.jpg'
+      },
+      {
+        title: 'より高速な相互接続',
+        description: 'PCIe 5.0と400Gbit/s NICの相互接続に対応し、より高速なアプリケーション実行を実現',
+        image: '/products/servers/dfx-dh520s-v2/03.jpg'
+      }
+    ],
+    reliability: [
+      {
+        title: 'ヒートシンクあたりの放熱性能が50%向上',
+        description: '先進的な拡張型空冷技術（EVAC）により、優れた放熱とより強い温度適応性を実現',
+        image: '/products/servers/dfx-dh520s-v2/04.jpg'
+      },
+      {
+        title: 'システムのダウンタイムが66%削減',
+        description: '独自のAIメモリー障害自己修復機能により、システムの安定稼働を保証',
+        image: '/products/servers/dfx-dh520s-v2/05.jpg'
+      }
+    ],
+    energySaving: {
+      image: '/products/servers/dfx-dh520s-v2/06.jpg',
+      points: [
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '独自のアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
+        },
+        {
+          icon: 'ThermometerSun',
+          title: '業界をリードする電源技術、より高い効率',
+          description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'Gauge',
+          title: 'インテリジェントなサービス状況把握、動的な負荷調整',
+          description: 'サービス負荷に応じてCPUの動作周波数を動的に調整可能'
+        }
+      ]
+    },
+    oandm: {
+      features: [
+        {
+          icon: 'Rocket',
+          title: '20倍向上のアップグレード効率',
+          description: 'バージョンの自動プッシュと非接触型アップグレードに対応'
+        },
+        {
+          icon: 'Gauge',
+          title: '10倍向上の展開効率',
+          description: '75%の合理化された展開手順がツールによって実行可能'
+        },
+        {
+          icon: 'Search',
+          title: '100%のインベントリー精度',
+          description: 'すべてのベンダーのサーバーを管理可能で、資産位置の自動識別とリアルタイムの追跡に対応'
+        }
+      ]
+    },
+    specs: [
+      { label: '形態', value: '4Uラックサーバー' },
+      { label: 'プロセッサー', value: '2基の第4/5世代インテル®Xeon®スケーラブルプロセッサー、プロセッサーあたり最大TDP 385W対応' },
+      { label: 'チップセット', value: 'Emmitsburg PCH' },
+      { label: 'メモリー', value: '32個のDDR5 DIMMスロット、最大5600MT/s対応' },
+      { label: 'ローカルストレージ', value: 'さまざまなドライブ構成（ホットスワップ対応）：10×2.5インチSAS/SATAドライブ、60×3.5インチSAS/SATAドライブ、8×NVMe SSD、2×M.2 SSD' },
+      { label: 'RAID', value: 'RAID 0、1、10、1E、5、50、6、60に対応。スーパーキャパシタによるキャッシュデータの電源障害保護、RAIDレベルの移行、ディスクローミング、自己診断、Webによるリモート設定' },
+      { label: 'ネットワーク', value: '2×FlexIOスロット（2×OCP 3.0 NIC専用、オンデマンド選択とホットスワップに対応）' },
+      { label: 'PCIe拡張', value: '最大6個のPCIe拡張スロット（RAIDコントローラーカード専用1個、OCP 3.0 NIC専用2×FlexIO拡張スロットを含む）、PCIe 5.0対応' },
+      { label: 'ファンモジュール', value: '演算エリア：8個のホットスワップ対応カウンターローテーティングファンモジュール（N+1冗長）/ ストレージエリア：4個のホットスワップ対応カウンターローテーティングファンモジュール（N+1冗長）' },
+      { label: '電源モジュール', value: '1500W/2000W/3000W Platinum/Titanium PSU、ホットスワップ対応、1+1冗長' },
+      { label: '管理', value: 'iBMCチップによる包括的な管理機能。Redfish、SNMP、IPMI 2.0などの標準インターフェースに対応。オプションのFusionDirector管理ソフトウェア' },
+      { label: 'OS', value: 'FusionOS、Microsoft Windows Server、SUSE Linux Enterprise Server、VMware ESXi、Red Hat Enterprise Linux、CentOS、Oracle、Ubuntu、Debian、openEuler' },
+      { label: 'セキュリティ', value: 'パワーオンパスワード、管理者パスワード、TPM 2.0、TCM、セキュリティベゼル、セキュアブート、シャーシ侵入検知' },
+      { label: '動作温度', value: '5°C～35°C（41°F～95°F）、ASHRAE Class A1/A2準拠' },
+      { label: '認証', value: 'CE、UL、CCC、FCC、VCCI、RoHS' },
+      { label: '取り付けレール', value: 'L型および調整可能なガイドレール' },
+      { label: '寸法（高さ×幅×奥行）', value: '175mm×447mm×850mm（6.89in.×17.60in.×33.46in.）' }
+    ],
     shortFeatures: [],
   },
   {
