@@ -10,27 +10,33 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-gray-900">
+      <section className="relative w-full aspect-video overflow-hidden bg-gray-900">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero.jpg"
+            src="/hero.png"
             alt="IT Infrastructure Background"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-50"
             priority
           />
-          <div className="absolute inset-0 bg-gray-900/60"></div>
+          <div className="absolute inset-0 bg-gray-900/40"></div>
         </div>
         
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6">
-            AI駆動の未来を創る
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            AIデータセンター向けエンドツーエンドソリューション
-          </p>
+        <div className="absolute inset-0 z-10 flex items-center justify-center">
+          <div className="text-center px-4 sm:px-6 lg:px-8">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6 whitespace-nowrap">
+              <span className="text-white">AI時代の</span>
+              <span className="text-orange-500">インフラ</span>
+              <span className="text-white">を創る</span>
+            </h1>
+            <div className="inline-block">
+              <p className="text-xl md:text-2xl text-gray-100 font-light tracking-wider border-b-2 border-orange-500 pb-1">
+                Starseeds Digital
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
