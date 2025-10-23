@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Brain, Server, Zap, Box, Network, Cable, Lightbulb, Users, Target, Wrench } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Solution() {
   const [activeTab, setActiveTab] = useState('ai-datacenter');
@@ -412,17 +413,7 @@ export default function Solution() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">スターシーズデジタル</h3>
-            <p className="text-gray-400">
-              AI駆動のビジネス革新と持続可能な成長を実現し、社会のスマート化を推進
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

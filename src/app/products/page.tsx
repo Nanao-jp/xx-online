@@ -1,21 +1,35 @@
 'use client';
 
-import { useState } from 'react';
-import { Server, HardDrive, Network, Radio, Cable, Cpu, Gpu, Unplug, Usb, Waypoints } from "lucide-react";
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { Server, Radio, Cable, Cpu, Gpu, Unplug, Usb, Waypoints } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { allProducts } from '@/data/products';
 import { ProductCard } from '@/components/ProductCard';
 
+type TabId = 'server' | 'cable' | 'transceiver';
+
 export default function Products() {
-  const [activeTab, setActiveTab] = useState('server');
+  const searchParams = useSearchParams();
+  const [activeTab, setActiveTab] = useState<TabId>('server');
 
   const tabs = [
     { id: 'server', label: 'サーバー', icon: Server },
     { id: 'cable', label: 'ケーブル', icon: Cable },
     { id: 'transceiver', label: '光トランシーバー', icon: Radio },
-    { id: 'storage', label: 'ストレージ', icon: HardDrive, disabled: true },
-    { id: 'switch', label: 'スイッチ', icon: Network, disabled: true },
+    // 非表示要望により、ストレージ/スイッチのタブを一時的に無効化
+    // { id: 'storage', label: 'ストレージ', icon: HardDrive, disabled: true },
+    // { id: 'switch', label: 'スイッチ', icon: Network, disabled: true },
   ];
+
+  // 初期タブをクエリパラメータ ?tab= から切替（例: /products?tab=cable）
+  useEffect(() => {
+    const tabParam = searchParams.get('tab');
+    if (tabParam === 'server' || tabParam === 'cable' || tabParam === 'transceiver') {
+      setActiveTab(tabParam);
+    }
+  }, [searchParams]);
 
   const renderEmptyState = (title: string) => (
     <div className="bg-white p-8 rounded-2xl border border-gray-200 text-gray-400">
@@ -251,17 +265,7 @@ export default function Products() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">スターシーズデジタル</h3>
-            <p className="text-gray-400">
-              AI駆動のビジネス革新と持続可能な成長を実現し、社会のスマート化を推進
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

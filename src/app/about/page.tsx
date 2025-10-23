@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function About() {
   return (
@@ -42,8 +43,12 @@ export default function About() {
                     <dd className="text-gray-600">〒108-0073<br />東京都港区三田1-4-28 三田国際ビル1808</dd>
                   </div>
                   <div>
+                    <dt className="font-semibold text-gray-900">電話 / FAX</dt>
+                    <dd className="text-gray-600">TEL：03-6435-4433　／　FAX：03-6435-4448</dd>
+                  </div>
+                  <div>
                     <dt className="font-semibold text-gray-900">親会社</dt>
-                    <dd className="text-gray-600">StarSeeds（上場企業）</dd>
+                    <dd className="text-gray-600">StarSeeds</dd>
                   </div>
                 </dl>
               </div>
@@ -69,17 +74,7 @@ export default function About() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-xl font-bold mb-4">スターシーズデジタル</h3>
-            <p className="text-gray-400">
-              AI駆動のビジネス革新と持続可能な成長を実現し、社会のスマート化を推進
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

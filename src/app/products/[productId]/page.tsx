@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import ProductDetailView from '@/components/ProductDetailView';
+import Footer from '@/components/Footer';
 
 // ✅ Next.js 15 から params/searchParams は Promise になった
 type Params = Promise<{ productId: string }>;
@@ -60,6 +61,7 @@ export default async function ProductDetailPage(
         <RelatedProducts currentProductId={product.id} />
         <ProductContactCTA />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -17,7 +18,8 @@ export default function Header({ className = '' }: HeaderProps) {
     { href: '/', label: 'ホーム' },
     { href: '/products', label: '製品' },
     { href: '/solution', label: '事業内容' },
-    { href: '/news', label: 'ニュース' },
+    // ニュースをナビゲーションから非表示
+    // { href: '/news', label: 'ニュース' },
     { href: '/about', label: '会社概要' },
   ];
 
@@ -30,11 +32,19 @@ export default function Header({ className = '' }: HeaderProps) {
     <>
       <header className={`fixed w-full z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100/50 ${className}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-3 md:py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors duration-300">
-                Starseeds Digital
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/LOGO_white.jpg"
+                  alt="Starseeds Digital"
+                  width={160}
+                  height={40}
+                  className="h-10 md:h-12 w-auto"
+                  priority
+                />
+                <span className="sr-only">Starseeds Digital</span>
               </Link>
             </div>
 

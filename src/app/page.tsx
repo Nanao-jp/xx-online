@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Server, HardDrive, Network, Zap, Wifi, Radio, Cable, ArrowRight } from "lucide-react";
+import { Server, Radio, Cable, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -10,14 +10,14 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative w-full aspect-video overflow-hidden bg-gray-900">
+      <section className="relative w-full min-h-[60vh] sm:aspect-video overflow-hidden bg-gray-900">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.png"
             alt="IT Infrastructure Background"
             fill
-            className="object-cover opacity-50"
+            className="object-cover opacity-50 object-[center_30%] sm:object-center"
             priority
           />
           <div className="absolute inset-0 bg-gray-900/40"></div>
@@ -26,10 +26,10 @@ export default function Home() {
         {/* Content */}
         <div className="absolute inset-0 z-10 flex items-center justify-center">
           <div className="text-center px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6 whitespace-nowrap">
-              <span className="text-white">AI時代の</span>
-              <span className="text-orange-500">インフラ</span>
-              <span className="text-white">を創る</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6 whitespace-normal sm:whitespace-nowrap">
+              <span className="text-white block sm:inline">AI基盤を築き、</span>
+              <span className="text-orange-500 block sm:inline">無限の知能</span>
+              <span className="text-white block sm:inline">の未来へ</span>
             </h1>
             <div className="inline-block">
               <p className="text-xl md:text-2xl text-gray-100 font-light tracking-wider border-b-2 border-orange-500 pb-1">
@@ -64,7 +64,8 @@ export default function Home() {
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
             </Link>
-
+            {/* 非表示: ストレージ/スイッチ/波長分離多重化/FTTx のカード */}
+            {/*
             <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <HardDrive className="w-6 h-6 text-orange-600" />
@@ -77,7 +78,7 @@ export default function Home() {
             </Link>
 
             <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify中心 mb-4 group-hover:bg-orange-100 transition-colors">
                 <Network className="w-6 h-6 text-orange-600" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">スイッチ</h3>
@@ -88,7 +89,7 @@ export default function Home() {
             </Link>
 
             <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+              <div className="w-12 h-12 bg-white rounded-xl flex items中心 justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Zap className="w-6 h-6 text-orange-600" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">波長分離多重化</h3>
@@ -99,7 +100,7 @@ export default function Home() {
             </Link>
 
             <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
+              <div className="w-12 h-12 bg白 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Wifi className="w-6 h-6 text-orange-600" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">FTTx</h3>
@@ -108,6 +109,7 @@ export default function Home() {
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
             </Link>
+            */}
 
             <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
@@ -144,61 +146,7 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Latest News Section */}
-          <div className="mt-16">
-            <div className="flex justify-between items-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900">最新ニュース</h2>
-              <Link href="/news" className="text-orange-600 hover:text-orange-700 font-medium flex items-center">
-                すべて見る <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-            <div className="space-y-4">
-              <Link href="/news" className="block bg-white p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:shadow-md transition-all duration-300">
-                <div className="flex items-center mb-3">
-                  <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
-                    お知らせ
-                  </span>
-                  <span className="text-gray-500 text-sm ml-4">2025.10.01</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  800G OSFP光トランシーバー新製品ラインナップを拡充
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  次世代AIデータセンター向けの800G OSFP DR8/2xFR4光トランシーバーの提供を開始いたしました。
-                </p>
-              </Link>
-
-              <Link href="/news" className="block bg-white p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:shadow-md transition-all duration-300">
-                <div className="flex items-center mb-3">
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                    プレスリリース
-                  </span>
-                  <span className="text-gray-500 text-sm ml-4">2025.09.25</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  液冷CDUソリューションの国内展開を本格化
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  高密度GPU環境向けの先進的な液冷技術を活用したCDUソリューションの提供を拡大いたします。
-                </p>
-              </Link>
-
-              <Link href="/news" className="block bg-white p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:shadow-md transition-all duration-300">
-                <div className="flex items-center mb-3">
-                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                    イベント
-                  </span>
-                  <span className="text-gray-500 text-sm ml-4">2025.09.15</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  「AI Data Center Expo 2025」に出展いたします
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  10月23日〜25日開催の展示会にて、最新のAIデータセンターソリューションをご紹介します。
-                </p>
-              </Link>
-            </div>
-          </div>
+          {/* 最新ニュースセクション（非表示） */}
         </div>
       </section>
 

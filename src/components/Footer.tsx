@@ -5,7 +5,7 @@ export default function Footer() {
     { href: '/', label: 'ホーム' },
     { href: '/products', label: '製品' },
     { href: '/solution', label: '事業内容' },
-    { href: '/news', label: 'ニュース' },
+    // { href: '/news', label: 'ニュース' },
     { href: '/about', label: '会社概要' },
   ];
 
@@ -23,6 +23,7 @@ export default function Footer() {
               スターシーズデジタル株式会社<br />
               〒108-0073<br />
               東京都港区三田1-4-28 三田国際ビル1808
+              <br />TEL：03-6435-4433　／　FAX：03-6435-4448
             </p>
           </div>
           
@@ -40,15 +41,22 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Business Areas */}
+          {/* Products & Solutions */}
           <div>
-            <h4 className="font-semibold mb-4">事業領域</h4>
+            <h4 className="font-semibold mb-4">製品・ソリューション</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>GPUサーバー</li>
-              <li>ストレージサーバー</li>
-              <li>液冷CDU</li>
-              <li>光モジュール・ケーブル</li>
-              <li>スイッチ・ネットワーク機器</li>
+              <li>
+                <Link href="/products?tab=server" className="hover:text-white transition-colors">サーバー</Link>
+              </li>
+              <li>
+                <Link href="/products?tab=transceiver" className="hover:text-white transition-colors">光トランシーバー</Link>
+              </li>
+              <li>
+                <Link href="/products?tab=cable" className="hover:text-white transition-colors">ケーブル（AOC・DAC・MPO）</Link>
+              </li>
+              <li>
+                <Link href="/solution" className="hover:text-white transition-colors">ソリューション（液冷CDUなど）</Link>
+              </li>
             </ul>
           </div>
         </div>
