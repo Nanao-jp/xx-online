@@ -23,16 +23,20 @@ export default function Home() {
           <div className="absolute inset-0 bg-gray-900/40"></div>
         </div>
         
-        {/* Content */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center">
-          <div className="text-center px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6 whitespace-normal sm:whitespace-nowrap">
-              <span className="text-white block sm:inline">AI基盤を築き、</span>
-              <span className="text-orange-500 block sm:inline">無限の知能</span>
-              <span className="text-white block sm:inline">の未来へ</span>
+        {/* Content: 見出しを縦中央、サブテキストをその直下に配置（重なり防止のためグリッド使用） */}
+        <div className="absolute inset-0 z-10 grid grid-rows-[1fr_auto_1fr] justify-items-center">
+          <div className="row-start-2 text-center px-4 sm:px-6 lg:px-8">
+            <h1 className="text-[48px] sm:text-6xl md:text-7xl font-bold text-white leading-tight tracking-tight">
+              <span className="block sm:inline whitespace-nowrap">AI基盤を築き、</span>
+              <span className="block sm:inline whitespace-nowrap">
+                <span className="text-orange-500">無限の知能</span>
+                <span>の未来へ</span>
+              </span>
             </h1>
+          </div>
+          <div className="row-start-3 mt-4">
             <div className="inline-block">
-              <p className="text-xl md:text-2xl text-gray-100 font-light tracking-wider border-b-2 border-orange-500 pb-1">
+              <p className="text-[22px] sm:text-2xl text-gray-100 font-light tracking-wider border-b-2 border-orange-500 pb-1">
                 Starseeds Digital
               </p>
             </div>
