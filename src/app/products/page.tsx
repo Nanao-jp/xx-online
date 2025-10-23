@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Server, Radio, Cable, Cpu, Gpu, Unplug, Usb, Waypoints } from "lucide-react";
 import Header from "@/components/Header";
@@ -10,7 +10,7 @@ import { ProductCard } from '@/components/ProductCard';
 
 type TabId = 'server' | 'cable' | 'transceiver';
 
-export default function Products() {
+function ProductsInner() {
   const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<TabId>('server');
 
@@ -18,10 +18,7 @@ export default function Products() {
     { id: 'server', label: 'サーバー', icon: Server },
     { id: 'cable', label: 'ケーブル', icon: Cable },
     { id: 'transceiver', label: '光トランシーバー', icon: Radio },
-    // 非表示要望により、ストレージ/スイッチのタブを一時的に無効化
-    // { id: 'storage', label: 'ストレージ', icon: HardDrive, disabled: true },
-    // { id: 'switch', label: 'スイッチ', icon: Network, disabled: true },
-  ];
+  ] as const;
 
   // 初期タブをクエリパラメータ ?tab= から切替（例: /products?tab=cable）
   useEffect(() => {
@@ -63,14 +60,11 @@ export default function Products() {
                   return (
                     <button
                       key={tab.id}
-                      onClick={() => !tab.disabled && setActiveTab(tab.id)}
-                      disabled={tab.disabled}
+                      onClick={() => setActiveTab(tab.id)}
                       className={`flex items-center px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
                         activeTab === tab.id
                           ? 'bg-gray-900 text-white shadow-lg'
-                          : tab.disabled 
-                            ? 'text-gray-300 cursor-not-allowed'
-                            : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                          : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                       }`}
                     >
                       <IconComponent className="w-4 h-4 mr-2" />
@@ -267,5 +261,13 @@ export default function Products() {
 
       <Footer />
     </div>
+  );
+}
+
+export default function Products() {
+  return (
+    <Suspense fallback={null}>
+      <ProductsInner />
+    </Suspense>
   );
 }
