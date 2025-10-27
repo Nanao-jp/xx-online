@@ -21,7 +21,7 @@ export const serverProducts: ServerProduct[] = [
     introduction: {
       title: '次世代の4U2ソケットAIサーバー',
       description: 'DFX Server DH116 V1は、強力な性能、高い信頼性と安全性、効率的な省エネルギー、容易な管理、容易な導入などの特長を備えており、トレーニングと推論のワークロードに利用できます。',
-      image: '/products/servers/dfx-dh116-v1/main.jpg'
+      image: '/products/servers/dfx-dh116-v1/g5200v7-ai-server.jpg'
     },
     features: [
       {
@@ -1336,7 +1336,7 @@ export const serverProducts: ServerProduct[] = [
     introduction: { 
       title: '次世代の4U2ソケットAIサーバー', 
       description: 'DFX Server DH520G V1は、大容量ストレージAIのニーズに応えた次世代の4U2ソケットAIサーバーです。DH520G V1は、強力な性能、高い信頼性と安全性、効率的な省エネルギー、容易な管理、容易な導入などの特長を備えており、トレーニングと推論のワークロードに利用でき、音声、画像、ビデオ分析などのシナリオに適します。', 
-      image: '/products/servers/dfx-dh520g-v1/00.jpg' 
+      image: '/products/servers/dfx-dh520g-v1/main.png' 
     },
     features: [
       {
