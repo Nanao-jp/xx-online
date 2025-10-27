@@ -15,7 +15,7 @@ export default function About() {
               会社情報
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              スターシーズデジタル株式会社は、東京に本社を置くStarSeeds上場企業の子会社です。
+              スターシーズデジタル株式会社は、東京に本社を置くAIデータセンターソリューション企業です。
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               AIデータセンター向けエンドツーエンドソリューションを提供し、AIサーバー、ストレージ、スイッチ、光モジュール、コンテナ型データセンター、先進的な液冷技術を組み合わせ、IDC運営事業者のネットワークサービスと連携。計画・構築・運営までを一貫して支援し、AI駆動のビジネス革新と持続可能な成長を実現し、社会のスマート化を推進します。
@@ -47,8 +47,8 @@ export default function About() {
                     <dd className="text-gray-600">TEL：03-6435-4433　／　FAX：03-6435-4448</dd>
                   </div>
                   <div>
-                    <dt className="font-semibold text-gray-900">親会社</dt>
-                    <dd className="text-gray-600">StarSeeds</dd>
+                    <dt className="font-semibold text-gray-900">お問い合わせメール</dt>
+                    <dd className="text-gray-600">ssd-sales@starseeds-digital.co.jp</dd>
                   </div>
                 </dl>
               </div>
