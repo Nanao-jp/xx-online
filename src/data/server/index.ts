@@ -148,7 +148,7 @@ export const serverProducts: ServerProduct[] = [
     introduction: {
       title: '次世代の1U2ソケットラックサーバー',
       description: 'DFX Server DH126 V1は、インターネット、IDC、クラウドコンピューティング、エンタープライズ、電気通信サービスなど、幅広いニーズに応える次世代の1U2ソケットラックサーバーです。ITコア業務から複雑なワークロードまで柔軟に対応します。',
-      image: '/products/servers/dfx-dh126-v1/00.jpg',
+      image: '/products/servers/dfx-dh126-v1/00.png',
       bullets: [
         '主な運用：仮想化、クラウドコンピューティング、Webアプリケーション、AI推論',
         '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理・導入'
@@ -380,7 +380,7 @@ export const serverProducts: ServerProduct[] = [
     introduction: { 
       title: '次世代の2U2ソケットラックサーバー', 
       description: 'DFX Server DH226 V1は、インターネット、インターネットデータセンター（IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。ITコア業務から複雑なワークロードまで柔軟に対応します。',
-      image: '/products/servers/dfx-dh226-v1/00.jpg',
+      image: '/products/servers/dfx-dh226-v1/00.png',
       bullets: [
         '主な運用: 仮想化, クラウドコンピューティング, Webアプリケーション, AI推論',
         '主なメリット: 高性能、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
@@ -481,7 +481,7 @@ export const serverProducts: ServerProduct[] = [
     introduction: { 
       title: '次世代の2U2ソケットラックサーバー', 
       description: 'DFX Server DH226H V1は、インターネット、インターネットデータセンター（IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。ITコア業務、クラウドコンピューティング、仮想化、高性能計算、エンタープライズまたは電気通信サービスの運用、およびその他の複雑なワークロードに適します。',
-      image: '/products/servers/dfx-dh226h-v1/01.jpg',
+      image: '/products/servers/dfx-dh226h-v1/s 226h-v1-01.png',
       bullets: [
         '主な運用: 仮想化、クラウドコンピューティング、Webアプリケーション、AI推論',
         '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
@@ -1189,7 +1189,7 @@ export const serverProducts: ServerProduct[] = [
     introduction: { 
       title: '次世代の2U2ソケットラックサーバー', 
       description: 'DFX Server DH220H V2は、インターネット、通信キャリア、政府や企業、金融、製造などの業界ニーズに応えて開発した、幅広く利用されている次世代の2U2ソケットラックサーバーです。AI推論、クラウドコンピューティング、仮想化、高性能計算、グラフィックス処理、VDI、ビッグデータ分析など、さまざまな運用シナリオに適しています。低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入などのメリットを備えています。',
-      image: '/products/servers/dfx-dh220h-v2/00.png',
+      image: '/products/servers/dfx-dh220h-v2/s 220h-v2-00.png',
       bullets: [
         '主な運用: AI推論、クラウドコンピューティング、仮想化、高性能計算',
         '主なメリット: 低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入'
