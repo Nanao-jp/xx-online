@@ -37,7 +37,7 @@ export default function Home() {
           <div className="row-start-3 mt-4">
             <div className="inline-block">
               <p className="text-[22px] sm:text-2xl text-gray-100 font-light tracking-wider border-b-2 border-orange-500 pb-1">
-                Starseeds Digital
+                Star Seeds Digital Co., Ltd.
               </p>
             </div>
           </div>
