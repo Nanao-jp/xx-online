@@ -37,7 +37,7 @@ export default function Header({ className = '' }: HeaderProps) {
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/LOGO_white.jpg"
+                  src="/logo.png"
                   alt="Starseeds Digital"
                   width={160}
                   height={40}
