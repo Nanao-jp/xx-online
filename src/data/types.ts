@@ -90,6 +90,7 @@ export interface ServerProduct extends BaseProduct {
     imagePosition?: string;
   };
   oandm: {
+    subtitle?: string;
     features: ProductOandMFeature[];
   };
   security?: ProductFeature[];

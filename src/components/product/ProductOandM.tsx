@@ -38,6 +38,9 @@ export function ProductOandM({ oandm }: ProductOandMProps) {
           <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
             インテリジェントなO&M
           </h2>
+          {oandm.subtitle && (
+            <p className="mt-3 text-orange-200 tracking-wide">{oandm.subtitle}</p>
+          )}
           <div className="mt-6 flex items-center justify-center gap-3">
             <div className="h-1 w-16 bg-gradient-to-r from-orange-400 to-orange-300 rounded-full"></div>
             <div className="h-1 w-8 bg-orange-300 rounded-full"></div>

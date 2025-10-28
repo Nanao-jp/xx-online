@@ -14,18 +14,29 @@ function ProductsInner() {
   const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<TabId>('server');
 
+  const resolveTab = (value: string | null | undefined): TabId | null => {
+    if (!value) return null;
+    const v = value.toLowerCase();
+    if (v === 'server' || v === 'servers') return 'server';
+    if (v === 'cable' || v === 'cables') return 'cable';
+    if (v === 'transceiver' || v === 'transceivers' || v === 'optics') return 'transceiver';
+    return null;
+  };
+
   const tabs = [
     { id: 'server', label: 'サーバー', icon: Server },
-    { id: 'cable', label: 'ケーブル', icon: Cable },
     { id: 'transceiver', label: '光トランシーバー', icon: Radio },
+    { id: 'cable', label: 'ケーブル', icon: Cable },
   ] as const;
 
   // 初期タブをクエリパラメータ ?tab= から切替（例: /products?tab=cable）
   useEffect(() => {
-    const tabParam = searchParams.get('tab');
-    if (tabParam === 'server' || tabParam === 'cable' || tabParam === 'transceiver') {
-      setActiveTab(tabParam);
-    }
+    const fromQuery = resolveTab(searchParams.get('tab'))
+      || resolveTab(searchParams.get('category'))
+      || resolveTab(searchParams.get('type'));
+    const fromHash = typeof window !== 'undefined' ? resolveTab(window.location.hash?.replace('#', '')) : null;
+    const next = fromQuery || fromHash;
+    if (next) setActiveTab(next);
   }, [searchParams]);
 
   const renderEmptyState = (title: string) => (

@@ -10,6 +10,6 @@ import type { Product } from './types';
 // --- Combine and export all products
 export const allProducts = [
   ...serverProducts,
-  ...cableProducts,
   ...transceiverProducts,
+  ...cableProducts,
 ] satisfies readonly Product[];

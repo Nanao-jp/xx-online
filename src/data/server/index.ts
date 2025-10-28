@@ -117,6 +117,7 @@ export const serverProducts: ServerProduct[] = [
     ],
     datasheetUrl: '/products/servers/dfx-dh116-v1/G5200-V7-Datasheet.pdf',
     shortFeatures: [],
+    showSpecs: false,
   },
   {
     id: 'dfx-dh126-v1',
@@ -1433,28 +1434,28 @@ export const serverProducts: ServerProduct[] = [
     shortFeatures: [],
   },
   {
-    id: 'dfx-sh560g-v1',
+    id: 'dfx-dh560g-v1',
     order: 15,
     displayType: 'fullpage',
-    name: 'DFX Server SH560G V1',
+    name: 'DFX Server DH560G V1',
     description: '最大10×デュアル幅GPUカードをサポートする次世代の4U2ソケットAIサーバー',
-    mainImage: '/products/servers/dfx-sh560g-v1/main.png',
+    mainImage: '/products/servers/dfx-dh560g-v1/main.png',
     category: 'gpu-server',
     meta: {
-      title: 'DFX Server SH560G V1 | Starseeds Digital',
+      title: 'DFX Server DH560G V1 | Starseeds Digital',
       description: '最大10×デュアル幅GPUカードをサポートする次世代の4U2ソケットAIサーバー。AIトレーニング、AI推論、HPC、画像解析・動画解析などのアプリケーションを高速化。'
     },
-    hero: { title: 'DFX Server SH560G V1', subtitle: '最大10×デュアル幅GPUカード対応の4U2ソケットAIサーバー', image: '/products/servers/dfx-sh560g-v1/main.png' },
+    hero: { title: 'DFX Server DH560G V1', subtitle: '最大10×デュアル幅GPUカード対応の4U2ソケットAIサーバー', image: '/products/servers/dfx-dh560g-v1/main.png' },
     introduction: { 
       title: '次世代の4U2ソケットAIサーバー', 
-      description: 'DFX Server SH560G V1は、次世代の4U2ソケットAIサーバーです。最大10×デュアル幅GPUカードをサポートし、4×標準PCIeカードと3×OCPカードの拡張能力を備えています。また、24×3.5インチハードディスクまたは12×NVMe SSDに対応することで、超大容量または超高速ストレージを提供します。SH560G V1は、高性能、柔軟なアーキテクチャ、高信頼性、容易な導入、容易な管理などのメリットを備えています。SH560G V1は、AIトレーニング、AI推論、HPC、画像解析・動画解析、データベースなどのアプリケーションを高速化し、エンタープライズとパブリッククラウドの展開に対応します。', 
-      image: '/products/servers/dfx-sh560g-v1/main.png' 
+      description: 'DFX Server DH560G V1は、次世代の4U2ソケットAIサーバーです。最大10×デュアル幅GPUカードをサポートし、4×標準PCIeカードと3×OCPカードの拡張能力を備えています。また、24×3.5インチハードディスクまたは12×NVMe SSDに対応することで、超大容量または超高速ストレージを提供します。DH560G V1は、高性能、柔軟なアーキテクチャ、高信頼性、容易な導入、容易な管理などのメリットを備えています。DH560G V1は、AIトレーニング、AI推論、HPC、画像解析・動画解析、データベースなどのアプリケーションを高速化し、エンタープライズとパブリッククラウドの展開に対応します。', 
+      image: '/products/servers/dfx-dh560g-v1/main.png' 
     },
     features: [
       {
         title: '比類ない演算能力',
         description: '最新世代のIntel Xeonプロセッサーと最大10枚のデュアル幅GPUカードの組み合わせにより、業界トップクラスのAI演算性能を実現します。',
-        image: '/products/servers/dfx-sh560g-v1/01.jpg',
+        image: '/products/servers/dfx-dh560g-v1/01.jpg',
         bullets: [
           '第4/5世代インテル®Xeon®スケーラブルプロセッサー、最大TDP 385W対応、強力なパフォーマンスを提供',
           '最大10×デュアル幅GPUカードに対応し、業界の一般的に8×GPUカードを搭載したサーバーと比較して、25%のAI演算能力向上を実現'
@@ -1463,7 +1464,7 @@ export const serverProducts: ServerProduct[] = [
       {
         title: '柔軟なストレージ構成',
         description: '大容量HDDと高速NVMe SSDの両方に対応し、ワークロードに応じた最適なストレージ構成が可能です。',
-        image: '/products/servers/dfx-sh560g-v1/02.jpg',
+        image: '/products/servers/dfx-dh560g-v1/02.jpg',
         bullets: [
           '24×3.5インチハードディスク：柔軟な構成',
           '12×NVMe SSD：柔軟な構成'
@@ -1472,7 +1473,7 @@ export const serverProducts: ServerProduct[] = [
       {
         title: '多数のI/O',
         description: '豊富なメモリスロットと拡張スロットにより、大規模なAIワークロードに必要な高速データ転送を実現します。',
-        image: '/products/servers/dfx-sh560g-v1/03.jpg',
+        image: '/products/servers/dfx-dh560g-v1/03.jpg',
         imagePosition: 'left',
         bullets: [
           '32×5600MT/s対応のDDR5 DIMMをサポート',
@@ -1483,7 +1484,7 @@ export const serverProducts: ServerProduct[] = [
       {
         title: '先進的な技術設計',
         description: 'GPUDirect対応とRetimer不要設計により、高速データ転送と低遅延を実現。大規模クラスター展開に最適化されています。',
-        image: '/products/servers/dfx-sh560g-v1/04.jpg',
+        image: '/products/servers/dfx-dh560g-v1/04.jpg',
         imagePosition: 'right',
         bullets: [
           'GPUDirect対応：GPUDirect Storage/RDMA/P2Pに対応し、大規模なクラスター展開に最適',
@@ -1496,7 +1497,7 @@ export const serverProducts: ServerProduct[] = [
       {
         title: '高い信頼性と可用性',
         description: '優れた放熱設計で動作温度5℃～35℃（41℉～95℉）をサポート。4×高効率3000W Titanium PSUを搭載でき、N+N/N+M冗長に対応。6 or 8カスタマイズされた8080+ファンを搭載でき、N+1冗長に対応し、システムの安定稼働を保証します。',
-        image: '/products/servers/dfx-sh560g-v1/05.jpg'
+        image: '/products/servers/dfx-dh560g-v1/05.jpg'
       }
     ],
     energySaving: { image: '', points: [] },
