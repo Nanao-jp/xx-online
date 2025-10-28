@@ -7,7 +7,7 @@ export const serverProducts: ServerProduct[] = [
     displayType: 'fullpage',
     name: 'DFX Server DH116 V1',
     description: 'AIトレーニング・推論ワークロードに最適な次世代の4U2ソケットAIサーバー。',
-    mainImage: '/products/servers/dfx-dh116-v1/g5200v7-ai-server.jpg',
+    mainImage: '/products/servers/dfx-dh116-v1_02/main.png',
     category: 'cpu-server',
     meta: {
       title: 'DFX Server DH116 V1 | Starseeds Digital',
@@ -16,69 +16,59 @@ export const serverProducts: ServerProduct[] = [
     hero: {
       title: 'DFX Server DH116 V1',
       subtitle: 'AIワークロードを加速する、ストレージと拡張性に優れた4U2ソケットサーバー。',
-      image: '/products/servers/dfx-dh116-v1/g5200v7-ai-server.jpg'
+      image: '/products/servers/dfx-dh116-v1_02/main.png'
     },
     introduction: {
-      title: '次世代の4U2ソケットAIサーバー',
-      description: 'DFX Server DH116 V1は、強力な性能、高い信頼性と安全性、効率的な省エネルギー、容易な管理、容易な導入などの特長を備えており、トレーニングと推論のワークロードに利用できます。',
-      image: '/products/servers/dfx-dh116-v1/g5200v7-ai-server.jpg'
+      title: '次世代の1U1ソケットラックサーバー',
+      description: 'DH116 V1は、インターネット、インターネットデータセンター（Internet Data Center、IDC）、クラウドコンピューティング、エンタープライズと電気通信サービスの運用などのニーズに応えて開発した、幅広く利用されている次世代の1U1ソケットラックサーバーです。 ITコア業務、クラウドコンピューティング、仮想化、高性能計算、エンタープライズまたは電気通信サービスの運用、およびその他の複雑なワークロードに適します。 低消費電力、柔軟な拡張性、高信頼性、容易な管理、容易な導入などのメリットを備えています。',
+      image: '/products/servers/dfx-dh116-v1_02/00.jpg',
+      bullets: [
+        '主な運用：仮想化、クラウドコンピューティング、Webアプリケーション、AI推論'
+      ]
     },
     features: [
       {
-        title: '超大容量ストレージ',
-        description: 'AIの要求に応える大容量ストレージ構成に対応。柔軟なドライブオプションで、多様なワークロードをサポートします。',
-        image: '/products/servers/dfx-dh116-v1/large-storage.jpg',
-        bullets: [
-          '最大28台の3.5インチSAS/SATAドライブ',
-          '最大4台のNVMe SSD',
-          '2台のM.2 SSD'
-        ]
+        title: '高密度コンピューティング',
+        description: '1Uスペースに1基の第4世代AMD® EPYC™ 9004シリーズプロセッサー（Genoa）を搭載可能、最大400WのCPUと24枚のDIMM DDR5に対応',
+        image: '/products/servers/dfx-dh116-v1_02/01.jpg',
+        imagePosition: 'right'
       },
       {
-        title: '柔軟な拡張性',
-        description: '', // This one uses a list format directly
-        image: '/products/servers/dfx-dh116-v1/flexible-expansion.jpg',
-        bullets: [
-          '最大10×標準PCIe拡張スロットに対応',
-          '2×OCP 3.0ネットワークカードに対応'
-        ]
+        title: '超高速相互接続',
+        description: '超高速相互接続でより高速な運用を実現、PCIe5.0対応、400Gbit/s NICの相互接続に対応',
+        image: '/products/servers/dfx-dh116-v1_02/02.jpg'
       },
       {
-        title: '極めて優れた演算能力',
-        description: '', // This one uses a list format directly
-        image: '/products/servers/dfx-dh116-v1/computing-power.jpg',
-        bullets: [
-          '第4/5世代インテル®Xeon®スケーラブルプロセッサーに対応',
-          '4×フルハイトフルレングスデュアル幅のGPUカードに対応',
-          'GPUパススルー設計によりPCIeスイッチが不要'
-        ]
+        title: '高速フラッシュ',
+        description: '10×2.5インチSAS/SATA/NVMe SSDをサポートし、パフォーマンスの倍増を実現',
+        image: '/products/servers/dfx-dh116-v1_02/03.jpg'
       }
     ],
     reliability: [
       {
         title: 'ヒートシンクあたりの放熱性能が50%向上',
         description: 'ヒートパイプ拡張放熱技術により、優れた放熱とより強い温度適応性を実現',
-        image: '/products/servers/dfx-dh116-v1/heat-dissipation.jpg'
+        image: '/products/servers/dfx-dh116-v1_02/04.jpg'
       },
       {
-        title: 'システムのダウンタイムが66%削減',
-        description: '自社開発したAIメモリー障害自己修復機能により、システムの安定稼働を保証',
-        image: '/products/servers/dfx-dh116-v1/high-reliability.jpg'
+        title: '障害データ収集',
+        description: 'CPUクラッシュ時の自動障害情報収集と迅速なシステム障害箇所特定に対応',
+        image: '/products/servers/dfx-dh116-v1_02/05.jpg'
       }
     ],
     energySaving: {
-      image: '/products/servers/dfx-dh116-v1/energy-saving.jpg',
+      image: '/products/servers/dfx-dh116-v1_02/06.jpg',
       imagePosition: 'bottom',
       points: [
-        {
-          icon: 'BatteryCharging',
-          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
-          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
-        },
         {
           icon: 'ThermometerSun',
           title: '業界をリードする電源技術、より高い効率',
           description: '業界平均よりも12.5%低い電力損失を実現し、3つのコア技術で電力と効率を向上させ、業界をリードする電力変換率を提供'
+        },
+        {
+          icon: 'BatteryCharging',
+          title: 'サーバー全体の消費電力が業界平均よりも最大8%削減',
+          description: '自社開発したアルゴリズムにより、ファンとCPUの消費電力を最小限に抑える'
         },
         {
           icon: 'Gauge',
