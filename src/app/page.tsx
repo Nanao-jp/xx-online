@@ -58,7 +58,7 @@ export default function Home() {
 
           {/* Product Categories Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products?tab=server" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Server className="w-6 h-6 text-orange-600" />
               </div>
@@ -68,65 +68,20 @@ export default function Home() {
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
             </Link>
-            {/* 非表示: ストレージ/スイッチ/波長分離多重化/FTTx のカード */}
-            {/*
-            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
-                <HardDrive className="w-6 h-6 text-orange-600" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">ストレージ</h3>
-              <p className="text-sm text-gray-600 mb-3">NAS・SAN・SSD</p>
-              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
-                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
-              </div>
-            </Link>
+            {/* 非表示ブロックは削除済み */}
 
-            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify中心 mb-4 group-hover:bg-orange-100 transition-colors">
-                <Network className="w-6 h-6 text-orange-600" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">スイッチ</h3>
-              <p className="text-sm text-gray-600 mb-3">L2・L3・コア</p>
-              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
-                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
-              </div>
-            </Link>
-
-            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
-              <div className="w-12 h-12 bg-white rounded-xl flex items中心 justify-center mb-4 group-hover:bg-orange-100 transition-colors">
-                <Zap className="w-6 h-6 text-orange-600" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">波長分離多重化</h3>
-              <p className="text-sm text-gray-600 mb-3">DWDM・CWDM</p>
-              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
-                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
-              </div>
-            </Link>
-
-            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
-              <div className="w-12 h-12 bg白 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
-                <Wifi className="w-6 h-6 text-orange-600" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">FTTx</h3>
-              <p className="text-sm text-gray-600 mb-3">AP・OLT・ONU</p>
-              <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
-                詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
-              </div>
-            </Link>
-            */}
-
-            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products?tab=transceiver" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Radio className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">トランスセイバー</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">トランシーバー</h3>
               <p className="text-sm text-gray-600 mb-3">1.6T～10G・Coherent</p>
               <div className="flex items-center text-sm text-gray-600 group-hover:text-gray-900">
                 詳細を見る <ArrowRight className="w-4 h-4 ml-1" />
               </div>
             </Link>
 
-            <Link href="/products" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
+            <Link href="/products?tab=cable" className="group bg-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-orange-200 hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-100 transition-colors">
                 <Cable className="w-6 h-6 text-orange-600" />
               </div>
