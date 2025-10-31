@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* Logo & Description */}
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Starseeds Digital</h3>
+            <h3 className="text-xl font-bold mb-4">Star Seeds Digital Co., Ltd.</h3>
             <p className="text-gray-400 max-w-md mx-auto md:mx-0 mb-4">
               AIデータセンター向けエンドツーエンドソリューションを提供し、AI駆動のビジネス革新と持続可能な成長を実現します。
             </p>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Starseeds Digital Co., Ltd. All rights reserved.</p>
+          <p>&copy; 2025 Star Seeds Digital Co., Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
