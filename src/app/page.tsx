@@ -1,8 +1,10 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 import { Server, Radio, Cable, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
@@ -10,39 +12,16 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[60vh] sm:aspect-video overflow-hidden bg-gray-900">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/hero.png"
-            alt="IT Infrastructure Background"
-            fill
-            className="object-cover opacity-50 object-[center_30%] sm:object-center"
-            priority
-          />
-          <div className="absolute inset-0 bg-gray-900/40"></div>
-        </div>
-        
-        {/* Content: 見出しを縦中央、サブテキストをその直下に配置（重なり防止のためグリッド使用） */}
-        <div className="absolute inset-0 z-10 grid grid-rows-[1fr_auto_1fr] justify-items-center">
-          <div className="row-start-2 text-center px-4 sm:px-6 lg:px-8">
-            <h1 className="text-[48px] sm:text-6xl md:text-7xl font-bold text-white leading-tight tracking-tight">
-              <span className="block sm:inline whitespace-nowrap">AI基盤を築き、</span>
-              <span className="block sm:inline whitespace-nowrap">
-                <span className="text-orange-500">無限の知能</span>
-                <span>の未来へ</span>
-              </span>
-            </h1>
-          </div>
-          <div className="row-start-3 mt-4">
-            <div className="inline-block">
-              <p className="text-[22px] sm:text-2xl text-gray-100 font-light tracking-wider border-b-2 border-orange-500 pb-1">
-                Star Seeds Digital Co., Ltd.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title={{
+          line1: "AI基盤を築き、",
+          line2: {
+            highlight: "無限の知能",
+            normal: "の未来へ",
+          },
+        }}
+        subtitle="Star Seeds Digital Co., Ltd."
+      />
 
       {/* Products Showcase Section */}
       <section className="py-20 bg-white">
