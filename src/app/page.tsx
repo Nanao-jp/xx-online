@@ -13,6 +13,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <HeroSection
+        videoSrcWebM="/video/hero.webm"
         title={{
           line1: "AI基盤を築き、",
           line2: {

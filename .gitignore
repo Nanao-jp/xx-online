@@ -42,3 +42,4 @@ next-env.d.ts
 
 # internal materials (do not push)
 /_materials
+/material

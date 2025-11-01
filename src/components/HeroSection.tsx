@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 interface HeroSectionProps {
   videoSrc?: string;
+  videoSrcWebM?: string;
   title: {
     line1: string;
     line2: {
@@ -16,6 +17,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({
   videoSrc = "/video/hero.mp4",
+  videoSrcWebM,
   title,
   subtitle,
 }: HeroSectionProps) {
@@ -37,6 +39,7 @@ export default function HeroSection({
             playsInline
             className="absolute inset-0 w-full h-full object-cover opacity-50"
           >
+            {videoSrcWebM && <source src={videoSrcWebM} type="video/webm" />}
             <source src={videoSrc} type="video/mp4" />
           </video>
         </motion.div>
