@@ -53,8 +53,8 @@ export default function ProductDetailView({ product }: { product: Product }) {
               return (
                 <>
                   <ul className="space-y-2">
-                    {mainSpecs.map((spec) => (
-                      <li key={spec.label} className="flex items-start text-gray-700">
+                    {mainSpecs.map((spec, index) => (
+                      <li key={`${spec.label}-${index}`} className="flex items-start text-gray-700">
                         <CheckCircle className="w-4 h-4 mt-1 text-green-500 mr-3 flex-shrink-0" />
                         <div>
                           <strong className="font-semibold">{spec.label}:</strong>
@@ -67,8 +67,8 @@ export default function ProductDetailView({ product }: { product: Product }) {
                   {minorSpecs.length > 0 && (
                     <div className="mt-4 pt-4 border-t border-gray-200">
                       <ul className="space-y-1">
-                        {minorSpecs.map((spec) => (
-                          <li key={spec.label} className="flex items-center text-sm text-gray-800">
+                        {minorSpecs.map((spec, index) => (
+                          <li key={`${spec.label}-${index}`} className="flex items-center text-sm text-gray-800">
                             <strong className="font-medium w-40 flex-shrink-0">{spec.label}:</strong>
                             <span className="ml-2 font-mono bg-gray-100 px-2 py-0.5 rounded text-gray-600">{spec.value}</span>
                           </li>

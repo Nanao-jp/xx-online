@@ -49,9 +49,9 @@ export function ProductSpecs({ specs, datasheetUrl }: ProductSpecsProps) {
 
           {isOpen && (
             <div className="divide-y divide-gray-200 border-t border-gray-200">
-              {specs.map((spec) => (
+              {specs.map((spec, index) => (
                 <div 
-                  key={spec.label} 
+                  key={`${spec.label}-${index}`} 
                   className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 hover:bg-gray-50"
                 >
                   <dt className="font-semibold text-gray-900">

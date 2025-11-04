@@ -469,7 +469,7 @@ export const transceiverProducts: TransceiverProduct[] = [
         'データセンター向けの400Gbps対応EMLベースQSFP112光トランシーバー。SMFで最大2km伝送。',
     },
     specs: [
-      { label: '製品型番', value: 'FQDC0DC02KD-0F4P' },
+      { label: '製品型番', value: 'FOSCODC100P-OS8P' },
       { label: 'ベンダー名', value: 'DFX' },
       { label: 'フォームファクタ', value: 'QSFP112' },
       { label: '最大データレート', value: '400Gbps' },
@@ -480,7 +480,7 @@ export const transceiverProducts: TransceiverProduct[] = [
       { label: 'DDM/DOM', value: 'Supported' },
       { label: '動作温度', value: '0 to 70°C (32 to 158°F)' },
       { label: 'プロトコル', value: 'IEEE 802.3cu and QSFP112 MSA' },
-      { label: '消費電力', value: '12W' },
+      { label: '消費電力', value: '8W' },
     ],
   },
   {
@@ -799,14 +799,14 @@ export const transceiverProducts: TransceiverProduct[] = [
     id: '100g-er4l-qsfp28',
     name: '100G QSFP28 ER4 Lite',
     description:
-      '100G QSFP28 ER4 Liteは、100ギガビットイーサネットリンクで最大30kmのシングルモードファイバーでの使用を目的として設計されたEMLベースのトランシーバーモジュールです。',
+      '100G QSFP28 ER4 Liteは、100ギガビットイーサネットリンクで最大10kmのシングルモードファイバーでの使用を目的として設計されたEMLベースのトランシーバーモジュールです。',
     mainImage: '/products/transceivers/100g-er4-lite-qsfp28-01.png',
     category: '100g',
     displayType: 'modal',
     meta: {
       title: '100G QSFP28 ER4 Lite 光トランシーバー | Starseeds Digital',
       description:
-        '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大30km伝送。',
+        '100Gbps対応EMLベースQSFP28光トランシーバー。SMFで最大10km伝送。',
     },
     specs: [
       { label: '製品型番', value: 'FQPA0RC30KD-0E4A' },
@@ -814,7 +814,7 @@ export const transceiverProducts: TransceiverProduct[] = [
       { label: 'フォームファクタ', value: 'QSFP28' },
       { label: '最大データレート', value: '100Gbps' },
       { label: '波長', value: '1310nm' },
-      { label: '最大ケーブル長', value: '30km' },
+      { label: '最大ケーブル長', value: '10km' },
       { label: 'コネクタ', value: 'Duplex LC' },
       { label: 'ケーブルタイプ', value: 'SMF' },
       { label: 'DDM/DOM', value: 'Supported' },
