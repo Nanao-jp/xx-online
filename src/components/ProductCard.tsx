@@ -6,7 +6,7 @@ type ProductCardProps = {
   product: Product;
 };
 
-const ProductCardContent = ({ product }: { product: Product }) => (
+const ProductCardContent = ({ product, index }: { product: Product; index?: number }) => (
   <>
     <div className="relative w-full aspect-square bg-gradient-to-br from-gray-50 to-orange-50/30 rounded-xl overflow-hidden mb-6 border border-gray-100">
       <Image
@@ -14,6 +14,9 @@ const ProductCardContent = ({ product }: { product: Product }) => (
         alt={product.name}
         fill
         className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        quality={85}
+        priority={index !== undefined && index < 6}
       />
       {/* 装飾的なグラデーション */}
       <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -48,13 +51,17 @@ const ProductCardContent = ({ product }: { product: Product }) => (
   </>
 );
 
-export function ProductCard({ product }: ProductCardProps) {
+type ProductCardPropsWithIndex = ProductCardProps & {
+  index?: number;
+};
+
+export function ProductCard({ product, index }: ProductCardPropsWithIndex) {
   const commonClasses = "relative block bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-orange-500/50 shadow-md hover:shadow-2xl transition-all duration-300 group overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-orange-500/0 before:to-orange-500/0 hover:before:from-orange-500/5 hover:before:to-transparent before:transition-all before:duration-300";
 
   if (product.displayType === 'modal') {
     return (
       <Link href={`/products/${product.id}`} className={commonClasses} scroll={false}>
-        <ProductCardContent product={product} />
+        <ProductCardContent product={product} index={index} />
       </Link>
     );
   }
@@ -62,7 +69,7 @@ export function ProductCard({ product }: ProductCardProps) {
   // For 'fullpage' products, use a standard link to ensure navigation.
   return (
     <a href={`/products/${product.id}`} className={commonClasses}>
-      <ProductCardContent product={product} />
+      <ProductCardContent product={product} index={index} />
     </a>
   );
 };

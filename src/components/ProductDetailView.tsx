@@ -39,6 +39,8 @@ export default function ProductDetailView({ product }: { product: Product }) {
             alt={product.name}
             fill
             className="object-contain p-4"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            quality={85}
           />
         </div>
         <div>

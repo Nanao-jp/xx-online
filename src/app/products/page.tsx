@@ -120,8 +120,8 @@ function ProductsInner() {
                       {allProducts
                         .filter(p => p.category === 'gpu-server')
                         .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                        .map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        .map((product, index) => (
+                        <ProductCard key={product.id} product={product} index={index} />
                       ))}
                     </div>
                   </div>
@@ -144,7 +144,7 @@ function ProductsInner() {
                         allProducts
                           .filter((p) => p.category === 'aoc')
                           .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                          .map((product) => <ProductCard key={product.id} product={product} />)
+                          .map((product, index) => <ProductCard key={product.id} product={product} index={index} />)
                       ) : (
                         renderEmptyState('AOC')
                       )}
@@ -164,7 +164,7 @@ function ProductsInner() {
                         allProducts
                           .filter((p) => p.category === 'dac')
                           .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                          .map((product) => <ProductCard key={product.id} product={product} />)
+                          .map((product, index) => <ProductCard key={product.id} product={product} index={index} />)
                       ) : (
                         renderEmptyState('DAC')
                       )}
@@ -184,7 +184,7 @@ function ProductsInner() {
                         allProducts
                           .filter((p) => p.category === 'mpo')
                           .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                          .map((product) => <ProductCard key={product.id} product={product} />)
+                          .map((product, index) => <ProductCard key={product.id} product={product} index={index} />)
                       ) : (
                         renderEmptyState('MPO')
                       )}
@@ -207,8 +207,8 @@ function ProductsInner() {
                       {allProducts
                         .filter(p => p.category === '800g')
                         .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                        .map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        .map((product, index) => (
+                        <ProductCard key={product.id} product={product} index={index} />
                       ))}
                     </div>
                   </div>
@@ -224,8 +224,8 @@ function ProductsInner() {
                       {allProducts
                         .filter(p => p.category === '400g')
                         .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                        .map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        .map((product, index) => (
+                        <ProductCard key={product.id} product={product} index={index} />
                       ))}
                     </div>
                   </div>
@@ -241,8 +241,8 @@ function ProductsInner() {
                       {allProducts
                         .filter(p => p.category === '200g')
                         .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                        .map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        .map((product, index) => (
+                        <ProductCard key={product.id} product={product} index={index} />
                       ))}
                     </div>
                   </div>
@@ -258,8 +258,8 @@ function ProductsInner() {
                       {allProducts
                         .filter(p => p.category === '100g')
                         .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-                        .map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        .map((product, index) => (
+                        <ProductCard key={product.id} product={product} index={index} />
                       ))}
                     </div>
                   </div>
