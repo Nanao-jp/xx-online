@@ -387,14 +387,14 @@ export const cableProducts: CableProduct[] = [
   },
   {
     id: 'mpo-fiber-cables',
-    name: '1 MPO Fiber Cables',
+    name: 'MPO Fiber Cables',
     description: 'シングルモードおよびマルチモードの事前終端MPO/MTPパッチケーブルは、データセンターや通信ネットワークでの迅速な展開に使用されるマルチファイバーコネクタです。MPOコネクタは標準コネクタの最大12倍の密度を提供し、スペースとコストを節約します。MPOパッチコードは、ファイバーアライメントのための金属ガイドピンと精密なハウジング寸法を備えた精密成型MTフェルールを使用し、4、8、12、または24ファイバーで大量終端が可能です。',
     mainImage: '/products/cables/MPO/mpo-01.png',
     category: 'mpo',
     displayType: 'modal',
     order: 1,
     meta: {
-      title: '1 MPO Fiber Cables | Starseeds Digital',
+      title: 'MPO Fiber Cables | Starseeds Digital',
       description: '事前終端MPO-MPOファイバーオプティックトランクケーブル。高密度配線と効率的な接続管理を実現。'
     },
     specs: [
@@ -417,14 +417,14 @@ export const cableProducts: CableProduct[] = [
   },
   {
     id: 'mpo-breakout',
-    name: '01 MPO Breakout',
+    name: 'MPO Breakout',
     description: 'シングルモードおよびマルチモードの事前終端MPO/MTPパッチケーブルは、データセンターや通信ネットワークでの迅速な展開に使用されるマルチファイバーコネクタです。MPOコネクタは標準コネクタの最大12倍の密度を提供し、スペースとコストを節約します。MPOパッチコードは、ファイバーアライメントのための金属ガイドピンと精密なハウジング寸法を備えた精密成型MTフェルールを使用し、4、8、12、または24ファイバーで大量終端が可能です。',
     mainImage: '/products/cables/MPO/mpo-breakout-01.png',
     category: 'mpo',
     displayType: 'modal',
     order: 2,
     meta: {
-      title: '01 MPO Breakout | Starseeds Digital',
+      title: 'MPO Breakout | Starseeds Digital',
       description: '事前終端MPO-MPOファイバーオプティックトランクケーブル。高密度配線と効率的な接続管理を実現。'
     },
     specs: [
@@ -447,14 +447,14 @@ export const cableProducts: CableProduct[] = [
   },
   {
     id: 'mpo-mmf',
-    name: '01 MPO MMF',
+    name: 'MPO MMF',
     description: 'シングルモードおよびマルチモードの事前終端MPO/MTPパッチケーブルは、データセンターや通信ネットワークでの迅速な展開に使用されるマルチファイバーコネクタです。MPOコネクタは標準コネクタの最大12倍の密度を提供し、スペースとコストを節約します。MPOパッチコードは、ファイバーアライメントのための金属ガイドピンと精密なハウジング寸法を備えた精密成型MTフェルールを使用し、4、8、12、または24ファイバーで大量終端が可能です。',
     mainImage: '/products/cables/MPO/mpo-mmf-01.png',
     category: 'mpo',
     displayType: 'modal',
     order: 3,
     meta: {
-      title: '01 MPO MMF | Starseeds Digital',
+      title: 'MPO MMF | Starseeds Digital',
       description: '事前終端MPO-MPOファイバーオプティックトランクケーブル。高密度配線と効率的な接続管理を実現。'
     },
     specs: [
@@ -477,14 +477,14 @@ export const cableProducts: CableProduct[] = [
   },
   {
     id: 'mpo-6lc',
-    name: '02 MPO-6LC',
+    name: 'MPO-6LC',
     description: 'MPO-LCプリターミネート済み光ファイバーパッチコードは、メイン配線エリアからシステム機器ポートまたは機器エリア配線フレームへの直接接続を提供する光ファイバーパッチコードです。MPO標準に準拠しており、8、12、16、または24コアの選択が可能です。IEC 61754-7およびTelcordia GR-1435-COREに準拠しています。MTP/MPOマルチファイバートランクケーブルは、ミニラウンドケーブルやリボンケーブルで提供され、2〜24ファイバーの0.9mmまたは2.0mmテールにLC、SC、ST、FCなどのコネクタが付いています。ケーブル全長、ファンアウト長、コネクタタイプはカスタマイズ可能です。',
     mainImage: '/products/cables/MPO/mpo-6lc-01.png',
     category: 'mpo',
     displayType: 'modal',
     order: 4,
     meta: {
-      title: '02 MPO-6LC | Starseeds Digital',
+      title: 'MPO-6LC | Starseeds Digital',
       description: 'MPO-LCプリターミネート済み光ファイバーパッチコード。メイン配線エリアからシステム機器ポートへの直接接続を提供。'
     },
     specs: [
@@ -503,14 +503,14 @@ export const cableProducts: CableProduct[] = [
   },
   {
     id: 'mpo-12lc',
-    name: '02 MPO-12LC',
+    name: 'MPO-12LC',
     description: 'MPO-LCプリターミネート済み光ファイバーパッチコードは、メイン配線エリアからシステム機器ポートまたは機器エリア配線フレームへの直接接続を提供する光ファイバーパッチコードです。MPO標準に準拠しており、8、12、16、または24コアの選択が可能です。IEC 61754-7およびTelcordia GR-1435-COREに準拠しています。MTP/MPOマルチファイバートランクケーブルは、ミニラウンドケーブルやリボンケーブルで提供され、2〜24ファイバーの0.9mmまたは2.0mmテールにLC、SC、ST、FCなどのコネクタが付いています。ケーブル全長、ファンアウト長、コネクタタイプはカスタマイズ可能です。',
     mainImage: '/products/cables/MPO/mpo-12lc-01.jpg',
     category: 'mpo',
     displayType: 'modal',
     order: 5,
     meta: {
-      title: '02 MPO-12LC | Starseeds Digital',
+      title: 'MPO-12LC | Starseeds Digital',
       description: 'MPO-LCプリターミネート済み光ファイバーパッチコード。メイン配線エリアからシステム機器ポートへの直接接続を提供。'
     },
     specs: [
@@ -529,14 +529,14 @@ export const cableProducts: CableProduct[] = [
   },
   {
     id: 'mpo-24lc',
-    name: '02 MPO-24LC',
+    name: 'MPO-24LC',
     description: 'MPO-LCプリターミネート済み光ファイバーパッチコードは、メイン配線エリアからシステム機器ポートまたは機器エリア配線フレームへの直接接続を提供する光ファイバーパッチコードです。MPO標準に準拠しており、8、12、16、または24コアの選択が可能です。IEC 61754-7およびTelcordia GR-1435-COREに準拠しています。MTP/MPOマルチファイバートランクケーブルは、ミニラウンドケーブルやリボンケーブルで提供され、2〜24ファイバーの0.9mmまたは2.0mmテールにLC、SC、ST、FCなどのコネクタが付いています。ケーブル全長、ファンアウト長、コネクタタイプはカスタマイズ可能です。',
     mainImage: '/products/cables/MPO/mpo-24lc-01.jpg',
     category: 'mpo',
     displayType: 'modal',
     order: 6,
     meta: {
-      title: '02 MPO-24LC | Starseeds Digital',
+      title: 'MPO-24LC | Starseeds Digital',
       description: 'MPO-LCプリターミネート済み光ファイバーパッチコード。メイン配線エリアからシステム機器ポートへの直接接続を提供。'
     },
     specs: [
